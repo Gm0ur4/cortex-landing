@@ -798,10 +798,7 @@ Além disso, você sempre pode verificar a URL do checkout, confirmar que está 
         <div class="faq-item">
             <div class="faq-question">Como funciona a IA?</div>
             <div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
-Analisa seus padrões comportamentais
-Faz um diagnóstico personalizado
-Oferece soluções práticas
-Cria um plano de ação
+Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação e tira todas suas dúvidas sobre a mente humana.
 Tudo baseado em ciência. Tudo prático. É como ter um especialista em comportamento humano disponível 24/7 para ajudar você.</div>
         </div>
         <div class="faq-item">
