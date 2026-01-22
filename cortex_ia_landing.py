@@ -543,10 +543,10 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="hero">
-            <h1>🧠 O Fim dos Cursos Chatos e PDFs Intermináveis</h1>
+            <h1>🧠 A Cortex é a primeira plataforma desenvolvida para te ensinar comportamento em 21 dias</h1>
             <p class="hero-subtitle">
-                Você não precisa ler 7.000 páginas para dominar a mente humana.<br>
-                <strong>A Cortex já leu, filtrou e organizou o ouro de cada obra para você aplicar hoje mesmo.</strong>
+                Somos pioneiros a dar o fim em cursos chatos e PDFs intermináveis.<br>
+                <strong>São mais de 15.000 alunos absorvendo o conhecimento dos 22 maiores best-sellers do mundo</strong>
             </p>
             <button class="hero-cta" onclick="document.querySelector('.final-cta').scrollIntoView({behavior: 'smooth'})">
                 ⚡ Começar Agora
@@ -559,22 +559,22 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="problem-section">
-            <h2>❌ O Problema Real</h2>
+            <h2>❌ Qual o problema dos demais que tentam ensinar?</h2>
             <div class="problem-grid">
                 <div class="problem-item">
-                    <h3>📚 Sobrecarga de Informação</h3>
+                    <h3>📚 Sobrecarga de informação</h3>
                     <p>Existem milhares de livros sobre comportamento humano. Qual ler? Por onde começar? Você fica perdido entre teorias complexas e informações contraditórias.</p>
                 </div>
                 <div class="problem-item">
-                    <h3>⏰ Tempo Desperdiçado</h3>
+                    <h3>⏰ Tempo desperdiçado</h3>
                     <p>Ler 7.000 páginas leva meses. Assistir cursos chatos leva semanas. Você quer resultados AGORA, não em 6 meses.</p>
                 </div>
                 <div class="problem-item">
-                    <h3>🤔 Sem Aplicação Prática</h3>
+                    <h3>🤔 Sem aplicação prática</h3>
                     <p>Você lê, aprende a teoria, mas não sabe como aplicar na vida real. Relacionamentos, trabalho, pessoal... tudo continua igual.</p>
                 </div>
                 <div class="problem-item">
-                    <h3>💰 Cursos Caros e Genéricos</h3>
+                    <h3>💰 Cursos caros e genéricos</h3>
                     <p>Cursos de comportamento custam caro, duram meses e não são personalizados para sua realidade específica.</p>
                 </div>
             </div>
@@ -586,15 +586,15 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="solution-section">
-            <h2>✅ A Solução: Cortex IA</h2>
+            <h2>✅ Aprenda com quem é especialista no assunto</h2>
             <div class="quote-box">
                 <p class="quote-text">
-                    "Você não precisa ler 7.000 páginas para dominar a mente humana. 
-                    <span class="quote-highlight">A Cortex já leu, filtrou e organizou o ouro de cada obra para você aplicar hoje mesmo.</span>"
+                    "Você não precisa ler mais de 7.000 páginas para dominar a mente humana. 
+                    <span class="quote-highlight">A Cortex já processou, filtrou e organizou o ouro de cada mestre da inteligência humana para você aplicar hoje mesmo.</span>"
                 </p>
             </div>
             <p style="color: #666; font-size: 1.05rem; line-height: 1.8; text-align: center; margin-top: 30px;">
-                Cortex IA é um <strong>programa de 21 dias</strong> com atividades práticas que te ensinam os princípios fundamentais 
+                A Cortex é um <strong>programa de 21 dias</strong> com atividades práticas que te ensinam os princípios fundamentais 
                 do comportamento humano. Sem teoria chata. Sem PDFs gigantes. Apenas <strong>o essencial para você aplicar e transformar sua vida.</strong>
             </p>
         </div>
@@ -605,36 +605,36 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="benefits-section">
-            <h2>🎯 Benefícios Principais</h2>
+            <h2>🎯 Características principais</h2>
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">⚡</div>
-                    <h3>Aprenda em 21 Dias</h3>
+                    <h3>Aprenda em 21 dias</h3>
                     <p>Não em 6 meses. Não em 1 ano. Em apenas 21 dias você terá os conhecimentos que levaria meses para ler em livros.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">🎯</div>
-                    <h3>100% Prático</h3>
+                    <h3>100% prático</h3>
                     <p>Cada dia tem atividades que você faz. Sem teoria chata. Sem vídeos longos. Pura aplicação.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">🧠</div>
-                    <h3>Baseado em Ciência</h3>
-                    <p>Todos os conceitos vêm dos melhores livros sobre comportamento humano. Você aprende o que realmente funciona.</p>
+                    <h3>Baseado em ciência</h3>
+                    <p>Todos os conceitos vêm das melhores referências mundiais sobre comportamento humano. Você aprende só o que realmente funciona.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">💡</div>
-                    <h3>Aplique Imediatamente</h3>
+                    <h3>Aplique imediatamente</h3>
                     <p>Aprenda uma técnica e use no mesmo dia. Com seus relacionamentos, no trabalho, em casa. Resultados reais.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">🚀</div>
-                    <h3>Transforme Relacionamentos</h3>
+                    <h3>Transforme relacionamentos</h3>
                     <p>Entenda por que as pessoas agem como agem. Mude conflitos em conexões. Construa relacionamentos mais fortes.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">💪</div>
-                    <h3>Domine Sua Mente</h3>
+                    <h3>Domine sua mente</h3>
                     <p>Entenda seus próprios padrões. Vença a procrastinação, ansiedade e insegurança. Tome controle da sua vida.</p>
                 </div>
             </div>
@@ -652,28 +652,28 @@ st.markdown("""
             </p>
             <div class="microlearning-grid">
                 <div class="microlearning-item">
-                    <h3>🔗 Links Cerebrais</h3>
+                    <h3>🔗 Links cerebrais</h3>
                     <p>Cada conceito é conectado a exemplos reais. Seu cérebro cria conexões mais fortes e memória duradoura.</p>
                 </div>
                 <div class="microlearning-item">
-                    <h3>🌊 Modo Difuso</h3>
+                    <h3>🌊 Modo difuso</h3>
                     <p>Atividades que ativam o modo difuso do cérebro. Você aprende enquanto relaxa, não através de força bruta.</p>
                 </div>
                 <div class="microlearning-item">
-                    <h3>⏱️ Sessões Curtas</h3>
+                    <h3>⏱️ Sessões curtas</h3>
                     <p>15-20 minutos por dia. Seu cérebro absorve melhor em sessões curtas e focadas do que em maratonas.</p>
                 </div>
                 <div class="microlearning-item">
-                    <h3>🔄 Repetição Espaçada</h3>
+                    <h3>🔄 Repetição espaçada</h3>
                     <p>Conceitos são revisitados em intervalos ótimos. Você não esquece. Conhecimento fica para sempre.</p>
                 </div>
                 <div class="microlearning-item">
-                    <h3>✍️ Atividades Práticas</h3>
+                    <h3>✍️ Atividades práticas</h3>
                     <p>Fazer é o melhor jeito de aprender. Cada dia tem exercícios que consolidam o conhecimento.</p>
                 </div>
                 <div class="microlearning-item">
-                    <h3>🎓 Baseado em Pesquisa</h3>
-                    <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva. Aprendizado que funciona.</p>
+                    <h3>🎓 Baseado em estudo</h3>
+                    <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva. Todo conteúdo sempre estará citando de onde vem a base. Aprendizado que funciona.</p>
                 </div>
             </div>
         </div>
@@ -684,30 +684,30 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="loses-section">
-            <h2>⚠️ O Que Você Perde Por Não Ter Cortex IA</h2>
+            <h2>⚠️ Quem não entende comportamento humano está à mercê de:</h2>
             <div class="loses-grid">
                 <div class="lose-item">
-                    <h3>😔 Relacionamentos Superficiais</h3>
+                    <h3>😔 Relações superficiais </h3>
                     <p>Sem entender comportamento, você fica preso em conflitos. Relacionamentos que poderiam ser incríveis viram frustrantes.</p>
                 </div>
                 <div class="lose-item">
-                    <h3>📉 Baixa Produtividade</h3>
-                    <p>Sem entender suas próprias motivações, você procrastina. Fica preso em padrões que te impedem de avançar.</p>
+                    <h3>📉 Baixa produtividade</h3>
+                    <p>Se não compreende suas próprias motivações, você procrastina. Fica preso em padrões que te impedem de avançar.</p>
                 </div>
                 <div class="lose-item">
-                    <h3>💔 Insegurança Constante</h3>
-                    <p>Sem autoconhecimento, você fica inseguro. Duvida de si mesmo. Deixa oportunidades passarem.</p>
+                    <h3>💔 Insegurança constante</h3>
+                    <p>Sem autoconhecimento? Você fica inseguro. Duvida de si mesmo. Deixa oportunidades passarem.</p>
                 </div>
                 <div class="lose-item">
-                    <h3>🔄 Ciclos Repetidos</h3>
-                    <p>Sem entender seus padrões, você repete os mesmos erros. Relacionamentos que fracassam. Oportunidades perdidas.</p>
+                    <h3>🔄 Ciclos repetidos</h3>
+                    <p>Infelizmente, sem entender seus padrões, você repete os mesmos erros. Relacionamentos que fracassam. Oportunidades perdidas.</p>
                 </div>
                 <div class="lose-item">
-                    <h3>⏳ Tempo Desperdiçado</h3>
+                    <h3>⏳ Tempo desperdiçado</h3>
                     <p>Cada dia que passa sem esse conhecimento é um dia que você poderia estar transformando sua vida.</p>
                 </div>
                 <div class="lose-item">
-                    <h3>💰 Potencial Não Realizado</h3>
+                    <h3>💰 Potencial não realizado</h3>
                     <p>Você tem potencial. Mas sem entender comportamento, você fica preso. Nunca alcança o que poderia ser.</p>
                 </div>
             </div>
@@ -719,10 +719,10 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="social-proof">
-            <h2>📊 Confie nos Números</h2>
+            <h2>📊 Confie nos nossos números</h2>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <p class="stat-number">20.000+</p>
+                    <p class="stat-number">15.000+</p>
                     <p class="stat-label">Usuários Ativos</p>
                 </div>
                 <div class="stat-card">
@@ -734,7 +734,7 @@ st.markdown("""
                     <p class="stat-label">Taxa de Conclusão</p>
                 </div>
                 <div class="stat-card">
-                    <p class="stat-number">+50K</p>
+                    <p class="stat-number">+40K</p>
                     <p class="stat-label">Vidas Transformadas</p>
                 </div>
             </div>
@@ -773,7 +773,7 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="demo-section">
-            <h2>🎬 Veja Como Funciona</h2>
+            <h2>🎬 Veja como funciona</h2>
             <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.8;">
                 Quer ver um exemplo de como é uma atividade prática? Clique abaixo para acessar uma demonstração gratuita.
             </p>
