@@ -787,28 +787,29 @@ st.markdown("""
     <div class="faq-section">
         <h2>❓ Perguntas frequentes</h2>
         <div class="faq-item">
-            <div class="faq-question">Quanto tempo leva para ver resultados?</div>
-            <div class="faq-answer">Muitos clientes começam a notar mudanças na primeira semana. Os 21 dias são estruturados para uma transformação progressiva. Você vai perceber que entende melhor as pessoas, consegue lidar melhor com conflitos e se conhece mais.</div>
+            <div class="faq-question">É seguro realizar a compra?</div>
+            <div class="faq-answer">Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
+Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
         </div>
         <div class="faq-item">
-            <div class="faq-question">Preciso ter experiência anterior?</div>
-            <div class="faq-answer">Não! Cortex IA é para todos. Desde iniciantes até pessoas que já estudam comportamento. Cada um aprende no seu ritmo e aproveita conforme seu nível.</div>
+            <div class="faq-question">Por onde acesso a Cortex?</div>
+            <div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.</div>
         </div>
         <div class="faq-item">
-            <div class="faq-question">Quanto tempo por dia preciso dedicar?</div>
-            <div class="faq-answer">Apenas 15-20 minutos por dia. É microlearning. Você faz a atividade do dia e pronto. Sem necessidade de longas sessões de estudo.</div>
+            <div class="faq-question">Como funciona a IA?</div>
+            <div class="faq-answer">aaaaaaaaaaaaaa</div>
         </div>
         <div class="faq-item">
-            <div class="faq-question">Posso acessar para sempre?</div>
-            <div class="faq-answer">Sim! Você tem acesso vitalício à plataforma. Pode revisar o conteúdo quantas vezes quiser e receberá todas as atualizações futuras.</div>
+            <div class="faq-question">O que vou aprender?</div>
+            <div class="faq-answer">aaaaaaaaaa</div>
         </div>
         <div class="faq-item">
-            <div class="faq-question">E se não gostar?</div>
-            <div class="faq-answer">Você tem 7 dias para explorar. Se não achar valor, é fácil resolver. Mas a maioria das pessoas adora desde o primeiro dia.</div>
+            <div class="faq-question">Existe algum tipo de suporte?</div>
+            <div class="faq-answer">Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.</div>
         </div>
         <div class="faq-item">
-            <div class="faq-question">Posso fazer o curso com outras pessoas?</div>
-            <div class="faq-answer">Sim! Muitas pessoas fazem juntas e compartilham experiências. Você pode fazer sozinho ou com amigos. Ambas as formas funcionam.</div>
+            <div class="faq-question">Posso fazer no meu ritmo?</div>
+            <div class="faq-answer">Claro! você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência..</div>
         </div>
     </div>
 </div>
