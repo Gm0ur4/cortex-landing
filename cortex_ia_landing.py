@@ -717,57 +717,54 @@ st.markdown("""
 
 # --- PROVA SOCIAL ---
 st.markdown("""
-<div class="container">
-    <div class="social-proof">
-        <h2>📊 Confie nos nossos números</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <p class="stat-number">15.000+</p>
-                <p class="stat-label">Usuários ativos</p>
-            </div>
-            <div class="stat-card">
-                <p class="stat-number">4.9★</p>
-                <p class="stat-label">Avaliação média</p>
-            </div>
-            <div class="stat-card">
-                <p class="stat-number">92%</p>
-                <p class="stat-label">Taxa de conclusão</p>
-            </div>
-            <div class="stat-card">
-                <p class="stat-number">+40K</p>
-                <p class="stat-label">Vidas transformadas</p>
-            </div>
-        </div>
-        
-        <h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">
-            O Que Dizem Nossos Clientes
-        </h3>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "Cortex IA mudou minha vida. Em 21 dias aprendi mais sobre comportamento humano do que em 5 anos lendo livros. Agora entendo por que as pessoas agem como agem e consigo lidar melhor com tudo."
-                </p>
-                <div class="testimonial-author">Maria Silva</div>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "As atividades práticas são incríveis. Não é teoria chata. É algo que você faz e já vê resultado. Meus relacionamentos melhoraram muito."
-                </p>
-                <div class="testimonial-author">João Santos</div>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "Finalmente entendi meus próprios padrões de comportamento. Isso me libertou de inseguranças que carregava há anos. Recomendo para todos."
-                </p>
-                <div class="testimonial-author">Ana Costa</div>
+    <div class="container">
+        <div class="social-proof">
+            <h2>📊 Confie nos nossos números</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <p class="stat-number">15.000+</p>
+                    <p class="stat-label">Usuários ativos</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">4.9★</p>
+                    <p class="stat-label">Avaliação média</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">92%</p>
+                    <p class="stat-label">Taxa de conclusão</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">+40K</p>
+                    <p class="stat-label">Vidas transformadas</p>
+                </div>
+            </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">O Que Dizem Nossos Clientes</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Cortex IA mudou minha vida. Em 21 dias aprendi mais sobre comportamento humano do que em 5 anos lendo livros. Agora entendo por que as pessoas agem como agem e consigo lidar melhor com tudo."
+                    </p>
+                    <div class="testimonial-author">Maria Silva</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "As atividades práticas são incríveis. Não é teoria chata. É algo que você faz e já vê resultado. Meus relacionamentos melhoraram muito."
+                    </p>
+                    <div class="testimonial-author">João Santos</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Finalmente entendi meus próprios padrões de comportamento. Isso me libertou de inseguranças que carregava há anos. Recomendo para todos."
+                    </p>
+                    <div class="testimonial-author">Ana Costa</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True
+)
 
 # --- DEMO ---
 st.markdown("""
