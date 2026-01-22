@@ -548,7 +548,8 @@ st.markdown("""
                 Somos pioneiros a dar o fim em cursos chatos e PDFs intermináveis.<br>
                 <strong>São mais de 15.000 alunos absorvendo o conhecimento dos 22 maiores best-sellers do mundo</strong>
             </p>
-            <button class="hero-cta" onclick="window.open('https://translate.google.com.br', '_blank')">
+            <a href="https://translate.google.com.br" target="_blank" class="hero-cta-link">
+            <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
         </div>
