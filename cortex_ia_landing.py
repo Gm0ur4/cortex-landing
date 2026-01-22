@@ -3,7 +3,7 @@ from datetime import datetime
 
 # --- CONFIGURAÇÃO DA PÁGINA ---
 st.set_page_config(
-    page_title="Cortex IA - Domine o Comportamento Humano",
+    page_title="Cortex - Domine o Comportamento Humano",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -589,8 +589,8 @@ st.markdown("""
             <h2>✅ Aprenda com quem é especialista no assunto</h2>
             <div class="quote-box">
                 <p class="quote-text">
-                    "Você não precisa ler mais de 7.000 páginas para dominar a mente humana. 
-                    <span class="quote-highlight">A Cortex já processou, filtrou e organizou o ouro de cada mestre da inteligência humana para você aplicar hoje mesmo.</span>"
+                    Você não precisa ler mais de 7.000 páginas para dominar a mente humana. 
+                    <span class="quote-highlight">A Cortex já processou, filtrou e organizou o ouro de cada mestre da inteligência humana para você aplicar hoje mesmo.</span>
                 </p>
             </div>
             <p style="color: #666; font-size: 1.05rem; line-height: 1.8; text-align: center; margin-top: 30px;">
@@ -609,8 +609,8 @@ st.markdown("""
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">⚡</div>
-                    <h3>Aprenda em 21 dias</h3>
-                    <p>Não em 6 meses. Não em 1 ano. Em apenas 21 dias você terá os conhecimentos que levaria meses para ler em livros.</p>
+                    <h3>Aprenda no tempo perfeito</h3>
+                    <p>Não em 6 meses. Não em 1 ano. Em apenas 21 dias você terá os conhecimentos que levaria meses para ler em livros e cursos.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">🎯</div>
@@ -723,19 +723,19 @@ st.markdown("""
             <div class="stats-grid">
                 <div class="stat-card">
                     <p class="stat-number">15.000+</p>
-                    <p class="stat-label">Usuários Ativos</p>
+                    <p class="stat-label">Usuários ativos</p>
                 </div>
                 <div class="stat-card">
                     <p class="stat-number">4.9★</p>
-                    <p class="stat-label">Avaliação Média</p>
+                    <p class="stat-label">Avaliação média</p>
                 </div>
                 <div class="stat-card">
                     <p class="stat-number">92%</p>
-                    <p class="stat-label">Taxa de Conclusão</p>
+                    <p class="stat-label">Taxa de conclusão</p>
                 </div>
                 <div class="stat-card">
                     <p class="stat-number">+40K</p>
-                    <p class="stat-label">Vidas Transformadas</p>
+                    <p class="stat-label">Vidas transformadas</p>
                 </div>
             </div>
             
@@ -788,7 +788,7 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="faq-section">
-            <h2>❓ Perguntas Frequentes</h2>
+            <h2>❓ Perguntas frequentes</h2>
             
             <div class="faq-item">
                 <div class="faq-question">Quanto tempo leva para ver resultados?</div>
@@ -840,7 +840,7 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="final-cta">
-            <h2>🚀 Comece Sua Transformação Hoje</h2>
+            <h2>🚀 Comece sua transformação hoje</h2>
             <p>
                 Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
                 <strong>A escolha é sua.</strong>
@@ -859,7 +859,7 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="footer">
-            <p>© 2024 Cortex IA. Todos os direitos reservados.</p>
+            <p>© 2026 Inteligência Cortex. Todos os direitos reservados.</p>
             <p>
                 <a href="#">Política de Privacidade</a> | 
                 <a href="#">Termos de Uso</a> | 
