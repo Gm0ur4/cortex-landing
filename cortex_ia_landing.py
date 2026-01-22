@@ -841,11 +841,6 @@ st.markdown("""
     <div class="container">
         <div class="footer">
             <p>© 2026 Inteligência Cortex. Todos os direitos reservados.</p>
-            <p>
-                <a href="#">Política de Privacidade</a> | 
-                <a href="#">Termos de Uso</a> | 
-                <a href="#">Contato</a>
-            </p>
         </div>
     </div>
     """, unsafe_allow_html=True)
