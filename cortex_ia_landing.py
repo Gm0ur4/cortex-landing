@@ -827,7 +827,8 @@ st.markdown("""
                 Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
                 <strong>A escolha é sua.</strong>
             </p>
-            <button class="final-cta-btn" onclick="window.location.href='https://seu-checkout.streamlit.app'">
+            <a href="https://translate.google.com.br" target="_blank" class="hero-cta-link">
+            <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
             <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
