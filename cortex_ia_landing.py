@@ -803,7 +803,7 @@ Tudo baseado em ciência. Tudo prático. É como ter um especialista em comporta
         </div>
         <div class="faq-item">
             <div class="faq-question">O que vou aprender?</div>
-            <div class="faq-answer">aaaaaaaaaa</div>
+            <div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência (com inteligência emocional), vendas (com persuasão) + um conteúdo bônus final no formato intensivo surpresa.</div>
         </div>
         <div class="faq-item">
             <div class="faq-question">Existe algum tipo de suporte?</div>
