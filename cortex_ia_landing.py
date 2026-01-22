@@ -716,8 +716,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # --- PROVA SOCIAL ---
-st.markdown(
-    """
+st.markdown("""
     <div class="container">
         <div class="social-proof">
             <h2>📊 Confie nos nossos números</h2>
@@ -768,8 +767,7 @@ st.markdown(
             </div>
         </div>
     </div>
-    """,
-    unsafe_allow_html=True
+    """, unsafe_allow_html=True
 )
 
 # --- DEMO ---
