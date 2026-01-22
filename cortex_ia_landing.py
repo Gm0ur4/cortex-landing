@@ -783,55 +783,36 @@ st.markdown("""
 
 # --- FAQ ---
 st.markdown("""
-    <div class="container">
-        <div class="faq-section">
-            <h2>❓ Perguntas frequentes</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">Quanto tempo leva para ver resultados?</div>
-                <div class="faq-answer">
-                    Muitos clientes começam a notar mudanças na primeira semana. Os 21 dias são estruturados para uma transformação progressiva. Você vai perceber que entende melhor as pessoas, consegue lidar melhor com conflitos e se conhece mais.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Preciso ter experiência anterior?</div>
-                <div class="faq-answer">
-                    Não! Cortex IA é para todos. Desde iniciantes até pessoas que já estudam comportamento. Cada um aprende no seu ritmo e aproveita conforme seu nível.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Quanto tempo por dia preciso dedicar?</div>
-                <div class="faq-answer">
-                    Apenas 15-20 minutos por dia. É microlearning. Você faz a atividade do dia e pronto. Sem necessidade de longas sessões de estudo.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Posso acessar para sempre?</div>
-                <div class="faq-answer">
-                    Sim! Você tem acesso vitalício à plataforma. Pode revisar o conteúdo quantas vezes quiser e receberá todas as atualizações futuras.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">E se não gostar?</div>
-                <div class="faq-answer">
-                    Você tem 7 dias para explorar. Se não achar valor, é fácil resolver. Mas a maioria das pessoas adora desde o primeiro dia.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">Posso fazer o curso com outras pessoas?</div>
-                <div class="faq-answer">
-                    Sim! Muitas pessoas fazem juntas e compartilham experiências. Você pode fazer sozinho ou com amigos. Ambas as formas funcionam.
-                </div>
-            </div>
-            
+<div class="container">
+    <div class="faq-section">
+        <h2>❓ Perguntas frequentes</h2>
+        <div class="faq-item">
+            <div class="faq-question">Quanto tempo leva para ver resultados?</div>
+            <div class="faq-answer">Muitos clientes começam a notar mudanças na primeira semana. Os 21 dias são estruturados para uma transformação progressiva. Você vai perceber que entende melhor as pessoas, consegue lidar melhor com conflitos e se conhece mais.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Preciso ter experiência anterior?</div>
+            <div class="faq-answer">Não! Cortex IA é para todos. Desde iniciantes até pessoas que já estudam comportamento. Cada um aprende no seu ritmo e aproveita conforme seu nível.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Quanto tempo por dia preciso dedicar?</div>
+            <div class="faq-answer">Apenas 15-20 minutos por dia. É microlearning. Você faz a atividade do dia e pronto. Sem necessidade de longas sessões de estudo.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Posso acessar para sempre?</div>
+            <div class="faq-answer">Sim! Você tem acesso vitalício à plataforma. Pode revisar o conteúdo quantas vezes quiser e receberá todas as atualizações futuras.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">E se não gostar?</div>
+            <div class="faq-answer">Você tem 7 dias para explorar. Se não achar valor, é fácil resolver. Mas a maioria das pessoas adora desde o primeiro dia.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Posso fazer o curso com outras pessoas?</div>
+            <div class="faq-answer">Sim! Muitas pessoas fazem juntas e compartilham experiências. Você pode fazer sozinho ou com amigos. Ambas as formas funcionam.</div>
         </div>
     </div>
-    """, unsafe_allow_html=True)
+</div>
+""", unsafe_allow_html=True)
 
 # --- CTA FINAL ---
 st.markdown("""
