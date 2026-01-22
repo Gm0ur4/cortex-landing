@@ -543,7 +543,7 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="hero">
-            <h1>🧠 A Cortex é a primeira plataforma desenvolvida para te ensinar comportamento em 21 dias</h1>
+            <h1>🧠 A Cortex é a primeira plataforma desenvolvida para te ensinar comportamento humano em 21 dias</h1>
             <p class="hero-subtitle">
                 Somos pioneiros a dar o fim em cursos chatos e PDFs intermináveis.<br>
                 <strong>São mais de 15.000 alunos absorvendo o conhecimento dos 22 maiores best-sellers do mundo</strong>
