@@ -717,61 +717,58 @@ st.markdown("""
 
 # --- PROVA SOCIAL ---
 st.markdown("""
-    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-        <div style="background: white; padding: 60px 20px; margin: 40px 0; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); text-align: center;">
-            <h2 style="color: #952791; font-size: 2.2rem; margin-bottom: 50px; font-weight: 800;">📊 Confie nos nossos números</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 50px;">
-                <div style="padding: 30px; background: linear-gradient(135deg, #F0FFFE 0%, #E8F8FF 100%); border-radius: 12px; border: 2px solid #37D087;">
-                    <p style="color: #37D087; font-size: 2.5rem; font-weight: 800; margin: 0;">15.000+</p>
-                    <p style="color: #666; font-size: 0.95rem; margin: 10px 0 0 0;">Usuários ativos</p>
+    <div class="container">
+        <div class="social-proof">
+            <h2>📊 Confie nos nossos números</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <p class="stat-number">15.000+</p>
+                    <p class="stat-label">Usuários ativos</p>
                 </div>
-                <div style="padding: 30px; background: linear-gradient(135deg, #F0FFFE 0%, #E8F8FF 100%); border-radius: 12px; border: 2px solid #37D087;">
-                    <p style="color: #37D087; font-size: 2.5rem; font-weight: 800; margin: 0;">4.9★</p>
-                    <p style="color: #666; font-size: 0.95rem; margin: 10px 0 0 0;">Avaliação média</p>
+                <div class="stat-card">
+                    <p class="stat-number">4.9★</p>
+                    <p class="stat-label">Avaliação média</p>
                 </div>
-                <div style="padding: 30px; background: linear-gradient(135deg, #F0FFFE 0%, #E8F8FF 100%); border-radius: 12px; border: 2px solid #37D087;">
-                    <p style="color: #37D087; font-size: 2.5rem; font-weight: 800; margin: 0;">92%</p>
-                    <p style="color: #666; font-size: 0.95rem; margin: 10px 0 0 0;">Taxa de conclusão</p>
+                <div class="stat-card">
+                    <p class="stat-number">92%</p>
+                    <p class="stat-label">Taxa de conclusão</p>
                 </div>
-                <div style="padding: 30px; background: linear-gradient(135deg, #F0FFFE 0%, #E8F8FF 100%); border-radius: 12px; border: 2px solid #37D087;">
-                    <p style="color: #37D087; font-size: 2.5rem; font-weight: 800; margin: 0;">+40K</p>
-                    <p style="color: #666; font-size: 0.95rem; margin: 10px 0 0 0;">Vidas transformadas</p>
+                <div class="stat-card">
+                    <p class="stat-number">+40K</p>
+                    <p class="stat-label">Vidas transformadas</p>
                 </div>
             </div>
             
             <h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">
                 O Que Dizem Nossos Clientes
             </h3>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
-                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F9F9F9 100%); padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); border-left: 5px solid #37D087;">
-                    <div style="color: #FFD700; font-size: 1.2rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
-                    <p style="color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px; font-style: italic;">
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
                         "Cortex IA mudou minha vida. Em 21 dias aprendi mais sobre comportamento humano do que em 5 anos lendo livros. Agora entendo por que as pessoas agem como agem e consigo lidar melhor com tudo."
                     </p>
-                    <div style="color: #952791; font-weight: 700; font-size: 0.9rem;">Maria Silva</div>
+                    <div class="testimonial-author">Maria Silva</div>
                 </div>
-                
-                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F9F9F9 100%); padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); border-left: 5px solid #37D087;">
-                    <div style="color: #FFD700; font-size: 1.2rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
-                    <p style="color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px; font-style: italic;">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
                         "As atividades práticas são incríveis. Não é teoria chata. É algo que você faz e já vê resultado. Meus relacionamentos melhoraram muito."
                     </p>
-                    <div style="color: #952791; font-weight: 700; font-size: 0.9rem;">João Santos</div>
+                    <div class="testimonial-author">João Santos</div>
                 </div>
-                
-                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F9F9F9 100%); padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); border-left: 5px solid #37D087;">
-                    <div style="color: #FFD700; font-size: 1.2rem; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
-                    <p style="color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 15px; font-style: italic;">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
                         "Finalmente entendi meus próprios padrões de comportamento. Isso me libertou de inseguranças que carregava há anos. Recomendo para todos."
                     </p>
-                    <div style="color: #952791; font-weight: 700; font-size: 0.9rem;">Ana Costa</div>
+                    <div class="testimonial-author">Ana Costa</div>
                 </div>
             </div>
         </div>
     </div>
-    """, unsafe_allow_html=True)
+    """, unsafe_allow_html=True
+)
 
 # --- DEMO ---
 st.markdown("""
