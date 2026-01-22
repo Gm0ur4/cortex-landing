@@ -737,28 +737,28 @@ st.markdown("""
                     <p class="stat-number">+40K</p>
                     <p class="stat-label">Vidas transformadas</p>
                 </div>
-            </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">O Que Dizem Nossos Clientes</h3>
+            </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">O que dizem nossos alunos</h3>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
-                        "Cortex IA mudou minha vida. Em 21 dias aprendi mais sobre comportamento humano do que em 5 anos lendo livros. Agora entendo por que as pessoas agem como agem e consigo lidar melhor com tudo."
+                        "Sempre gostei de estudar sobre nosso comportamento. Em 21 dias aprendi MUITO sobre linguagem corporal. Consigo agora compreender diversas situações."
                     </p>
-                    <div class="testimonial-author">Maria Silva</div>
+                    <div class="testimonial-author">Ricardo Murata</div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
-                        "As atividades práticas são incríveis. Não é teoria chata. É algo que você faz e já vê resultado. Meus relacionamentos melhoraram muito."
+                        "As atividades práticas são ótimas, nada de teoria chata e tudo aquilo que já sabemos."
                     </p>
-                    <div class="testimonial-author">João Santos</div>
+                    <div class="testimonial-author">Luiza Sabino</div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
-                        "Finalmente entendi meus próprios padrões de comportamento. Isso me libertou de inseguranças que carregava há anos. Recomendo para todos."
+                        "De fato eu aprendi sobre padrões de comportamento e leitura das pessoas. Recomendo para todos."
                     </p>
-                    <div class="testimonial-author">Ana Costa</div>
+                    <div class="testimonial-author">Fernanda Zerbini</div>
                 </div>
             </div>
         </div>
