@@ -775,7 +775,7 @@ st.markdown("""
             <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.8;">
                 Quer ver um exemplo de como é uma atividade prática? Clique abaixo para acessar uma demonstração gratuita.
             </p>
-            <a href="https://aprendizadocortexdemo.streamlit.app" target="_blank" class="hero-cta-link">
+            <button class="demo-btn" onclick="window.open('https://aprendizadocortexdemo.streamlit.app', '_blank')">
                 🎥 Ver Demonstração Gratuita
             </button>
         </div>
