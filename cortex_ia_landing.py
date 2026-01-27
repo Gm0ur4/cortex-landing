@@ -1,849 +1,240 @@
 import streamlit as st
-from datetime import datetime
 
 # --- CONFIGURAÇÃO DA PÁGINA ---
 st.set_page_config(
-    page_title="Cortex - Domine o Comportamento Humano",
+    page_title="Cortex | Protocolo de Inteligência Comportamental",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
 
-# --- ESTILO PREMIUM (CSS) ---
+# --- ESTILO AVANÇADO (CSS PROFISSIONAL) ---
 st.markdown("""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
     
-    * {
-        font-family: 'Inter', sans-serif;
+    /* Reset de Elementos do Streamlit */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .stApp {
+        background-color: #0A0E14 !important; /* Fundo Escuro para Autoridade */
+        color: #E2E8F0;
     }
-    
-    html, body, .stApp {
-        background: linear-gradient(135deg, #F0FFFE 0%, #E8F8FF 100%) !important;
+
+    * {
+        font-family: 'Plus Jakarta Sans', sans-serif;
     }
     
     /* Container Principal */
-    .container {
-        max-width: 1200px;
+    .main-container {
+        max-width: 1000px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 40px 20px;
     }
     
     /* HERO SECTION */
     .hero {
-        padding: 80px 20px;
+        padding: 60px 0;
         text-align: center;
+        background: radial-gradient(circle at center, #1A222E 0%, #0A0E14 100%);
+        border-radius: 30px;
+        border: 1px solid #2D3748;
+        margin-bottom: 40px;
     }
     
+    .badge {
+        background: rgba(55, 208, 135, 0.1);
+        color: #37D087;
+        padding: 8px 16px;
+        border-radius: 100px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 1px solid rgba(55, 208, 135, 0.3);
+    }
+
     .hero h1 {
-        color: #952791;
-        font-size: 3.5rem;
+        color: #FFFFFF;
+        font-size: 3.2rem;
         font-weight: 800;
-        margin: 0 0 20px 0;
-        letter-spacing: -0.02em;
-        line-height: 1.2;
+        margin: 20px 0;
+        letter-spacing: -1px;
+        line-height: 1.1;
     }
     
+    .hero h1 span {
+        background: linear-gradient(90deg, #37D087, #39D7FE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .hero-subtitle {
-        color: #666;
-        font-size: 1.3rem;
-        margin-bottom: 30px;
+        color: #94A3B8;
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto 40px;
         line-height: 1.6;
     }
     
-    .hero-cta {
-        display: inline-block;
-        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
-        color: white;
-        padding: 18px 40px;
-        border-radius: 8px;
-        font-weight: 700;
-        font-size: 1.1rem;
+    .cta-button {
+        background: #37D087;
+        color: #0A0E14 !important;
+        padding: 20px 50px;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 1.2rem;
         text-decoration: none;
-        cursor: pointer;
-        border: none;
+        display: inline-block;
         transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(55, 208, 135, 0.2);
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        box-shadow: 0 10px 30px rgba(55, 208, 135, 0.3);
     }
     
-    .hero-cta:hover {
+    .cta-button:hover {
         transform: translateY(-3px);
         box-shadow: 0 15px 40px rgba(55, 208, 135, 0.4);
+        background: #41E094;
     }
-    
-    /* PROBLEMA */
-    .problem-section {
-        background: white;
-        padding: 60px 20px;
-        margin: 40px 0;
-        border-radius: 16px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-    }
-    
-    .problem-section h2 {
-        color: #952791;
-        font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 40px;
-        font-weight: 800;
-    }
-    
-    .problem-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        margin-bottom: 30px;
-    }
-    
-    @media (max-width: 768px) {
-        .problem-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-    
-    .problem-item {
+
+    /* GRID DE MÉTODO */
+    .method-card {
+        background: #161B22;
         padding: 30px;
-        background: #FFF5F5;
-        border-radius: 12px;
-        border-left: 5px solid #FF6B6B;
+        border-radius: 20px;
+        border: 1px solid #30363D;
+        height: 100%;
     }
-    
-    .problem-item h3 {
-        color: #FF6B6B;
-        font-size: 1.2rem;
-        margin: 0 0 15px 0;
-        font-weight: 700;
-    }
-    
-    .problem-item p {
-        color: #666;
-        line-height: 1.6;
-        margin: 0;
-    }
-    
-    /* SOLUÇÃO */
-    .solution-section {
-        background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
-        padding: 60px 20px;
-        margin: 40px 0;
-        border-radius: 16px;
-        border-left: 5px solid #37D087;
-    }
-    
-    .solution-section h2 {
-        color: #952791;
-        font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 50px;
-        font-weight: 800;
-    }
-    
-    .quote-box {
-        background: white;
-        padding: 40px;
-        border-radius: 12px;
-        border-left: 5px solid #37D087;
-        margin-bottom: 40px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    }
-    
-    .quote-text {
-        color: #952791;
+
+    .method-card h3 {
+        color: #37D087;
+        margin-bottom: 15px;
         font-size: 1.3rem;
-        font-weight: 700;
-        line-height: 1.6;
-        margin: 0;
     }
-    
-    .quote-highlight {
-        color: #37D087;
-        font-style: italic;
-    }
-    
-    /* BENEFÍCIOS */
-    .benefits-section {
-        padding: 60px 20px;
-        margin: 40px 0;
-    }
-    
-    .benefits-section h2 {
-        color: #952791;
-        font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 50px;
-        font-weight: 800;
-    }
-    
-    .benefits-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-    }
-    
-    .benefit-card {
-        background: white;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-        transition: all 0.3s ease;
-        text-align: center;
-        border-top: 4px solid #37D087;
-    }
-    
-    .benefit-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-    }
-    
-    .benefit-icon {
-        font-size: 2.5rem;
-        margin-bottom: 15px;
-    }
-    
-    .benefit-card h3 {
-        color: #952791;
-        font-size: 1.2rem;
-        margin: 0 0 15px 0;
-        font-weight: 700;
-    }
-    
-    .benefit-card p {
-        color: #666;
-        line-height: 1.6;
-        margin: 0;
+
+    .method-card p {
+        color: #8B949E;
         font-size: 0.95rem;
+        line-height: 1.5;
     }
-    
-    /* MICROLEARNING */
-    .microlearning-section {
-        background: linear-gradient(135deg, #F3E5F5 0%, #FCE4EC 100%);
-        padding: 60px 20px;
-        margin: 40px 0;
-        border-radius: 16px;
-    }
-    
-    .microlearning-section h2 {
-        color: #952791;
-        font-size: 2.2rem;
+
+    /* SECTION TITLES */
+    .section-title {
         text-align: center;
-        margin-bottom: 40px;
-        font-weight: 800;
+        margin: 80px 0 40px;
     }
     
-    .microlearning-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 25px;
-    }
-    
-    .microlearning-item {
-        background: white;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    }
-    
-    .microlearning-item h3 {
-        color: #952791;
-        font-size: 1.1rem;
-        margin: 0 0 10px 0;
-        font-weight: 700;
-    }
-    
-    .microlearning-item p {
-        color: #666;
-        font-size: 0.9rem;
-        line-height: 1.6;
-        margin: 0;
-    }
-    
-    /* PROVA SOCIAL */
-    .social-proof {
-        background: white;
-        padding: 60px 20px;
-        margin: 40px 0;
-        border-radius: 16px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-        text-align: center;
-    }
-    
-    .social-proof h2 {
-        color: #952791;
+    .section-title h2 {
         font-size: 2.2rem;
-        margin-bottom: 50px;
-        font-weight: 800;
+        color: #FFFFFF;
     }
-    
-    .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 30px;
-        margin-bottom: 50px;
+
+    /* PROVA SOCIAL CLEAN */
+    .stat-box {
+        text-align: center;
+        padding: 20px;
+        border-right: 1px solid #30363D;
     }
-    
-    .stat-card {
-        padding: 30px;
-        background: linear-gradient(135deg, #F0FFFE 0%, #E8F8FF 100%);
-        border-radius: 12px;
-        border: 2px solid #37D087;
-    }
-    
+
     .stat-number {
-        color: #37D087;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 800;
-        margin: 0;
+        color: #FFFFFF;
+        display: block;
     }
-    
+
     .stat-label {
-        color: #666;
-        font-size: 0.95rem;
-        margin: 10px 0 0 0;
+        color: #8B949E;
+        font-size: 0.8rem;
     }
-    
-    .testimonials-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-    }
-    
-    .testimonial-card {
-        background: linear-gradient(135deg, #FFFFFF 0%, #F9F9F9 100%);
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        border-left: 5px solid #37D087;
-    }
-    
-    .stars {
-        color: #FFD700;
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-    }
-    
-    .testimonial-text {
-        color: #666;
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin-bottom: 15px;
-        font-style: italic;
-    }
-    
-    .testimonial-author {
-        color: #952791;
-        font-weight: 700;
-        font-size: 0.9rem;
-    }
-    
-    /* O QUE VOCÊ PERDE */
-    .loses-section {
-        background: linear-gradient(135deg, #FFE8E8 0%, #FFF5F5 100%);
-        padding: 60px 20px;
-        margin: 40px 0;
-        border-radius: 16px;
-        border-left: 5px solid #FF6B6B;
-    }
-    
-    .loses-section h2 {
-        color: #FF6B6B;
-        font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 40px;
-        font-weight: 800;
-    }
-    
-    .loses-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 25px;
-    }
-    
-    .lose-item {
-        background: white;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    }
-    
-    .lose-item h3 {
-        color: #FF6B6B;
-        font-size: 1.1rem;
-        margin: 0 0 10px 0;
-        font-weight: 700;
-    }
-    
-    .lose-item p {
-        color: #666;
-        font-size: 0.9rem;
-        line-height: 1.6;
-        margin: 0;
-    }
-    
+
     /* FAQ */
-    .faq-section {
-        padding: 60px 20px;
-        margin: 40px 0;
-    }
-    
-    .faq-section h2 {
-        color: #952791;
-        font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 50px;
-        font-weight: 800;
-    }
-    
-    .faq-item {
-        background: white;
-        border-radius: 12px;
-        padding: 25px;
-        margin-bottom: 15px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    }
-    
-    .faq-question {
-        color: #952791;
-        font-weight: 700;
-        font-size: 1rem;
+    .faq-container {
+        background: #161B22;
+        padding: 20px;
+        border-radius: 15px;
         margin-bottom: 10px;
+        border: 1px solid #30363D;
     }
-    
-    .faq-answer {
-        color: #666;
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-    
-    /* CTA FINAL */
-    .final-cta {
-        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
-        padding: 80px 20px;
-        text-align: center;
-        border-radius: 16px;
-        margin: 60px 0;
-    }
-    
-    .final-cta h2 {
-        color: white;
-        font-size: 2.5rem;
-        margin: 0 0 20px 0;
-        font-weight: 800;
-    }
-    
-    .final-cta p {
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-        line-height: 1.6;
-    }
-    
-    .final-cta-btn {
-        display: inline-block;
-        background: white;
-        color: #37D087;
-        padding: 18px 50px;
-        border-radius: 8px;
-        font-weight: 700;
-        font-size: 1.1rem;
-        text-decoration: none;
-        cursor: pointer;
-        border: none;
-        transition: all 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-    
-    .final-cta-btn:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* DEMO SECTION */
-    .demo-section {
-        background: white;
-        padding: 60px 20px;
-        margin: 40px 0;
-        border-radius: 16px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-        text-align: center;
-    }
-    
-    .demo-section h2 {
-        color: #952791;
-        font-size: 2.2rem;
-        margin-bottom: 30px;
-        font-weight: 800;
-    }
-    
-    .demo-btn {
-        display: inline-block;
-        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
-        color: white;
-        padding: 16px 40px;
-        border-radius: 8px;
-        font-weight: 700;
-        font-size: 1rem;
-        text-decoration: none;
-        cursor: pointer;
-        border: none;
-        transition: all 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-    
-    .demo-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 30px rgba(55, 208, 135, 0.3);
-    }
-    
-    /* Footer */
-    .footer {
-        text-align: center;
-        color: #999;
-        font-size: 0.9rem;
-        padding: 40px 20px;
-        border-top: 1px solid #e0e0e0;
-        margin-top: 60px;
-    }
-    
-    .footer a {
-        color: #952791;
-        text-decoration: none;
-    }
-    
-    .footer a:hover {
-        text-decoration: underline;
-    }
-    
-    /* Responsivo */
-    @media (max-width: 768px) {
-        .hero h1 {
-            font-size: 2.2rem;
-        }
-        
-        .hero-subtitle {
-            font-size: 1rem;
-        }
-        
-        .benefits-section h2,
-        .microlearning-section h2,
-        .social-proof h2,
-        .loses-section h2,
-        .faq-section h2,
-        .final-cta h2 {
-            font-size: 1.8rem;
-        }
-    }
+
     </style>
     """, unsafe_allow_html=True)
 
-# --- HERO SECTION ---
-st.markdown("""
-    <div class="container">
-        <div class="hero">
-            <h1>🧠 A Cortex é a primeira plataforma desenvolvida para te ensinar comportamento humano em 21 dias</h1>
-            <p class="hero-subtitle">
-                Somos pioneiros a dar o fim em cursos chatos e PDFs intermináveis.<br>
-                <strong>São mais de 15.000 alunos absorvendo o conhecimento dos 22 maiores best-sellers do mundo</strong>
-            </p>
-            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
-            <button class="hero-cta">
-                ⚡ Começar Agora
-            </button>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+# --- CONTEÚDO DA PÁGINA ---
 
-# --- PROBLEMA ---
-st.markdown("""
-    <div class="container">
-        <div class="problem-section">
-            <h2>❌ Qual o problema dos demais que tentam ensinar?</h2>
-            <div class="problem-grid">
-                <div class="problem-item">
-                    <h3>📚 Sobrecarga de informação</h3>
-                    <p>Existem milhares de livros sobre comportamento humano. Qual ler? Por onde começar? Você fica perdido entre teorias complexas e informações contraditórias.</p>
-                </div>
-                <div class="problem-item">
-                    <h3>⏰ Tempo desperdiçado</h3>
-                    <p>Ler 7.000 páginas leva meses. Assistir cursos chatos leva semanas. Você quer resultados AGORA, não em 6 meses.</p>
-                </div>
-                <div class="problem-item">
-                    <h3>🤔 Sem aplicação prática</h3>
-                    <p>Você lê, aprende a teoria, mas não sabe como aplicar na vida real. Relacionamentos, trabalho, pessoal... tudo continua igual.</p>
-                </div>
-                <div class="problem-item">
-                    <h3>💰 Cursos caros e genéricos</h3>
-                    <p>Cursos de comportamento custam caro, duram meses e não são personalizados para sua realidade específica.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-# --- SOLUÇÃO ---
-st.markdown("""
-    <div class="container">
-        <div class="solution-section">
-            <h2>✅ Aprenda com quem é especialista no assunto</h2>
-            <div class="quote-box">
-                <p class="quote-text">
-                    Você não precisa ler mais de 7.000 páginas para dominar a mente humana. 
-                    <span class="quote-highlight">A Cortex já processou, filtrou e organizou o ouro de cada mestre da inteligência humana para você aplicar hoje mesmo.</span>
+with st.container():
+    # Hero Section
+    st.markdown(f"""
+        <div class="main-container">
+            <div class="hero">
+                <span class="badge">Protocolo Neurocientífico 2026</span>
+                <h1>Assuma o Controle do <span>Código Humano</span></h1>
+                <p class="hero-subtitle">
+                    O Cortex não é um curso. É um sistema de ativação de 21 dias que instala as habilidades de persuasão, leitura fria e domínio emocional que levaram décadas para serem decifradas.
+                </p>
+                <a href="https://cortexcheckout.streamlit.app" target="_blank" class="cta-button">
+                    Ativar meu Acesso
+                </a>
+                <p style="margin-top: 20px; font-size: 0.8rem; color: #4A5568;">
+                    ⚡ Acesso Imediato • 22 Best-sellers Processados • IA de Suporte Inclusa
                 </p>
             </div>
-            <p style="color: #666; font-size: 1.05rem; line-height: 1.8; text-align: center; margin-top: 30px;">
-                A Cortex é um <strong>programa de 21 dias</strong> com atividades práticas que te ensinam os princípios fundamentais 
-                do comportamento humano. Sem teoria chata. Sem PDFs gigantes. Apenas <strong>o essencial para você aplicar e transformar sua vida.</strong>
-            </p>
         </div>
-    </div>
     """, unsafe_allow_html=True)
 
-# --- BENEFÍCIOS ---
-st.markdown("""
-    <div class="container">
-        <div class="benefits-section">
-            <h2>🎯 Características principais</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3>Aprenda no tempo perfeito</h3>
-                    <p>Não em 6 meses. Não em 1 ano. Em apenas 21 dias você terá os conhecimentos que levaria meses para ler em livros e cursos.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎯</div>
-                    <h3>100% prático</h3>
-                    <p>Cada dia tem atividades que você faz. Sem teoria chata. Sem vídeos longos. Pura aplicação.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🧠</div>
-                    <h3>Baseado em ciência</h3>
-                    <p>Todos os conceitos vêm das melhores referências mundiais sobre comportamento humano. Você aprende só o que realmente funciona.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💡</div>
-                    <h3>Aplique imediatamente</h3>
-                    <p>Aprenda uma técnica e use no mesmo dia. Com seus relacionamentos, no trabalho, em casa. Resultados reais.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🚀</div>
-                    <h3>Transforme relacionamentos</h3>
-                    <p>Entenda por que as pessoas agem como agem. Mude conflitos em conexões. Construa relacionamentos mais fortes.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💪</div>
-                    <h3>Domine sua mente</h3>
-                    <p>Entenda seus próprios padrões. Vença a procrastinação, ansiedade e insegurança. Tome controle da sua vida.</p>
-                </div>
-            </div>
+    # Stats Section (Social Proof sutil e elegante)
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        st.markdown('<div class="stat-box"><span class="stat-number">15k+</span><span class="stat-label">Operadores</span></div>', unsafe_allow_html=True)
+    with col2:
+        st.markdown('<div class="stat-box"><span class="stat-number">4.9/5</span><span class="stat-label">Satisfação</span></div>', unsafe_allow_html=True)
+    with col3:
+        st.markdown('<div class="stat-box"><span class="stat-number">92%</span><span class="stat-label">Retenção</span></div>', unsafe_allow_html=True)
+    with col4:
+        st.markdown('<div class="stat-box" style="border:none"><span class="stat-number">24/7</span><span class="stat-label">Suporte IA</span></div>', unsafe_allow_html=True)
+
+    # Por que o Cortex?
+    st.markdown('<div class="section-title"><h2>O fim da obesidade mental</h2><p style="color:#8B949E">Chega de ler 500 páginas para extrair 1 insight. Nós filtramos o ruído.</p></div>', unsafe_allow_html=True)
+    
+    c1, c2, c3 = st.columns(3)
+    with c1:
+        st.markdown("""<div class="method-card"><h3>⚡ Microlearning</h3><p>Sessões de 15 minutos desenhadas para a janela de atenção do cérebro moderno. Absorção máxima, fadiga zero.</p></div>""", unsafe_allow_html=True)
+    with c2:
+        st.markdown("""<div class="method-card"><h3>🧠 Neuro-ativação</h3><p>Não é teoria. São desafios práticos diários que forçam a criação de novas sinapses comportamentais.</p></div>""", unsafe_allow_html=True)
+    with c3:
+        st.markdown("""<div class="method-card"><h3>🤖 Cortex AI</h3><p>Uma inteligência treinada nos maiores bancos de dados de psicologia do mundo para resolver seus problemas em tempo real.</p></div>""", unsafe_allow_html=True)
+
+    # Demonstração
+    st.markdown("<br><br>", unsafe_allow_html=True)
+    st.markdown("""
+        <div style="background: linear-gradient(90deg, #1A222E, #0A0E14); padding: 40px; border-radius: 20px; border: 1px dashed #37D087; text-align: center;">
+            <h3 style="color: white; margin-bottom: 20px;">Quer ver a engenharia por dentro?</h3>
+            <a href="https://aprendizadocortexdemo.streamlit.app/" target="_blank" style="color: #37D087; text-decoration: none; font-weight: 700;">
+                TESTAR DEMONSTRAÇÃO GRATUITA →
+            </a>
         </div>
-    </div>
     """, unsafe_allow_html=True)
 
-# --- MICROLEARNING ---
-st.markdown("""
-    <div class="container">
-        <div class="microlearning-section">
-            <h2>🧬 Microlearning + Neurociência = Aprendizado Real</h2>
-            <p style="text-align: center; color: #666; font-size: 1.05rem; margin-bottom: 40px; line-height: 1.8;">
-                Cada módulo é projetado com base em como o cérebro realmente aprende. Não é coincidência que você vai reter o conhecimento.
-            </p>
-            <div class="microlearning-grid">
-                <div class="microlearning-item">
-                    <h3>🔗 Links cerebrais</h3>
-                    <p>Cada conceito é conectado a exemplos reais. Seu cérebro cria conexões mais fortes e memória duradoura.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>🌊 Modo difuso</h3>
-                    <p>Atividades que ativam o modo difuso do cérebro. Você aprende enquanto relaxa, não através de força bruta.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>⏱️ Sessões curtas</h3>
-                    <p>15-20 minutos por dia. Seu cérebro absorve melhor em sessões curtas e focadas do que em maratonas.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>🔄 Repetição espaçada</h3>
-                    <p>Conceitos são revisitados em intervalos ótimos. Você não esquece. Conhecimento fica para sempre.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>✍️ Atividades práticas</h3>
-                    <p>Fazer é o melhor jeito de aprender. Cada dia tem exercícios que consolidam o conhecimento.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>🎓 Baseado em estudo</h3>
-                    <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva. Todo conteúdo sempre estará citando de onde vem a base. Aprendizado que funciona.</p>
-                </div>
-            </div>
+    # FAQ Reduzido e Direto
+    st.markdown('<div class="section-title"><h2>Dúvidas de quem pensa</h2></div>', unsafe_allow_html=True)
+    
+    with st.expander("O acesso expira em 21 dias?"):
+        st.write("Não. O protocolo de ativação dura 21 dias, mas o acesso à plataforma e a todas as futuras atualizações é vitalício.")
+    
+    with st.expander("Como a IA funciona na prática?"):
+        st.write("Você descreve um conflito (ex: 'Tenho uma reunião difícil com um chefe autoritário') e a Cortex AI analisa os gatilhos e te dá o roteiro exato de comportamento baseado em ciência.")
+
+    # CTA Final
+    st.markdown(f"""
+        <div style="text-align: center; padding: 100px 0;">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 30px;">Pronto para sair do automático?</h2>
+            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="cta-button">
+                Quero o Protocolo Completo
+            </a>
+            <p style="margin-top: 20px; color: #8B949E;">R$ 39,90 no Plano Start • R$ 79,90 no Plano Expert (IA Inclusa)</p>
         </div>
-    </div>
     """, unsafe_allow_html=True)
 
-# --- O QUE VOCÊ PERDE ---
-st.markdown("""
-    <div class="container">
-        <div class="loses-section">
-            <h2>⚠️ Quem não entende comportamento humano está à mercê de:</h2>
-            <div class="loses-grid">
-                <div class="lose-item">
-                    <h3>😔 Relações superficiais </h3>
-                    <p>Sem entender comportamento, você fica preso em conflitos. Relacionamentos que poderiam ser incríveis viram frustrantes.</p>
-                </div>
-                <div class="lose-item">
-                    <h3>📉 Baixa produtividade</h3>
-                    <p>Se não compreende suas próprias motivações, você procrastina. Fica preso em padrões que te impedem de avançar.</p>
-                </div>
-                <div class="lose-item">
-                    <h3>💔 Insegurança constante</h3>
-                    <p>Sem autoconhecimento? Você fica inseguro. Duvida de si mesmo. Deixa oportunidades passarem.</p>
-                </div>
-                <div class="lose-item">
-                    <h3>🔄 Ciclos repetidos</h3>
-                    <p>Infelizmente, sem entender seus padrões, você repete os mesmos erros. Relacionamentos que fracassam. Oportunidades perdidas.</p>
-                </div>
-                <div class="lose-item">
-                    <h3>⏳ Tempo desperdiçado</h3>
-                    <p>Cada dia que passa sem esse conhecimento é um dia que você poderia estar transformando sua vida.</p>
-                </div>
-                <div class="lose-item">
-                    <h3>💰 Potencial não realizado</h3>
-                    <p>Você tem potencial. Mas sem entender comportamento, você fica preso. Nunca alcança o que poderia ser.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-# --- PROVA SOCIAL ---
-st.markdown("""
-    <div class="container">
-        <div class="social-proof">
-            <h2>📊 Confie nos nossos números</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <p class="stat-number">15.000+</p>
-                    <p class="stat-label">Usuários ativos</p>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-number">4.9★</p>
-                    <p class="stat-label">Avaliação média</p>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-number">92%</p>
-                    <p class="stat-label">Taxa de conclusão</p>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-number">+40K</p>
-                    <p class="stat-label">Vidas transformadas</p>
-                </div>
-            </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">O que dizem nossos alunos</h3>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Sempre gostei de estudar sobre nosso comportamento. Em 21 dias aprendi MUITO sobre linguagem corporal. Consigo agora compreender diversas situações."
-                    </p>
-                    <div class="testimonial-author">Ricardo Murata</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "As atividades práticas são ótimas, nada de teoria chata e tudo aquilo que já sabemos."
-                    </p>
-                    <div class="testimonial-author">Luiza Sabino</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "De fato eu aprendi sobre padrões de comportamento e leitura das pessoas. Recomendo para todos."
-                    </p>
-                    <div class="testimonial-author">Fernanda Zerbini</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True
-)
-
-# --- DEMO ---
-st.markdown("""
-    <div class="container">
-        <div class="demo-section">
-            <h2>🎬 Veja como funciona</h2>
-            <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.8;">
-                Quer ver um exemplo de como é uma atividade prática? Clique abaixo para acessar uma demonstração gratuita.
-            </p>
-            <a href="https://aprendizadocortexdemo.streamlit.app/" target="_blank" style="text-decoration: none;">
-            <button class="demo-btn" style="cursor: pointer;">
-                🎥 Ver Demonstração Gratuita
-            </button>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-# --- FAQ ---
-st.markdown("""
-<div class="container">
-    <div class="faq-section">
-        <h2>❓ Perguntas frequentes</h2>
-        <div class="faq-item">
-            <div class="faq-question">É seguro realizar a compra?</div>
-            <div class="faq-answer">Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
-Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Por onde acesso a Cortex?</div>
-            <div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Como funciona a IA?</div>
-            <div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
-Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação e tira todas suas dúvidas sobre a mente humana.
-Tudo baseado em ciência. Tudo prático. É como ter um especialista em comportamento humano disponível 24/7 para ajudar você.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">O que vou aprender?</div>
-            <div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência (com inteligência emocional), vendas (com persuasão) + um conteúdo bônus final no formato intensivo surpresa.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Existe algum tipo de suporte?</div>
-            <div class="faq-answer">Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Posso fazer no meu ritmo?</div>
-            <div class="faq-answer">Claro! você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência..</div>
-        </div>
-    </div>
-</div>
-""", unsafe_allow_html=True)
-
-# --- CTA FINAL ---
-st.markdown("""
-    <div class="container">
-        <div class="final-cta">
-            <h2>🚀 Comece sua transformação hoje</h2>
-            <p>
-                Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
-                <strong>A escolha é sua.</strong>
-            </p>
-            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
-            <button class="hero-cta">
-                ⚡ Começar Agora
-            </button>
-            <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
-                Acesso vitalício • Sem contratos • Comece hoje
-            </p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-# --- FOOTER ---
-st.markdown("""
-    <div class="container">
-        <div class="footer">
-            <p>© 2026 Inteligência Cortex. Todos os direitos reservados.</p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    # Footer
+    st.markdown('<div style="text-align: center; color: #4A5568; padding: 40px; border-top: 1px solid #1A222E;">© 2026 Cortex Intelligence System</div>', unsafe_allow_html=True)
