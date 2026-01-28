@@ -683,13 +683,13 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="demo-section">
-            <h2>🎬 Veja como funciona</h2>
+            <h2>👀 Entre nos bastidores da Cortex: Veja um trecho de um módulo para vivenciar a experiência</h2>
             <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.8;">
-                Quer ver um exemplo de como é uma atividade prática? Clique abaixo para acessar uma demonstração gratuita.
+                Quer ver um exemplo de como é um parte de um dia? Clique abaixo para acessar uma demonstração gratuita.Sem necessidade de cadastro. Acesso imediato.
             </p>
             <a href="https://aprendizadocortexdemo.streamlit.app/" target="_blank" style="text-decoration: none;">
             <button class="demo-btn" style="cursor: pointer;">
-                🎥 Ver Demonstração Gratuita
+                ▶️ Ver demonstração gratuita
             </button>
         </div>
     </div>
