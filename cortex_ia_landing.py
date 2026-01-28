@@ -618,7 +618,7 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="problem-section">
-            <h2>✅Sua jornada de 21 dias</h2>
+            <h2>Sua jornada de 21 dias:</h2>
             <div class="problem-grid">
                 <div class="problem-item">
                     <h3>🏁 Fase 1: Persuasão e vendas (Dia 01 ao 05)</h3>
