@@ -760,7 +760,7 @@ st.markdown("""
                 </div>
                 <div class="testimonial-card">
                         <img class="testimonial-photo"
-                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/ricardo_depoimento.png">
+                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/fernanda_depoimento">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
                         "De fato eu aprendi sobre padrões de comportamento e leitura das pessoas. Recomendo para todos."
