@@ -466,7 +466,7 @@ st.markdown("""
     
     /* DEMO SECTION */
     .demo-section {
-        background: #0F172A;
+        background: #FFF38E;
         padding: 60px 20px;
         margin: 40px 0;
         border-radius: 16px;
