@@ -57,7 +57,7 @@ st.markdown("""
     
     .hero-cta {
         display: inline-block;
-        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
+        background: linear-gradient(90deg, #FFB800 0%, #CF9500 100%);
         color: white;
         padding: 18px 40px;
         border-radius: 8px;
