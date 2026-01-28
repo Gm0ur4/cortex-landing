@@ -36,7 +36,7 @@ st.markdown("""
     }
     
     .hero h1 {
-        color: #952791;
+        color: #FFFFFF;
         font-size: 3.5rem;
         font-weight: 800;
         margin: 0 0 20px 0;
