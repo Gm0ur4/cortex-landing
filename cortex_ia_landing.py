@@ -679,12 +679,6 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
-            <button class="hero-cta">
-                ⚡ Começar Agora
-            </button>
-
-
 # --- SOLUÇÃO ---
 st.markdown("""
     <div class="container">
