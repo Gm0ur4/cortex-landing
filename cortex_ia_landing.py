@@ -724,7 +724,7 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="social-proof">
-            <h2>📊 Confie nos nossos números</h2>
+            <h2>📊 Nossos resultados em números</h2>
             <div class="stats-grid">
                 <div class="stat-card">
                     <p class="stat-number">15.000+</p>
@@ -738,13 +738,11 @@ st.markdown("""
                     <p class="stat-number">92%</p>
                     <p class="stat-label">Taxa de conclusão</p>
                 </div>
-                <div class="stat-card">
-                    <p class="stat-number">+40K</p>
-                    <p class="stat-label">Vidas transformadas</p>
-                </div>
             </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">O que dizem nossos alunos</h3>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
+                        <img class="testimonial-photo"
+                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/ricardo_depoimento.png">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
                         "Sempre gostei de estudar sobre nosso comportamento. Em 21 dias aprendi MUITO sobre linguagem corporal. Consigo agora compreender diversas situações."
@@ -761,6 +759,8 @@ st.markdown("""
                     <div class="testimonial-author">Luiza Sabino</div>
                 </div>
                 <div class="testimonial-card">
+                        <img class="testimonial-photo"
+                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/ricardo_depoimento.png">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
                         "De fato eu aprendi sobre padrões de comportamento e leitura das pessoas. Recomendo para todos."
