@@ -19,7 +19,7 @@ st.markdown("""
     }
     
     html, body, .stApp {
-        background: linear-gradient(135deg, #BE90E3 0%, #020930 100%) !important;
+        background: linear-gradient(135deg, #020930 0%, #BE90E3 100%) !important;
     }
     
     /* Container Principal */
