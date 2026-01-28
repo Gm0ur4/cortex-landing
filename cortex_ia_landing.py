@@ -19,7 +19,7 @@ st.markdown("""
     }
     
     html, body, .stApp {
-        background: linear-gradient(135deg, #041470 0%, #E8F8FF 100%) !important;
+        background: linear-gradient(135deg, #041470 0%, #020930 100%) !important;
     }
     
     /* Container Principal */
@@ -285,7 +285,7 @@ st.markdown("""
     
     .stat-card {
         padding: 30px;
-        background: linear-gradient(135deg, #041470 0%, #E8F8FF 100%);
+        background: linear-gradient(135deg, #041470 0%, #020930 100%);
         border-radius: 12px;
         border: 2px solid #37D087;
     }
