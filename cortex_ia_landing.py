@@ -753,7 +753,7 @@ st.markdown("""
                 </div>
                 <div class="testimonial-card">
                  <img class="testimonial-photo"
-                         src="https://github.com/Gm0ur4/cortex-landing/blob/main/ricardo_depoimento.png">
+                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/ricardo_depoimento.png">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
                         "As atividades práticas são ótimas, nada de teoria chata e tudo aquilo que já sabemos."
