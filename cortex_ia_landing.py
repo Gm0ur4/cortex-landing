@@ -673,16 +673,16 @@ st.markdown("""
                 <div class="microlearning-item">
                     <h3>🎓 Baseado em estudo</h3>
                     <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva (Paul Ekman, Joe Navarro, Cialdini e muito mais). Todo conteúdo sempre estará citando de onde vem a base. Aprendizado que funciona.</p>
-
-                    <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
-            <button class="hero-cta">
-                ⚡ Começar Agora
-            </button>
                 </div>
             </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
+
+            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
+            <button class="hero-cta">
+                ⚡ Começar Agora
+            </button>
 
 
 # --- SOLUÇÃO ---
