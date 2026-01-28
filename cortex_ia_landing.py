@@ -27,17 +27,6 @@ st.markdown("""
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
-    }
-
-    .hero-subtitle-light {
-    color: #FFFFFF;
-    font-size: 3.6rem;     /* 🔥 AUMENTA AQUI */
-    font-weight: 500;
-    line-height: 1.6;
-    max-width: 820px;
-    margin: 20px auto 0 auto;
-    opacity: 0.95;
-}
 
     
     /* HERO SECTION */
