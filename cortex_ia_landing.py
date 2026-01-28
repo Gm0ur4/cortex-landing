@@ -109,13 +109,13 @@ st.markdown("""
     
     .problem-item {
         padding: 30px;
-        background: #FFF5F5;
+        background: rgba(55, 208, 135, 0.08);
         border-radius: 12px;
-        border-left: 5px solid #FF6B6B;
+        border-left: 5px solid #37D087;
     }
     
     .problem-item h3 {
-        color: #FF6B6B;
+        color: #37D087;
         font-size: 1.2rem;
         margin: 0 0 15px 0;
         font-weight: 700;
