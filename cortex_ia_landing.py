@@ -618,23 +618,23 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="problem-section">
-            <h2>❌ Qual o problema dos demais que tentam ensinar?</h2>
+            <h2>✅ O Plano de Ação: Sua Jornada de 21 Dias</h2>
             <div class="problem-grid">
                 <div class="problem-item">
-                    <h3>📚 Sobrecarga de informação</h3>
-                    <p>Existem milhares de livros sobre comportamento humano. Qual ler? Por onde começar? Você fica perdido entre teorias complexas e informações contraditórias.</p>
+                    <h3>🏁 FASE 1: Persuasão (Dia 01 ao 05)</h3>
+                    <p>Nesta fase, você desbloqueia as chaves da comunicação persuasiva. O objetivo é que, já na primeira semana, você consiga aplicar gatilhos mentais em negociações e conversas casuais para notar uma mudança imediata na aceitação das suas ideias.</p>
                 </div>
                 <div class="problem-item">
-                    <h3>⏰ Tempo desperdiçado</h3>
-                    <p>Ler 7.000 páginas leva meses. Assistir cursos chatos leva semanas. Você quer resultados AGORA, não em 6 meses.</p>
+                    <h3>🔍 FASE 2: Leitura de pessoas e linguagem corporal (Dia 06 ao 10)</h3>
+                    <p>Aqui é onde você "abre os olhos". Você aprenderá a decodificar microexpressões e gestos involuntários. É o módulo que o Ricardo (nosso aluno) usou para ler o fechamento de corpo do cliente e garantir o contrato.</p>
                 </div>
                 <div class="problem-item">
-                    <h3>🤔 Sem aplicação prática</h3>
-                    <p>Você lê, aprende a teoria, mas não sabe como aplicar na vida real. Relacionamentos, trabalho, pessoal... tudo continua igual.</p>
+                    <h3>🧠 FASE 3: Controle emocional e resiliência (Dia 11 ao 15)</h3>
+                    <p>Não adianta ler os outros se você não domina a si mesmo. Esta fase foca em manter a calma sob pressão e usar a resiliência como arma em ambientes hostis ou discussões acaloradas. Você aprende a não reagir, mas a agir com estratégia.</p>
                 </div>
                 <div class="problem-item">
-                    <h3>💰 Cursos caros e genéricos</h3>
-                    <p>Cursos de comportamento custam caro, duram meses e não são personalizados para sua realidade específica.</p>
+                    <h3>FASE 4: Liderança e influência social (Dia 16 ao 21)</h3>
+                    <p>A fase final consolida tudo. Você aprenderá como projetar uma presença de liderança que comanda o ambiente sem precisar dizer uma palavra. É o ajuste final para você se tornar a pessoa mais influente em qualquer grupo social ou profissional.</p>
                 </div>
             </div>
         </div>
