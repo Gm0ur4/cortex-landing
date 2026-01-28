@@ -621,7 +621,7 @@ st.markdown("""
             <h2>✅Sua jornada de 21 dias</h2>
             <div class="problem-grid">
                 <div class="problem-item">
-                    <h3>🏁 Fase 1: Persuasão (Dia 01 ao 05)</h3>
+                    <h3>🏁 Fase 1: Persuasão e vendas (Dia 01 ao 05)</h3>
                     <p>Nesta fase, você desbloqueia as chaves da comunicação persuasiva. O objetivo é que, já na primeira semana, você consiga aplicar gatilhos mentais em negociações e conversas casuais para notar uma mudança imediata na aceitação das suas ideias.</p>
                 </div>
                 <div class="problem-item">
