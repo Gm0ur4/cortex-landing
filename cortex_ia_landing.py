@@ -745,7 +745,7 @@ st.markdown("""
                          src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/ricardo_depoimento.png">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
-                        "Sempre gostei de estudar sobre nosso comportamento. Em 21 dias aprendi MUITO sobre linguagem corporal. Consigo agora compreender diversas situações."
+                        "Eu sempre achei que linguagem corporal não importava muito, mas a prática me provou o contrário. Usei a técnica de leitura de bloqueios numa reunião e percebi que o cliente ia recusar o preço antes dele abrir a boca. Ajustei o tom na hora e consegui fechar o contrato. É bizarro o quanto a gente é cego para esses sinais."
                     </p>
                     <div class="testimonial-author">Ricardo Murata</div>
                 </div>
@@ -754,7 +754,7 @@ st.markdown("""
                          src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/luiza_depoimento">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
-                        "As atividades práticas são ótimas, nada de teoria chata e tudo aquilo que já sabemos."
+                        "O que eu mais gostei é que não tem enrolação. Eu leio o conteúdo no ônibus e já chego no escritório testando. É muito direto ao ponto: você vê o módulo em 15 minutos e já entende por que aquela pessoa X age de tal forma. Valeu cada centavo pela praticidade."
                     </p>
                     <div class="testimonial-author">Luiza Sabino</div>
                 </div>
@@ -763,7 +763,7 @@ st.markdown("""
                          src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/fernanda_depoimento">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
-                        "De fato eu aprendi sobre padrões de comportamento e leitura das pessoas. Recomendo para todos."
+                        "Parece que agora eu vejo o mundo em câmera lenta. Você começa a notar as microexpressões e entende as intenções reais das pessoas, não só o que elas dizem. Mudou totalmente a forma como eu me posiciono em conversas difíceis. Minha única reclamação é não ter descoberto isso antes kkkk"
                     </p>
                     <div class="testimonial-author">Fernanda Zerbini</div>
                 </div>
