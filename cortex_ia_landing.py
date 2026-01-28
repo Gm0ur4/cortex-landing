@@ -50,6 +50,10 @@ st.markdown("""
         margin-bottom: 30px;
         line-height: 1.6;
     }
+
+    .hero-subtitle strong {
+        color: #FFFFFF;
+    }
     
     .hero-cta {
         display: inline-block;
