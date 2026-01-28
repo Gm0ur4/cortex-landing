@@ -1,189 +1,271 @@
+# STREAMLIT – LANDING PAGE + CHECKOUT ONE PAGE
+# Versão otimizada para conversão, clareza e credibilidade
+
 import streamlit as st
+from datetime import datetime
 
-# --- CONFIGURAÇÃO ---
-st.set_page_config(page_title="Cortex | Inteligência Comportamental", page_icon="🧠", layout="wide")
+# =========================================================
+# CONFIGURAÇÃO DA PÁGINA
+# =========================================================
+st.set_page_config(
+    page_title="Cortex | Domine o Comportamento Humano em 21 Dias",
+    page_icon="🧠",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
 
-# --- CSS DE ALTA CONVERSÃO ---
+# =========================================================
+# ESTILO GLOBAL – PREMIUM, CONFIANÇA, NEUROCIÊNCIA
+# =========================================================
 st.markdown("""
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
-    :root {
-        --primary: #952791;
-        --secondary: #37D087;
-        --dark: #0f172a;
-    }
+* { font-family: 'Inter', sans-serif; }
 
-    * { font-family: 'Inter', sans-serif; }
+html, body, .stApp {
+    background: linear-gradient(135deg, #F4FFFE 0%, #EEF9FF 100%) !important;
+}
 
-    .stApp {
-        background: #0f172a; /* Fundo Escuro para passar sofisticação */
-        color: white;
-    }
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
 
-    /* Animações */
-    @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    .reveal { animation: fadeInUp 0.8s ease-out; }
+h1, h2, h3 { letter-spacing: -0.02em; }
 
-    /* Hero Section */
-    .hero-container {
-        padding: 120px 20px;
-        text-align: center;
-        background: radial-gradient(circle at center, rgba(149, 39, 145, 0.15) 0%, rgba(15, 23, 42, 1) 70%);
-    }
+/* ================= HERO ================= */
+.hero {
+    padding: 90px 0 70px;
+    text-align: center;
+}
 
-    .badge {
-        background: rgba(55, 208, 135, 0.1);
-        border: 1px solid var(--secondary);
-        color: var(--secondary);
-        padding: 5px 15px;
-        border-radius: 50px;
-        font-size: 0.8rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        display: inline-block;
-    }
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #7B1E77;
+    margin-bottom: 24px;
+}
 
-    .main-title {
-        font-size: 4.5rem !important;
-        font-weight: 800;
-        background: linear-gradient(135deg, #FFF 60%, #952791 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        line-height: 1.1;
-        margin-bottom: 25px;
-    }
+.hero p {
+    font-size: 1.3rem;
+    color: #555;
+    max-width: 780px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
 
-    /* Glass Cards */
-    .card-vendas {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        padding: 40px;
-        border-radius: 24px;
-        transition: 0.3s;
-    }
+.cta-primary {
+    background: linear-gradient(90deg, #37D087, #39D7FE);
+    color: #fff;
+    padding: 18px 44px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 12px 30px rgba(55,208,135,.35);
+}
 
-    .card-vendas:hover {
-        border: 1px solid var(--primary);
-        transform: translateY(-5px);
-    }
+.cta-primary:hover {
+    transform: translateY(-3px);
+}
 
-    /* Botão Irresistível */
-    .cta-button {
-        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
-        color: #000 !important;
-        padding: 22px 60px;
-        border-radius: 12px;
-        font-size: 1.3rem;
-        font-weight: 800;
-        text-decoration: none;
-        display: inline-block;
-        box-shadow: 0 10px 40px rgba(55, 208, 135, 0.3);
-        transition: 0.3s;
-        border: none;
-        cursor: pointer;
-    }
+.hero-proof {
+    margin-top: 22px;
+    font-size: .95rem;
+    color: #777;
+}
 
-    .cta-button:hover {
-        transform: scale(1.05);
-        box-shadow: 0 15px 50px rgba(55, 208, 135, 0.5);
-    }
+/* ================= SECTIONS ================= */
+.section {
+    margin: 80px 0;
+}
 
-    .sub-cta {
-        color: #64748b;
-        font-size: 0.9rem;
-        margin-top: 15px;
-    }
+.section-box {
+    background: #fff;
+    border-radius: 18px;
+    padding: 60px;
+    box-shadow: 0 14px 45px rgba(0,0,0,.08);
+}
 
-    /* Seção de Dor (The Gap) */
-    .pain-section {
-        background: #000;
-        padding: 80px 20px;
-        border-radius: 30px;
-        margin: 40px 0;
-    }
+.section h2 {
+    font-size: 2.3rem;
+    color: #7B1E77;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-    h2 { font-size: 2.5rem !important; font-weight: 700 !important; text-align: center; }
-    .highlight-green { color: var(--secondary); }
-    .highlight-purple { color: var(--primary); }
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 36px;
+}
 
-    </style>
+.card {
+    background: #F9FBFC;
+    border-radius: 14px;
+    padding: 32px;
+    border-left: 5px solid #37D087;
+}
+
+.card h3 {
+    color: #7B1E77;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ================= CHECKOUT ================= */
+.checkout {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F0FFFE 100%);
+    border-radius: 20px;
+    padding: 70px 50px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.12);
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #7B1E77;
+    margin: 20px 0;
+}
+
+.features li {
+    list-style: none;
+    margin: 12px 0;
+    color: #555;
+}
+
+.features li::before {
+    content: "✓";
+    color: #37D087;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.security {
+    margin-top: 25px;
+    font-size: .9rem;
+    color: #777;
+}
+
+/* ================= FAQ ================= */
+.faq-item {
+    background: #fff;
+    padding: 28px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
+}
+
+.faq-item h4 { color: #7B1E77; }
+.faq-item p { color: #666; line-height: 1.6; }
+
+/* ================= RESPONSIVO ================= */
+@media(max-width: 768px) {
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1.05rem; }
+    .section-box, .checkout { padding: 40px 24px; }
+}
+</style>
 """, unsafe_allow_html=True)
 
-# --- HERO ---
+# =========================================================
+# HERO
+# =========================================================
 st.markdown("""
-    <div class="hero-container reveal">
-        <span class="badge">🔥 15.000+ Alunos Ativos</span>
-        <h1 class="main-title">Instale o "Software" do Comportamento Humano no seu Cérebro.</h1>
-        <p style="font-size: 1.4rem; color: #cbd5e1; max-width: 900px; margin: 0 auto 40px auto;">
-            A Cortex não é um curso. É um <b>upgrade mental</b> de 21 dias. <br>
-            Aprenda a ler pessoas, negociar como um mestre e dominar suas emoções usando as mesmas técnicas da elite global.
+<div class="container hero">
+    <h1>Domine o comportamento humano em apenas 21 dias</h1>
+    <p>
+        A Cortex transforma os maiores livros de comportamento humano do mundo
+        em um sistema prático, simples e aplicável no seu dia a dia.
+    </p>
+    <button class="cta-primary" onclick="document.getElementById('checkout').scrollIntoView({behavior:'smooth'})">
+        Começar agora
+    </button>
+    <div class="hero-proof">15.000+ alunos • Avaliação média 4.9 ★ • Acesso vitalício</div>
+</div>
+""", unsafe_allow_html=True)
+
+# =========================================================
+# PROBLEMA
+# =========================================================
+st.markdown("""
+<div class="container section">
+    <div class="section-box">
+        <h2>Por que a maioria nunca entende comportamento humano?</h2>
+        <div class="grid-2">
+            <div class="card"><h3>Excesso de teoria</h3><p>Livros longos, cursos extensos e conteúdos que não se conectam com a vida real.</p></div>
+            <div class="card"><h3>Sem aplicação prática</h3><p>Você até aprende, mas não sabe como usar em relações, trabalho ou decisões.</p></div>
+            <div class="card"><h3>Tempo desperdiçado</h3><p>Meses consumindo conteúdo para resultados mínimos ou inexistentes.</p></div>
+            <div class="card"><h3>Falta de direção</h3><p>Ninguém te mostra o caminho essencial, só jogam informação.</p></div>
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# =========================================================
+# SOLUÇÃO
+# =========================================================
+st.markdown("""
+<div class="container section">
+    <div class="section-box">
+        <h2>A solução Cortex</h2>
+        <p style="text-align:center; font-size:1.1rem; color:#555; max-width:800px; margin:0 auto;">
+            Um programa de 21 dias baseado em neurociência, microlearning e prática real.
+            Tudo que você precisa — sem excesso, sem enrolação.
         </p>
-        <a href="https://cortexcheckout.streamlit.app" class="cta-button">QUERO ACESSO IMEDIATO ⚡</a>
-        <p class="sub-cta">Pagamento seguro via Eduzz • Acesso Vitalício</p>
     </div>
+</div>
 """, unsafe_allow_html=True)
 
-# --- THE PROBLEM (A DOR) ---
+# =========================================================
+# CHECKOUT INTEGRADO
+# =========================================================
 st.markdown("""
-    <div class="pain-section">
-        <h2>Você está perdendo dinheiro e oportunidades por ser <span style="color: #ff4b4b;">"Cego Comportamental"</span>?</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 50px;">
-            <div class="card-vendas">
-                <h3 style="color: #ff4b4b;">O Problema</h3>
-                <p style="color: #94a3b8;">90% das pessoas fracassam não por falta de técnica, mas por não entenderem de <b>GENTE</b>. Elas perdem vendas, destroem relacionamentos e são manipuladas sem perceber.</p>
-            </div>
-            <div class="card-vendas">
-                <h3 class="highlight-green">A Solução Cortex</h3>
-                <p style="color: #94a3b8;">Nós decodificamos 22 best-sellers mundiais (7.000+ páginas) em um método prático. Você aprende o que realmente importa em 15 minutos por dia.</p>
-            </div>
-        </div>
+<div id="checkout" class="container section">
+    <div class="checkout">
+        <h2 style="text-align:center">Acesso completo à Cortex</h2>
+        <p style="text-align:center; color:#666">Programa completo • IA comportamental • Atualizações vitalícias</p>
+        <div style="text-align:center" class="price">R$ 297</div>
+        <ul class="features">
+            <li>21 dias de atividades práticas</li>
+            <li>IA especialista em comportamento humano 24/7</li>
+            <li>Persuasão, leitura de pessoas, controle emocional</li>
+            <li>Acesso vitalício e atualizações futuras</li>
+            <li>Garantia incondicional de 7 dias</li>
+        </ul>
+        <button class="cta-primary" style="width:100%; margin-top:25px">Ir para pagamento seguro</button>
+        <div class="security">Pagamento 100% seguro via Eduzz • SSL • Antifraude</div>
     </div>
+</div>
 """, unsafe_allow_html=True)
 
-# --- MÉTODOS (OS DIFERENCIAIS) ---
+# =========================================================
+# FAQ
+# =========================================================
 st.markdown("""
-    <div style="padding: 60px 0;">
-        <h2 style="margin-bottom: 50px;">Por que a Cortex <span class="highlight-purple">Vende e Entrega</span>?</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-            <div class="card-vendas" style="text-align: center;">
-                <div style="font-size: 3rem;">🛰️</div>
-                <h4>Micro-Doses de Poder</h4>
-                <p style="font-size: 0.9rem;">Nada de aulas de 1 hora. Pílulas de conhecimento direto na veia para execução imediata.</p>
-            </div>
-            <div class="card-vendas" style="text-align: center;">
-                <div style="font-size: 3rem;">🤖</div>
-                <h4>IA Comportamental 24/7</h4>
-                <p style="font-size: 0.9rem;">Um consultor de psicologia treinado nas maiores obras do mundo para tirar suas dúvidas em tempo real.</p>
-            </div>
-            <div class="card-vendas" style="text-align: center;">
-                <div style="font-size: 3rem;">💸</div>
-                <h4>ROI Imediato</h4>
-                <p style="font-size: 0.9rem;">Use o que aprendeu na reunião da manhã para fechar o contrato à tarde.</p>
-            </div>
-        </div>
-    </div>
+<div class="container section">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-item"><h4>Funciona para qualquer pessoa?</h4><p>Sim. A Cortex se adapta à sua realidade, ritmo e objetivos.</p></div>
+    <div class="faq-item"><h4>Quanto tempo por dia?</h4><p>Entre 15 e 20 minutos por dia.</p></div>
+    <div class="faq-item"><h4>O acesso é vitalício?</h4><p>Sim. Inclui todas as atualizações futuras.</p></div>
+    <div class="faq-item"><h4>E se eu não gostar?</h4><p>Você tem 7 dias de garantia incondicional.</p></div>
+</div>
 """, unsafe_allow_html=True)
 
-# --- CTA FINAL DE IMPACTO ---
-st.divider()
+# =========================================================
+# FOOTER
+# =========================================================
 st.markdown("""
-    <div style="text-align: center; padding: 100px 20px; background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%); border-radius: 40px;">
-        <h2 style="margin-bottom: 20px;">Pare de tentar adivinhar o que as pessoas pensam.</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 40px; color: #94a3b8;">O conhecimento que separa os líderes dos seguidores agora está ao seu alcance.</p>
-        <div style="background: rgba(255,255,255,0.05); display: inline-block; padding: 20px 40px; border-radius: 20px; border: 1px dashed #37D087; margin-bottom: 30px;">
-            <span style="font-size: 1.5rem; font-weight: 800; color: #37D087;">Oferta Especial: Acesso Vitalício Liberado</span>
-        </div><br>
-        <a href="https://cortexcheckout.streamlit.app" class="cta-button">GARANTIR MINHA VAGA AGORA 🚀</a>
-        <div style="margin-top: 30px;">
-            <img src="https://img.icons8.com/color/48/000000/visa.png" width="35"/>
-            <img src="https://img.icons8.com/color/48/000000/mastercard.png" width="35"/>
-            <img src="https://img.icons8.com/color/48/000000/pix.png" width="35"/>
-        </div>
-    </div>
+<div class="container" style="text-align:center; color:#999; margin:60px 0">
+© 2026 Cortex • Todos os direitos reservados
+</div>
 """, unsafe_allow_html=True)
