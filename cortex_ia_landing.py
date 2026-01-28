@@ -594,7 +594,7 @@ st.markdown("""
                          src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/luiza_depoimento">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
-                        "O que eu mais gostei é que não tem enrolação. Eu leio o conteúdo no ônibus e já chego no escritório testando. É muito direto ao ponto: você vê o módulo em 15 minutos e já entende por que aquela pessoa X age de tal forma. Valeu cada centavo pela praticidade."
+                        "O que eu mais gostei é que não tem enrolação. Eu leio o conteúdo no ônibus e já chego no escritório testando. É muito direto ao ponto: a plataforma entrega o módulo e em minutos você já entende por que aquela pessoa X age de tal forma. Valeu cada centavo pela praticidade."
                     </p>
                     <div class="testimonial-author">Luiza Sabino</div>
                 </div>
