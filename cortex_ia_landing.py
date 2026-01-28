@@ -578,7 +578,7 @@ st.markdown("""
                     <p class="stat-number">92%</p>
                     <p class="stat-label">Taxa de conclusão</p>
                 </div>
-            </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">O que dizem nossos alunos</h3>
+            </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">Mais do que estatísticas, somos feitos de histórias reais:</h3>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                         <img class="testimonial-photo"
