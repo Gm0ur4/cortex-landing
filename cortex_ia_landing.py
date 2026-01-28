@@ -550,13 +550,12 @@ st.markdown("""
             <h1>🧬 A Cortex é a primeira plataforma desenvolvida para te ensinar comportamento humano em 21 dias</h1>
             <p class="hero-subtitle">
                 <br>
-                <strong>São mais de 15.000 usuários absorvendo o conhecimento das 22 maiores referências sobre a menta humana do mundo</strong>
+                <h2>São mais de 15.000 usuários absorvendo o conhecimento das 22 maiores referências sobre a menta humana do mundo</h2>
             </p>
             <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
             <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
-             <h2>🎯 Números mostram nossa escala. Mas são os resultados reais que validam nosso método. Veja como a Cortex está sendo aplicada na prática:</h2>
         </div>
     </div>
     """, unsafe_allow_html=True)
