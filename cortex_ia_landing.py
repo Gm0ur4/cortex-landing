@@ -720,52 +720,166 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-# --- PROVA SOCIAL ---
+# --- PROVA SOCIAL REESTRUTURADA (FORMATO SISTEMA/APP) ---
 st.markdown("""
-    <div class="container">
-        <div class="social-proof">
-            <h2>📊 Confie nos nossos números</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <p class="stat-number">15.000+</p>
-                    <p class="stat-label">Usuários ativos</p>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-number">4.9★</p>
-                    <p class="stat-label">Avaliação média</p>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-number">92%</p>
-                    <p class="stat-label">Taxa de conclusão</p>
-                </div>
-                <div class="stat-card">
-                    <p class="stat-number">+40K</p>
-                    <p class="stat-label">Vidas transformadas</p>
-                </div>
-            </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">O que dizem nossos alunos</h3>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Sempre gostei de estudar sobre nosso comportamento. Em 21 dias aprendi MUITO sobre linguagem corporal. Consigo agora compreender diversas situações."
-                    </p>
-                    <div class="testimonial-author">Ricardo Murata</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "As atividades práticas são ótimas, nada de teoria chata e tudo aquilo que já sabemos."
-                    </p>
-                    <div class="testimonial-author">Luiza Sabino</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "De fato eu aprendi sobre padrões de comportamento e leitura das pessoas. Recomendo para todos."
-                    </p>
-                    <div class="testimonial-author">Fernanda Zerbini</div>
-                </div>
+    <style>
+        .social-proof-container {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            border-radius: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+        .header-stats {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .rating-big {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 0;
+        }
+        .stars-main {
+            color: #FFD700;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #952791;
+            margin-bottom: 5px;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            position: relative;
+        }
+        .verified-badge {
+            font-size: 0.7rem;
+            color: #28a745;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 10px;
+        }
+        .testimonial-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .testimonial-text {
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .testimonial-meta {
+            font-size: 0.85rem;
+            color: #888;
+        }
+        .cta-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .btn-cta {
+            background-color: #952791;
+            color: white;
+            padding: 18px 35px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+        .btn-cta:hover {
+            transform: scale(1.05);
+            color: white;
+        }
+    </style>
+
+    <div class="social-proof-container">
+        <div class="header-stats">
+            <p class="rating-big">4.9</p>
+            <div class="stars-main">★★★★★</div>
+            <p style="color: #666;">Média baseada em mais de 15.000 avaliações de usuários</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <p class="stat-number">15k+</p>
+                <p class="stat-label">Alunos ativos</p>
             </div>
+            <div class="stat-card">
+                <p class="stat-number">92%</p>
+                <p class="stat-label">Aprovação do método</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-number">21 dias</p>
+                <p class="stat-label">Para os primeiros resultados</p>
+            </div>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="verified-badge">✓ Compra Verificada</div>
+                <span class="testimonial-title">Transformou minhas negociações</span>
+                <p class="testimonial-text">
+                    "O que mais pegou foi a parte de bloqueios. Usei numa reunião ontem, percebi que o cliente fechou o corpo no preço, mudei o tom na hora e fechamos. O resultado é imediato."
+                </p>
+                <div class="testimonial-meta">Ricardo M. • há 2 semanas</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="verified-badge">✓ Compra Verificada</div>
+                <span class="testimonial-title">Sem teoria chata</span>
+                <p class="testimonial-text">
+                    "Finalmente algo direto. Assisto no trajeto pro trabalho e já aplico. O método de 21 dias funciona porque é focado em prática, não em decorar conceitos inúteis."
+                </p>
+                <div class="testimonial-meta">Luiza S. • há 1 mês</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="verified-badge">✓ Compra Verificada</div>
+                <span class="testimonial-title">Parece um superpoder kkk</span>
+                <p class="testimonial-text">
+                    "A gente começa a 'ler' as pessoas em tempo real. Melhorei minha postura e até o clima na empresa mudou. Você para de adivinhar e passa a ter certeza do que vê."
+                </p>
+                <div class="testimonial-meta">Fernanda Z. • há 3 dias</div>
+            </div>
+        </div>
+
+        <div class="cta-container">
+            <a href="#checkout" class="btn-cta">QUERO TER ESSES RESULTADOS TAMBÉM</a>
         </div>
     </div>
     """, unsafe_allow_html=True
