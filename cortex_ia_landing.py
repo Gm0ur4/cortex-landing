@@ -1,4 +1,5 @@
 import streamlit as st
+from datetime import datetime
 
 # --- CONFIGURAÇÃO DA PÁGINA ---
 st.set_page_config(
@@ -26,7 +27,7 @@ st.markdown("""
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
-    }
+
     
     /* HERO SECTION */
     .hero {
@@ -143,6 +144,82 @@ st.markdown("""
         font-weight: 800;
     }
     
+    .quote-box {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        border-left: 5px solid #37D087;
+        margin-bottom: 40px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+    
+    .quote-text {
+        color: #952791;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.6;
+        margin: 0;
+    }
+    
+    .quote-highlight {
+        color: #37D087;
+        font-style: italic;
+    }
+    
+    /* BENEFÍCIOS */
+    .benefits-section {
+        padding: 60px 20px;
+        margin: 40px 0;
+    }
+    
+    .benefits-section h2 {
+        color: #952791;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 800;
+    }
+    
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+    
+    .benefit-card {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        text-align: center;
+        border-top: 4px solid #37D087;
+    }
+    
+    .benefit-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    }
+    
+    .benefit-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .benefit-card h3 {
+        color: #952791;
+        font-size: 1.2rem;
+        margin: 0 0 15px 0;
+        font-weight: 700;
+    }
+    
+    .benefit-card p {
+        color: #666;
+        line-height: 1.6;
+        margin: 0;
+        font-size: 0.95rem;
+    }
+    
     /* MICROLEARNING */
     .microlearning-section {
         background: linear-gradient(135deg, #F3E5F5 0%, #FCE4EC 100%);
@@ -212,7 +289,7 @@ st.markdown("""
     
     .stat-card {
         padding: 30px;
-        background: linear-gradient(135deg, #BE90E3 0%, #020930 100%);
+        background: linear-gradient(135deg, ##BE90E3 0%, #020930 100%);
         border-radius: 12px;
         border: 2px solid #37D087;
     }
@@ -264,7 +341,51 @@ st.markdown("""
         font-size: 0.9rem;
     }
     
-    /* FAQ - ESTILO ATUALIZADO (Accordion) */
+    /* O QUE VOCÊ PERDE */
+    .loses-section {
+        background: linear-gradient(135deg, #FFE8E8 0%, #FFF5F5 100%);
+        padding: 60px 20px;
+        margin: 40px 0;
+        border-radius: 16px;
+        border-left: 5px solid #FF6B6B;
+    }
+    
+    .loses-section h2 {
+        color: #FF6B6B;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 800;
+    }
+    
+    .loses-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    
+    .lose-item {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+    
+    .lose-item h3 {
+        color: #FF6B6B;
+        font-size: 1.1rem;
+        margin: 0 0 10px 0;
+        font-weight: 700;
+    }
+    
+    .lose-item p {
+        color: #666;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+    
+    /* FAQ */
     .faq-section {
         padding: 60px 20px;
         margin: 40px 0;
@@ -272,80 +393,31 @@ st.markdown("""
     
     .faq-section h2 {
         color: #FFFFFF;
-        font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 50px;
-        font-weight: 800;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 800;
     }
     
-    /* Elemento expansível */
-    details.faq-item {
+    .faq-item {
         background: white;
         border-radius: 12px;
-        padding: 20px 25px;
+        padding: 25px;
         margin-bottom: 15px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s ease;
-        overflow: hidden;
     }
     
-    details.faq-item[open] {
-        padding-bottom: 25px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Pergunta */
-    summary.faq-question {
+    .faq-question {
         color: #952791;
         font-weight: 700;
-        font-size: 1.05rem;
-        cursor: pointer;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px 0;
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
     
-    /* Remove a setinha padrão feia em todos os navegadores */
-    summary.faq-question::-webkit-details-marker {
-        display: none;
-    }
-    summary.faq-question {
-        list-style-type: none; 
-    }
-    
-    /* Criando o ícone de + e - */
-    summary.faq-question::after {
-        content: '+';
-        font-weight: 800;
-        color: #37D087;
-        font-size: 1.5rem;
-        line-height: 1;
-        margin-left: 10px;
-        transition: transform 0.2s ease;
-    }
-    
-    details[open] summary.faq-question::after {
-        content: '-';
-        color: #952791;
-        transform: rotate(180deg);
-    }
-    
-    /* Resposta */
     .faq-answer {
         color: #666;
         font-size: 0.95rem;
         line-height: 1.6;
-        margin-top: 15px;
-        padding-top: 15px;
-        border-top: 1px solid #f0f0f0;
-        animation: fadeIn 0.4s ease;
-    }
-    
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-5px); }
-        to { opacity: 1; transform: translateY(0); }
     }
     
     /* CTA FINAL */
@@ -369,6 +441,27 @@ st.markdown("""
         font-size: 1.2rem;
         margin-bottom: 30px;
         line-height: 1.6;
+    }
+    
+    .final-cta-btn {
+        display: inline-block;
+        background: white;
+        color: #37D087;
+        padding: 18px 50px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    
+    .final-cta-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
     
     /* DEMO SECTION */
@@ -452,155 +545,155 @@ st.markdown("""
 
 # --- HERO SECTION ---
 st.markdown("""
-<div class="container">
-    <div class="hero">
-        <h1>🧬 A Cortex é a primeira plataforma desenvolvida para te ensinar comportamento humano em 21 dias</h1>
-        <p class="hero-subtitle">
-            <br>
-<strong> São mais de 15.000 usuários absorvendo o conhecimento das 22 maiores referências sobre a mente humana do mundo</strong>
-        </p>
-        <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
-        <button class="hero-cta">
-            ⚡ Começar Agora
-        </button>
+    <div class="container">
+        <div class="hero">
+            <h1>🧬 A Cortex é a primeira plataforma desenvolvida para te ensinar comportamento humano em 21 dias</h1>
+            <p class="hero-subtitle">
+                <br>
+    <strong> São mais de 15.000 usuários absorvendo o conhecimento das 22 maiores referências sobre a mente humana do mundo</strong>
+            </p>
+            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
+            <button class="hero-cta">
+                ⚡ Começar Agora
+            </button>
+        </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 # --- PROVA SOCIAL ---
 st.markdown("""
-<div class="container">
-    <div class="social-proof">
-        <h2>📊 Nossos resultados em números</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <p class="stat-number">15.000+</p>
-                <p class="stat-label">Usuários ativos</p>
-            </div>
-            <div class="stat-card">
-                <p class="stat-number">4.9★</p>
-                <p class="stat-label">Avaliação média</p>
-            </div>
-            <div class="stat-card">
-                <p class="stat-number">92%</p>
-                <p class="stat-label">Taxa de conclusão</p>
-            </div>
-        </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">Mais do que estatísticas, somos feitos de histórias reais:</h3>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                    <img class="testimonial-photo" 
-                    src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/ricardo_depoimento.png">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "Eu sempre achei que linguagem corporal não importava muito, mas a prática me provou o contrário. Usei a técnica de leitura de bloqueios numa reunião e percebi que o cliente ia recusar o preço antes dele abrir a boca. Ajustei o tom na hora e consegui fechar o contrato. É bizarro o quanto a gente é cego para esses sinais."
-                </p>
-                <div class="testimonial-author">Ricardo Murata</div>
-            </div>
-            <div class="testimonial-card">
-                <img class="testimonial-photo" 
-                    src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/luiza_depoimento">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "O que eu mais gostei é que não tem enrolação. Eu leio o conteúdo no ônibus e já chego no escritório testando. É muito direto ao ponto: a plataforma entrega o módulo e em minutos você já entende por que aquela pessoa age de tal forma. Valeu cada centavo pela praticidade."
-                </p>
-                <div class="testimonial-author">Luiza Sabino</div>
-            </div>
-            <div class="testimonial-card">
-                    <img class="testimonial-photo" 
-                    src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/fernanda_depoimento">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">
-                    "Parece que agora eu vejo o mundo em câmera lenta. Você começa a notar as microexpressões e entende as intenções reais das pessoas, não só o que elas dizem. Mudou totalmente a forma como eu me posiciono em conversas difíceis. Minha única reclamação é não ter descoberto isso antes kkkk"
-                </p>
-                <div class="testimonial-author">Fernanda Zerbini</div>
+    <div class="container">
+        <div class="social-proof">
+            <h2>📊 Nossos resultados em números</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <p class="stat-number">15.000+</p>
+                    <p class="stat-label">Usuários ativos</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">4.9★</p>
+                    <p class="stat-label">Avaliação média</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">92%</p>
+                    <p class="stat-label">Taxa de conclusão</p>
+                </div>
+            </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">Mais do que estatísticas, somos feitos de histórias reais:</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                        <img class="testimonial-photo"
+                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/ricardo_depoimento.png">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Eu sempre achei que linguagem corporal não importava muito, mas a prática me provou o contrário. Usei a técnica de leitura de bloqueios numa reunião e percebi que o cliente ia recusar o preço antes dele abrir a boca. Ajustei o tom na hora e consegui fechar o contrato. É bizarro o quanto a gente é cego para esses sinais."
+                    </p>
+                    <div class="testimonial-author">Ricardo Murata</div>
+                </div>
+                <div class="testimonial-card">
+                 <img class="testimonial-photo"
+                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/luiza_depoimento">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "O que eu mais gostei é que não tem enrolação. Eu leio o conteúdo no ônibus e já chego no escritório testando. É muito direto ao ponto: a plataforma entrega o módulo e em minutos você já entende por que aquela pessoa age de tal forma. Valeu cada centavo pela praticidade."
+                    </p>
+                    <div class="testimonial-author">Luiza Sabino</div>
+                </div>
+                <div class="testimonial-card">
+                        <img class="testimonial-photo"
+                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/fernanda_depoimento">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Parece que agora eu vejo o mundo em câmera lenta. Você começa a notar as microexpressões e entende as intenções reais das pessoas, não só o que elas dizem. Mudou totalmente a forma como eu me posiciono em conversas difíceis. Minha única reclamação é não ter descoberto isso antes kkkk"
+                    </p>
+                    <div class="testimonial-author">Fernanda Zerbini</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-""", unsafe_allow_html=True
+    """, unsafe_allow_html=True
 )
 
 
 # --- PROBLEMA ---
 st.markdown("""
-<div class="container">
-    <div class="problem-section">
-        <h2>Sua jornada de 21 dias:</h2>
-        <div class="problem-grid">
-            <div class="problem-item">
-                <h3>🏁 Fase 1: Persuasão e vendas (Dia 01 ao 05)</h3>
-                <p>Nesta fase, você desbloqueia as chaves da comunicação persuasiva. O objetivo é que, já na primeira semana, você consiga aplicar gatilhos mentais em negociações e conversas casuais para notar uma mudança imediata na aceitação das suas ideias.</p>
-            </div>
-            <div class="problem-item">
-                <h3>🔍 Fase 2: Leitura de pessoas e linguagem corporal (Dia 06 ao 10)</h3>
-                <p>Aqui é onde você "abre os olhos". Você aprenderá a decodificar microexpressões e gestos involuntários. É o módulo que o Ricardo (nosso aluno) usou para ler o fechamento de corpo do cliente e garantir o contrato.</p>
-            </div>
-            <div class="problem-item">
-                <h3>🧠 Fase 3: Controle emocional e resiliência (Dia 11 ao 15)</h3>
-                <p>Não adianta ler os outros se você não domina a si mesmo. Esta fase foca em manter a calma sob pressão e usar a resiliência como arma em ambientes hostis ou discussões acaloradas. Você aprende a não reagir, mas a agir com estratégia.</p>
-            </div>
-            <div class="problem-item">
-                <h3>👑 Fase 4: Liderança e influência social (Dia 16 ao 21)</h3>
-                <p>A fase final consolida tudo. Você aprenderá como projetar uma presença de liderança que comanda o ambiente sem precisar dizer uma palavra. É o ajuste final para você se tornar a pessoa mais influente em qualquer grupo social ou profissional.</p>
+    <div class="container">
+        <div class="problem-section">
+            <h2>Sua jornada de 21 dias:</h2>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <h3>🏁 Fase 1: Persuasão e vendas (Dia 01 ao 05)</h3>
+                    <p>Nesta fase, você desbloqueia as chaves da comunicação persuasiva. O objetivo é que, já na primeira semana, você consiga aplicar gatilhos mentais em negociações e conversas casuais para notar uma mudança imediata na aceitação das suas ideias.</p>
+                </div>
+                <div class="problem-item">
+                    <h3>🔍 Fase 2: Leitura de pessoas e linguagem corporal (Dia 06 ao 10)</h3>
+                    <p>Aqui é onde você "abre os olhos". Você aprenderá a decodificar microexpressões e gestos involuntários. É o módulo que o Ricardo (nosso aluno) usou para ler o fechamento de corpo do cliente e garantir o contrato.</p>
+                </div>
+                <div class="problem-item">
+                    <h3>🧠 Fase 3: Controle emocional e resiliência (Dia 11 ao 15)</h3>
+                    <p>Não adianta ler os outros se você não domina a si mesmo. Esta fase foca em manter a calma sob pressão e usar a resiliência como arma em ambientes hostis ou discussões acaloradas. Você aprende a não reagir, mas a agir com estratégia.</p>
+                </div>
+                <div class="problem-item">
+                    <h3>👑 Fase 4: Liderança e influência social (Dia 16 ao 21)</h3>
+                    <p>A fase final consolida tudo. Você aprenderá como projetar uma presença de liderança que comanda o ambiente sem precisar dizer uma palavra. É o ajuste final para você se tornar a pessoa mais influente em qualquer grupo social ou profissional.</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 # --- MICROLEARNING ---
 st.markdown("""
-<div class="container">
-    <div class="microlearning-section">
-        <h2>🧬 Microlearning + Neurociência = Aprendizado Real</h2>
-        <p style="text-align: center; color: #666; font-size: 1.05rem; margin-bottom: 40px; line-height: 1.8;">
-            Cada módulo é projetado com base em como o cérebro realmente aprende. Não é coincidência que você vai reter o conhecimento.
-        </p>
-        <div class="microlearning-grid">
-            <div class="microlearning-item">
-                <h3>🔗 Links cerebrais</h3>
-                <p>Cada conceito é conectado a exemplos reais. Seu cérebro cria conexões mais fortes e memória duradoura.</p>
-            </div>
-            <div class="microlearning-item">
-                <h3>🌊 Modo difuso</h3>
-                <p>Atividades que ativam o modo difuso do cérebro. Você aprende enquanto relaxa, não através de força bruta.</p>
-            </div>
-            <div class="microlearning-item">
-                <h3>⏱️ Sessões curtas</h3>
-                <p>15-20 minutos por dia. Seu cérebro absorve melhor em sessões curtas e focadas do que em maratonas.</p>
-            </div>
-            <div class="microlearning-item">
-                <h3>🔄 Repetição espaçada</h3>
-                <p>Conceitos são revisitados em intervalos ótimos. Você não esquece. Conhecimento fica para sempre.</p>
-            </div>
-            <div class="microlearning-item">
-                <h3>✍️ Atividades práticas</h3>
-                <p>Fazer é o melhor jeito de aprender. Cada dia tem exercícios que consolidam o conhecimento.</p>
-            </div>
-            <div class="microlearning-item">
-                <h3>🎓 Baseado em estudo</h3>
-                <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva (Paul Ekman, Joe Navarro, Cialdini e muito mais). Todo conteúdo sempre estará citando de onde vem a base. Aprendizado que funciona.</p>
+    <div class="container">
+        <div class="microlearning-section">
+            <h2>🧬 Microlearning + Neurociência = Aprendizado Real</h2>
+            <p style="text-align: center; color: #666; font-size: 1.05rem; margin-bottom: 40px; line-height: 1.8;">
+                Cada módulo é projetado com base em como o cérebro realmente aprende. Não é coincidência que você vai reter o conhecimento.
+            </p>
+            <div class="microlearning-grid">
+                <div class="microlearning-item">
+                    <h3>🔗 Links cerebrais</h3>
+                    <p>Cada conceito é conectado a exemplos reais. Seu cérebro cria conexões mais fortes e memória duradoura.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>🌊 Modo difuso</h3>
+                    <p>Atividades que ativam o modo difuso do cérebro. Você aprende enquanto relaxa, não através de força bruta.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>⏱️ Sessões curtas</h3>
+                    <p>15-20 minutos por dia. Seu cérebro absorve melhor em sessões curtas e focadas do que em maratonas.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>🔄 Repetição espaçada</h3>
+                    <p>Conceitos são revisitados em intervalos ótimos. Você não esquece. Conhecimento fica para sempre.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>✍️ Atividades práticas</h3>
+                    <p>Fazer é o melhor jeito de aprender. Cada dia tem exercícios que consolidam o conhecimento.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>🎓 Baseado em estudo</h3>
+                    <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva (Paul Ekman, Joe Navarro, Cialdini e muito mais). Todo conteúdo sempre estará citando de onde vem a base. Aprendizado que funciona.</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 # --- DEMO ---
 st.markdown("""
-<div class="container">
-    <div class="demo-section">
-        <h2>🎥 Veja como funciona</h2>
-        <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.8;">
-            Quer ver um exemplo de como é um parte de um dia? Clique abaixo para acessar uma demonstração gratuita.Sem necessidade de cadastro. Acesso imediato.
-        </p>
-        <a href="https://aprendizadocortexdemo.streamlit.app/" target="_blank" style="text-decoration: none;">
-        <button class="demo-btn" style="cursor: pointer;">
-            👀 Ver demonstração gratuita
-        </button>
+    <div class="container">
+        <div class="demo-section">
+            <h2>🎥 Veja como funciona</h2>
+            <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.8;">
+                Quer ver um exemplo de como é um parte de um dia? Clique abaixo para acessar uma demonstração gratuita.Sem necessidade de cadastro. Acesso imediato.
+            </p>
+            <a href="https://aprendizadocortexdemo.streamlit.app/" target="_blank" style="text-decoration: none;">
+            <button class="demo-btn" style="cursor: pointer;">
+                👀 Ver demonstração gratuita
+            </button>
+        </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 # --- CTA ANTES DO FAQ ---
 st.markdown("""
@@ -615,67 +708,71 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# --- FAQ (CORRIGIDO: SEM IDENTAÇÃO) ---
+# --- FAQ ---
 st.markdown("""
 <div class="container">
-<div class="faq-section">
-<h2>❓ Perguntas frequentes</h2>
-<details class="faq-item">
-<summary class="faq-question">É seguro realizar a compra?</summary>
-<div class="faq-answer">Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
+    <div class="faq-section">
+        <h2>❓ Perguntas frequentes</h2>
+        <div class="faq-item">
+            <div class="faq-question">É seguro realizar a compra?</div>
+            <div class="faq-answer">Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
 Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Por onde acesso a Cortex?</summary>
-<div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Como funciona a IA?</summary>
-<div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Por onde acesso a Cortex?</div>
+            <div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Como funciona a IA?</div>
+            <div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
 Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação e tira todas suas dúvidas sobre a mente humana.
 Tudo baseado em ciência. Tudo prático. É como ter um especialista em comportamento humano disponível 24/7 para ajudar você.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">O que vou aprender?</summary>
-<div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência (com inteligência emocional), vendas (com persuasão) + um conteúdo bônus final no formato intensivo surpresa.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Existe algum tipo de suporte?</summary>
-<div class="faq-answer">Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Posso fazer no meu ritmo?</summary>
-<div class="faq-answer">Claro! você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência..</div>
-</details>
-</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">O que vou aprender?</div>
+            <div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência (com inteligência emocional), vendas (com persuasão) + um conteúdo bônus final no formato intensivo surpresa.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Existe algum tipo de suporte?</div>
+            <div class="faq-answer">Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Posso fazer no meu ritmo?</div>
+            <div class="faq-answer">Claro! você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência..</div>
+        </div>
+    </div>
 </div>
 """, unsafe_allow_html=True)
+
+
+
+
 
 # --- CTA FINAL ---
 st.markdown("""
-<div class="container">
-    <div class="final-cta">
-        <h2>🚀 Comece sua transformação hoje</h2>
-        <p>
-            Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
-            <strong>A escolha é sua.</strong>
-        </p>
-        <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
-        <button class="hero-cta">
-            ⚡ Começar Agora
-        </button>
-        <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
-            Acesso vitalício • Sem contratos • Comece hoje
-        </p>
+    <div class="container">
+        <div class="final-cta">
+            <h2>🚀 Comece sua transformação hoje</h2>
+            <p>
+                Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
+                <strong>A escolha é sua.</strong>
+            </p>
+            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
+            <button class="hero-cta">
+                ⚡ Começar Agora
+            </button>
+            <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
+                Acesso vitalício • Sem contratos • Comece hoje
+            </p>
+        </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 # --- FOOTER ---
 st.markdown("""
-<div class="container">
-    <div class="footer">
-        <p>© 2026 Inteligência Cortex. Todos os direitos reservados.</p>
+    <div class="container">
+        <div class="footer">
+            <p>© 2026 Inteligência Cortex. Todos os direitos reservados.</p>
+        </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
