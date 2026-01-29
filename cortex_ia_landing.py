@@ -968,56 +968,11 @@ Tudo baseado em ciência. Tudo prático. É como ter um especialista em comporta
 </div>
 """, unsafe_allow_html=True)
 
-
-# --- CTA FINAL ---
-st.markdown("""
-    <div class="container">
-        <div class="final-cta">
-            <h2>🚀 Comece sua transformação hoje</h2>
-            <p>
-                Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
-                <strong>A escolha é sua.</strong>
-            </p>
-            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
-            <button class="hero-cta">
-                ⚡ Começar Agora
-            </button>
-            <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
-                Acesso vitalício • Sem contratos • Comece hoje
-            </p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-# --- FOOTER ---
-st.markdown("""
-    <div class="container">
-        <div class="footer">
-            <p>© 2026 Inteligência Cortex. Todos os direitos reservados.</p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
 # ============================================================
 # ===== CHECKOUT INTEGRADO COM FUNDO BRANCO =====
 # ============================================================
 
 st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
-
-# Header
-st.markdown("""
-    <div class="header">
-        <h1>🧠 Inteligência Cortex</h1>
-        <p>Convivemos, trabalhamos e nos relacionamos com outras pessoas o tempo todo, entender o comportamento humano se torna uma habilidade essencial de sobrevivência e inteligência emocional. </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-# Urgência
-st.markdown("""
-    <div class="urgency-banner">
-        ⏰ OFERTA ESPECIAL DE CAMPANHA!
-    </div>
-    """, unsafe_allow_html=True)
 
 # Produtos
 st.markdown('<div class="products-grid">', unsafe_allow_html=True)
