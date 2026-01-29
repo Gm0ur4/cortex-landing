@@ -872,6 +872,46 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
+
+# --- MICROLEARNING ---
+st.markdown("""
+    <div class="container">
+        <div class="microlearning-section">
+            <h2>🧬 Microlearning + Neurociência = Aprendizado Real</h2>
+            <p style="text-align: center; color: #666; font-size: 1.05rem; margin-bottom: 40px; line-height: 1.8;">
+                Cada módulo é projetado com base em como o cérebro realmente aprende. Não é coincidência que você vai reter o conhecimento.
+            </p>
+            <div class="microlearning-grid">
+                <div class="microlearning-item">
+                    <h3>🔗 Links cerebrais</h3>
+                    <p>Cada conceito é conectado a exemplos reais. Seu cérebro cria conexões mais fortes e memória duradoura.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>🌊 Modo difuso</h3>
+                    <p>Atividades que ativam o modo difuso do cérebro. Você aprende enquanto relaxa, não através de força bruta.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>⏱️ Sessões curtas</h3>
+                    <p>15-20 minutos por dia. Seu cérebro absorve melhor em sessões curtas e focadas do que em maratonas.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>🔄 Repetição espaçada</h3>
+                    <p>Conceitos são revisitados em intervalos ótimos. Você não esquece. Conhecimento fica para sempre.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>✍️ Atividades práticas</h3>
+                    <p>Fazer é o melhor jeito de aprender. Cada dia tem exercícios que consolidam o conhecimento.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>🎓 Baseado em estudo</h3>
+                    <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva (Paul Ekman, Joe Navarro, Cialdini e muito mais). Todo conteúdo sempre estará citando de onde vem a base. Aprendizado que funciona.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+
 # --- PROVA SOCIAL ---
 st.markdown("""
     <div class="container">
@@ -947,44 +987,6 @@ st.markdown("""
                 <div class="problem-item">
                     <h3>👑 Fase 4: Liderança e influência social (Dia 16 ao 21)</h3>
                     <p>A fase final consolida tudo. Você aprenderá como projetar uma presença de liderança que comanda o ambiente sem precisar dizer uma palavra. É o ajuste final para você se tornar a pessoa mais influente em qualquer grupo social ou profissional.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-# --- MICROLEARNING ---
-st.markdown("""
-    <div class="container">
-        <div class="microlearning-section">
-            <h2>🧬 Microlearning + Neurociência = Aprendizado Real</h2>
-            <p style="text-align: center; color: #666; font-size: 1.05rem; margin-bottom: 40px; line-height: 1.8;">
-                Cada módulo é projetado com base em como o cérebro realmente aprende. Não é coincidência que você vai reter o conhecimento.
-            </p>
-            <div class="microlearning-grid">
-                <div class="microlearning-item">
-                    <h3>🔗 Links cerebrais</h3>
-                    <p>Cada conceito é conectado a exemplos reais. Seu cérebro cria conexões mais fortes e memória duradoura.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>🌊 Modo difuso</h3>
-                    <p>Atividades que ativam o modo difuso do cérebro. Você aprende enquanto relaxa, não através de força bruta.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>⏱️ Sessões curtas</h3>
-                    <p>15-20 minutos por dia. Seu cérebro absorve melhor em sessões curtas e focadas do que em maratonas.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>🔄 Repetição espaçada</h3>
-                    <p>Conceitos são revisitados em intervalos ótimos. Você não esquece. Conhecimento fica para sempre.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>✍️ Atividades práticas</h3>
-                    <p>Fazer é o melhor jeito de aprender. Cada dia tem exercícios que consolidam o conhecimento.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>🎓 Baseado em estudo</h3>
-                    <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva (Paul Ekman, Joe Navarro, Cialdini e muito mais). Todo conteúdo sempre estará citando de onde vem a base. Aprendizado que funciona.</p>
                 </div>
             </div>
         </div>
