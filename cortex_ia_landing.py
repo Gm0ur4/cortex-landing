@@ -27,7 +27,7 @@ st.markdown("""
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
-    }
+
     
     /* HERO SECTION */
     .hero {
@@ -289,7 +289,7 @@ st.markdown("""
     
     .stat-card {
         padding: 30px;
-        background: linear-gradient(135deg, #BE90E3 0%, #020930 100%);
+        background: linear-gradient(135deg, ##BE90E3 0%, #020930 100%);
         border-radius: 12px;
         border: 2px solid #37D087;
     }
@@ -623,7 +623,6 @@ st.markdown("""
             <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
-            </a>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -829,7 +828,6 @@ st.markdown("""
             <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
-            </a>
             <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
                 Acesso vitalício • Sem contratos • Comece hoje
             </p>
