@@ -296,7 +296,7 @@ st.markdown("""
     
     .stat-number {
         color: #37D087 !important;
-        font-size: 3.5rem !important;
+        font-size: 2.5rem !important;
         font-weight: 800 !important;
         margin: 0 !important;
         line-height: 1 !important;
