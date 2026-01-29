@@ -85,6 +85,38 @@ st.markdown("""
         border-radius: 16px;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     }
+
+    /* FAQ - Expander personalizado */
+div[data-testid="stExpander"] {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-left: 5px solid #37D087;
+    overflow: hidden;
+}
+
+/* Cabeçalho da pergunta */
+div[data-testid="stExpander"] summary {
+    font-weight: 700;
+    color: #952791;
+    font-size: 1rem;
+    padding: 18px 20px;
+}
+
+/* Hover */
+div[data-testid="stExpander"] summary:hover {
+    background: #F7F7F7;
+}
+
+/* Conteúdo da resposta */
+div[data-testid="stExpander"] div[role="region"] {
+    padding: 0 20px 18px 20px;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
     
     .problem-section h2 {
         color: #952791;
