@@ -288,7 +288,7 @@ st.markdown("""
     }
     
     .stat-card {
-        padding: 30px;
+        padding: 50px 30px;
         background: white;
         border-radius: 12px;
         border: 2px solid #37D087;
