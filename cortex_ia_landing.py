@@ -838,27 +838,6 @@ st.markdown("""
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-
-# --- CTA FINAL ---
-st.markdown("""
-    <div class="container">
-        <div class="final-cta">
-            <h2>🚀 Comece sua transformação hoje</h2>
-            <p>
-                Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
-                <strong>A escolha é sua.</strong>
-            </p>
-            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
-            <button class="hero-cta">
-                ⚡ Começar Agora
-            </button>
-            <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
-                Acesso vitalício • Sem contratos • Comece hoje
-            </p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
 # --- FOOTER ---
 st.markdown("""
     <div class="container">
