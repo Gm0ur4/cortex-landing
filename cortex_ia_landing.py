@@ -697,12 +697,14 @@ st.markdown("""
 
 # --- CTA ANTES DO FAQ ---
 st.markdown("""
-<div style="display: flex; justify-content: center; align-items: center; margin: 60px 0;">
-    <a href="https://cortexcheckout.streamlit.app" target="_blank" style="text-decoration:none;">
-        <button class="hero-cta" style="display: block; margin: 0 auto;">
-            ⚡ Começar Agora
-        </button>
-    </a>
+<div class="container">
+    <div style="text-align:center; margin: 40px 0;">
+        <a href="https://cortexcheckout.streamlit.app" target="_blank" style="text-decoration:none;">
+            <button class="hero-cta">
+                ⚡ Começar Agora
+            </button>
+        </a>
+    </div>
 </div>
 """, unsafe_allow_html=True)
 
