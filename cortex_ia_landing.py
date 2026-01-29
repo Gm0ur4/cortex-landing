@@ -765,6 +765,110 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
+# --- CONTEÚDO ---
+st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
+
+# Header
+st.markdown("""
+    <div class="header">
+        <h1>🧠 Inteligência Cortex</h1>
+        <p>Convivemos, trabalhamos e nos relacionamos com outras pessoas o tempo todo, entender o comportamento humano se torna uma habilidade essencial de sobrevivência e inteligência emocional. </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Urgência
+dias_restantes = 3
+st.markdown(f"""
+    <div class="urgency-banner">
+        ⏰ OFERTA ESPECIAL DE CAMPANHA!
+    </div>
+    """, unsafe_allow_html=True)
+
+# Produtos
+st.markdown('<div class="products-grid">', unsafe_allow_html=True)
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("""<div class="product-card">
+<h3 class="product-title">Plataforma de aprendizado Cortex</h3>
+
+<p class="product-description">
+Aprenda os princípios fundamentais do comportamento humano através de 21 dias de atividades práticas e transformadoras.
+</p>
+
+<div class="price">R$ 39,90</div>
+<p class="price-small">Acesso vitalício</p>
+
+<ul class="features-list">
+<li>21 dias de aprendizado puro</li>
+<li>Diversas atividades práticas para aplicação imediata</li>
+<li>Conteúdo baseado em comportamento humano</li>
+<li>Acesso vitalício à plataforma</li>
+<li>Atualizações futuras incluídas</li>
+<li>Suporte humano todos os dias</li>
+</ul>
+
+<button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia', '_blank')">
+Quero acessar agora
+</button>
+</div>""", unsafe_allow_html=True)
+
+
+with col2:
+    st.markdown("""<div class="product-card featured">
+<h3 class="product-title">Plataforma de aprendizado Cortex + Chat IA</h3>
+
+<p class="product-description">
+Aprenda e receba análises comportamentais personalizadas com nossa IA especializada. A melhor combinação para transformação.
+</p>
+
+<div class="price">R$ 79,90</div>
+<p class="price-small">Acesso vitalício a ambos</p>
+
+<ul class="features-list">
+<li>Acesso a todo aprendizado da plataforma</li>
+<li>Chat IA com análise comportamental</li>
+<li>Plano de ação customizado</li>
+<li>Análise de padrões comportamentais</li>
+<li>Diagnóstico personalizado</li>
+</ul>
+
+<button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-completo', '_blank')">
+Garantir a experiência completa
+</button>
+</div>""", unsafe_allow_html=True)
+
+st.markdown("</div>", unsafe_allow_html=True)
+
+
+# Order Bump
+st.markdown("""<div class="order-bump">
+<h3>🤖 Adicione somente a IA por apenas R$ 59,90</h3>
+
+<p>
+Caso queira, adicione somente nossa IA com análise comportamental e receba diagnósticos personalizados, planos de ação e acompanhamento contínuo.
+</p>
+
+<div class="bump-price">
+R$ 59,90
+<span class="bump-original">R$ 79,90</span>
+<span class="bump-savings">-25% OFF</span>
+</div>
+
+<p style="color: #666; margin: 15px 0;">
+✓ Análise de padrões comportamentais<br>
+✓ Diagnóstico personalizado<br>
+✓ Soluções para problemas específicos<br>
+✓ Plano de ação customizado<br>
+✓ Acesso vitalício
+</p>
+
+<button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-chat', '_blank')">
+Adicionar Chat IA Agora
+</button>
+</div>""", unsafe_allow_html=True)
+
 # --- FOOTER ---
 st.markdown("""
     <div class="container">
