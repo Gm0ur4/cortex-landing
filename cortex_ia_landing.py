@@ -28,6 +28,311 @@ st.markdown("""
         margin: 0 auto;
         padding: 0 20px;
 
+        /* Header */
+    .header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .header h1 {
+        color: #952791;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 0;
+        letter-spacing: -0.02em;
+    }
+    
+    .header p {
+        color: #666;
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    
+    /* Urgência */
+    .urgency-banner {
+        background: linear-gradient(90deg, #FF6B6B 0%, #FF8E72 100%);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    
+    /* Grid de Produtos */
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    
+    @media (max-width: 768px) {
+        .products-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    /* Card de Produto */
+    .product-card {
+        background: white;
+        border-radius: 16px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    }
+    
+    .product-card.featured {
+        border: 2px solid #37D087;
+        background: linear-gradient(135deg, #FFFFFF 0%, #F0FFFE 100%);
+    }
+    
+    .product-card.featured::before {
+        content: "MAIS POPULAR";
+        display: block;
+        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 800;
+        width: fit-content;
+        margin: -50px 0 20px 0;
+        letter-spacing: 0.05em;
+    }
+    
+    .product-title {
+        color: #952791;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin: 0 0 15px 0;
+    }
+    
+    .product-description {
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+    
+    .price {
+        font-size: 2.5rem;
+        color: #952791;
+        font-weight: 800;
+        margin: 20px 0;
+    }
+    
+    .price-small {
+        font-size: 0.9rem;
+        color: #999;
+        margin-bottom: 25px;
+    }
+    
+    .features-list {
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+    }
+    
+    .features-list li {
+        color: #666;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .features-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .features-list li::before {
+        content: "✓";
+        color: #37D087;
+        font-weight: 800;
+        margin-right: 12px;
+        font-size: 1.2rem;
+    }
+    
+    .btn-checkout {
+        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
+        color: white;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        width: 100%;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: 20px;
+    }
+    
+    .btn-checkout:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(55, 208, 135, 0.3);
+    }
+    
+    /* Order Bump */
+    .order-bump {
+        background: linear-gradient(135deg, #FFF9E6 0%, #FFFBF0 100%);
+        border: 2px solid #FFD700;
+        border-radius: 16px;
+        padding: 30px;
+        margin: 40px 0;
+        position: relative;
+    }
+    
+    .order-bump::before {
+        content: "⚡ OFERTA RELÂMPAGO";
+        position: absolute;
+        top: -15px;
+        left: 20px;
+        background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+    }
+    
+    .order-bump h3 {
+        color: #952791;
+        font-size: 1.3rem;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .order-bump p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    .bump-price {
+        font-size: 1.8rem;
+        color: #952791;
+        font-weight: 800;
+        margin: 15px 0;
+    }
+    
+    .bump-original {
+        text-decoration: line-through;
+        color: #999;
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+    
+    .bump-savings {
+        background: #FFD700;
+        color: #333;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    
+    /* Depoimentos */
+    .testimonials {
+        margin: 60px 0;
+    }
+    
+    .testimonials h2 {
+        color: #952791;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 800;
+    }
+    
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    .testimonial-card {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .stars {
+        color: #FFD700;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .testimonial-text {
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-style: italic;
+    }
+    
+    .testimonial-author {
+        color: #952791;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-role {
+        color: #999;
+        font-size: 0.85rem;
+    }
+    
+    /* Bônus */
+    .bonus-section {
+        background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+        border-radius: 16px;
+        padding: 40px;
+        margin: 50px 0;
+        border-left: 5px solid #37D087;
+    }
+    
+    .bonus-section h3 {
+        color: #952791;
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+        font-weight: 800;
+    }
+    
+    .bonus-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    
+    .bonus-icon {
+        font-size: 1.5rem;
+        margin-right: 15px;
+        min-width: 30px;
+    }
+    
+    .bonus-content h4 {
+        color: #952791;
+        margin: 0 0 5px 0;
+        font-size: 1rem;
+    }
+    
+    .bonus-content p {
+        color: #666;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
     
     /* HERO SECTION */
     .hero {
