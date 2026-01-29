@@ -704,7 +704,7 @@ st.markdown("""
         </button>
     </a>
 </div>
-""", unsafe_allow_html=True )
+""", unsafe_allow_html=True)
 
 # --- FAQ ---
 st.markdown("""
