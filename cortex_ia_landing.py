@@ -715,44 +715,55 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Adicionar CSS extra para os expanders
+# Adicionar CSS AGRESSIVO para os expanders
 st.markdown("""
     <style>
-    /* Estilo customizado para expanders */
-    .streamlit-expanderHeader {
+    /* Forçar fundo branco em TUDO */
+    div[data-testid="stExpander"] {
+        background-color: white !important;
+    }
+    
+    div[data-testid="stExpander"] > div {
+        background-color: white !important;
+    }
+    
+    /* Header dos expanders */
+    button[data-testid="stExpanderToggleButton"] {
         background-color: white !important;
         color: #952791 !important;
-        border: 1px solid #e0e0e0 !important;
-        border-radius: 8px !important;
-        padding: 15px 20px !important;
-        font-weight: 700 !important;
-        font-size: 1rem !important;
     }
     
-    .streamlit-expanderHeader:hover {
+    button[data-testid="stExpanderToggleButton"]:hover {
         background-color: #f8f9fa !important;
-        border-color: #952791 !important;
     }
     
-    .streamlit-expanderContent {
-        background-color: #fafafa !important;
+    /* Conteúdo dos expanders */
+    div[data-testid="stExpanderContent"] {
+        background-color: white !important;
         color: #555555 !important;
-        border: 1px solid #e0e0e0 !important;
-        border-top: none !important;
-        border-radius: 0 0 8px 8px !important;
     }
     
-    /* Remover fundo do container */
-    [data-testid="column"] {
-        background-color: transparent !important;
+    div[data-testid="stExpanderContent"] > div {
+        background-color: white !important;
+        color: #555555 !important;
+    }
+    
+    /* Texto dos expanders */
+    div[data-testid="stExpander"] p {
+        color: #555555 !important;
+    }
+    
+    /* Remover fundo roxo */
+    div[data-testid="stExpander"] .streamlit-expanderHeader {
+        background-color: white !important;
+        color: #952791 !important;
     }
     </style>
 """, unsafe_allow_html=True)
 
-# Criar colunas para centralizar o FAQ
-col1, col2, col3 = st.columns([0.5, 2, 0.5])
-
-with col2:
+# Usar container em vez de colunas
+with st.container():
+    st.markdown('<div style="max-width: 800px; margin: 0 auto;">', unsafe_allow_html=True)
     # FAQ Item 1
     with st.expander("🔒 É seguro realizar a compra?"):
         st.write("""
@@ -813,6 +824,8 @@ with col2:
         
         Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência.
         """)
+    
+    st.markdown('</div>', unsafe_allow_html=True)
 
 
 # --- CTA FINAL ---
