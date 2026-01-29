@@ -990,7 +990,7 @@ st.markdown("""
 # ===== INÍCIO DA SEÇÃO DE CHECKOUT INTEGRADA =====
 # ============================================================
 
-st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
+st.markdown('<div style="background: white; padding: 40px 0; margin-top: 40px;"><div class="checkout-container">', unsafe_allow_html=True)
 
 # Header
 st.markdown("""
@@ -1098,7 +1098,7 @@ st.markdown("""
     <div class="footer">
         <p>© 2026 Cortex IA. Todos os direitos reservados.</p>
     </div>
-</div>""", unsafe_allow_html=True)
+</div></div>""", unsafe_allow_html=True)
 
 # --- FOOTER GERAL ---
 st.markdown("""
