@@ -289,7 +289,7 @@ st.markdown("""
     
     .stat-card {
         padding: 30px;
-        background: linear-gradient(135deg, #BE90E3 0%, #020930 100%);
+        background: white;
         border-radius: 12px;
         border: 2px solid #37D087;
     }
