@@ -1113,6 +1113,7 @@ Aprenda e receba análises comportamentais personalizadas com nossa IA especiali
 <li>Plano de ação customizado</li>
 <li>Análise de padrões comportamentais</li>
 <li>Diagnóstico personalizado</li>
+<li>Diagnóstico personalizado</li>
 </ul>
 
 <button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-completo', '_blank')">
