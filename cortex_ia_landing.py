@@ -483,7 +483,7 @@ st.markdown("""
     
     .demo-btn {
         display: inline-block;
-        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
+        background: linear-gradient(90deg, #EDAB00 0%, #FFB800 100%);
         color: white;
         padding: 16px 40px;
         border-radius: 8px;
