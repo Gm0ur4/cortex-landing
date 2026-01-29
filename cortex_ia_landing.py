@@ -972,8 +972,6 @@ Tudo baseado em ciência. Tudo prático. É como ter um especialista em comporta
 # ===== CHECKOUT INTEGRADO COM FUNDO BRANCO =====
 # ============================================================
 
-st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
-
 # Produtos
 st.markdown('<div class="products-grid">', unsafe_allow_html=True)
 
