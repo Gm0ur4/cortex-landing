@@ -288,22 +288,27 @@ st.markdown("""
     }
     
     .stat-card {
-        padding: 30px;
+        padding: 80px 40px;
         background: white;
-        border-radius: 12px;
-        border: 2px solid #37D087;
+        border-radius: 16px;
+        border: 3px solid #37D087;
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .stat-number {
         color: #37D087;
-        font-size: 2.5rem;
+        font-size: 4rem;
         font-weight: 800;
         margin: 0;
     }
     
     .stat-label {
         color: #666;
-        font-size: 0.95rem;
+        font-size: 1.2rem;
         margin: 10px 0 0 0;
     }
     
