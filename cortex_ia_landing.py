@@ -714,73 +714,38 @@ st.markdown("""
 <div class="container">
     <div class="faq-section">
         <h2>❓ Perguntas frequentes</h2>
-            </div>
+        <div class="faq-item">
+            <div class="faq-question">É seguro realizar a compra?</div>
+            <div class="faq-answer">Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
+Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Por onde acesso a Cortex?</div>
+            <div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Como funciona a IA?</div>
+            <div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
+Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação e tira todas suas dúvidas sobre a mente humana.
+Tudo baseado em ciência. Tudo prático. É como ter um especialista em comportamento humano disponível 24/7 para ajudar você.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">O que vou aprender?</div>
+            <div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência (com inteligência emocional), vendas (com persuasão) + um conteúdo bônus final no formato intensivo surpresa.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Existe algum tipo de suporte?</div>
+            <div class="faq-answer">Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Posso fazer no meu ritmo?</div>
+            <div class="faq-answer">Claro! você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência..</div>
+        </div>
+    </div>
 </div>
 """, unsafe_allow_html=True)
-# Criar colunas para centralizar o FAQ
-col1, col2, col3 = st.columns([0.5, 2, 0.5])
 
-with col2:
-    # FAQ Item 1
-    with st.expander("🔒 É seguro realizar a compra?"):
-        st.write("""
-        Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. 
-        
-        Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
-        
-        Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.
-        """)
-    
-    # FAQ Item 2
-    with st.expander("🌐 Por onde acesso a Cortex?"):
-        st.write("""
-        Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.
-        """)
-    
-    # FAQ Item 3
-    with st.expander("🤖 Como funciona a IA?"):
-        st.write("""
-        O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
-        
-        • **Analisa** seus padrões comportamentais
-        • **Faz** um diagnóstico personalizado
-        • **Oferece** soluções práticas
-        • **Cria** um plano de ação
-        • **Tira** todas suas dúvidas sobre a mente humana
-        
-        Tudo baseado em ciência. Tudo prático. É como ter um especialista em comportamento humano disponível 24/7 para ajudar você.
-        """)
-    
-    # FAQ Item 4
-    with st.expander("📚 O que vou aprender?"):
-        st.write("""
-        Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto:
-        
-        • Persuasão
-        • Leitura de pessoas
-        • Linguagem corporal
-        • Controle emocional
-        • Influência social
-        • Resiliência (com inteligência emocional)
-        • Vendas (com persuasão)
-        • Conteúdo bônus final no formato intensivo surpresa
-        """)
-    
-    # FAQ Item 5
-    with st.expander("💬 Existe algum tipo de suporte?"):
-        st.write("""
-        Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. 
-        
-        Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.
-        """)
-    
-    # FAQ Item 6
-    with st.expander("⏰ Posso fazer no meu ritmo?"):
-        st.write("""
-        Claro! Você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. 
-        
-        Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência.
-        """)
+
 
 
 
