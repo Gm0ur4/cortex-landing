@@ -422,7 +422,7 @@ st.markdown("""
     
     /* CTA FINAL */
     .final-cta {
-        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
+        background: linear-gradient(90deg, #39D7FE 0%, #39D7FE 100%);
         padding: 80px 20px;
         text-align: center;
         border-radius: 16px;
