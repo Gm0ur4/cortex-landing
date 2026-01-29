@@ -829,14 +829,6 @@ Adicionar Chat IA Agora
 </button>
 </div>""", unsafe_allow_html=True)
 
-# Footer
-st.markdown("""
-    <div class="footer">
-        <p>© 2026 Cortex IA. Todos os direitos reservados.</p>
-    </div>
-    """, unsafe_allow_html=True)
-
-st.markdown('</div>', unsafe_allow_html=True)
 
 # --- FOOTER ---
 st.markdown("""
