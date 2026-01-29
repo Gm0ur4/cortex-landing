@@ -1058,8 +1058,6 @@ st.markdown("""
 # ===== CHECKOUT INTEGRADO COM FUNDO BRANCO =====
 # ============================================================
 
-st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
-
 # Urgência
 st.markdown("""
     <div class="urgency-banner">
