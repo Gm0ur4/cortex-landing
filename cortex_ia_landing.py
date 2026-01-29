@@ -389,35 +389,32 @@ st.markdown("""
     .faq-section {
         padding: 60px 20px;
         margin: 40px 0;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     }
     
     .faq-section h2 {
-        color: #FFFFFF;
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 800;
-    }
-    
-    .faq-item {
-        background: white;
-        border-radius: 12px;
-        padding: 25px;
-        margin-bottom: 15px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    }
-    
-    .faq-question {
         color: #952791;
-        font-weight: 700;
-        font-size: 1rem;
-        margin-bottom: 10px;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 800;
     }
     
-    .faq-answer {
-        color: #666;
-        font-size: 0.95rem;
-        line-height: 1.6;
+    /* Estilo dos Expanders */
+    .streamlit-expanderHeader {
+        background-color: white !important;
+        color: #952791 !important;
+    }
+    
+    .streamlit-expanderHeader:hover {
+        background-color: #f8f9fa !important;
+    }
+    
+    .streamlit-expanderContent {
+        background-color: white !important;
+        color: #555555 !important;
     }
     
     /* CTA FINAL */
@@ -709,14 +706,49 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# --- FAQ ---
+# ==================== FAQ COM ST.EXPANDER (SIMPLES E ELEGANTE) ====================
 st.markdown("""
 <div class="container">
     <div class="faq-section">
-        <h2>❓ Perguntas frequentes</h2>
-            </div>
+        <h2>❓ Perguntas Frequentes</h2>
+    </div>
 </div>
 """, unsafe_allow_html=True)
+
+# Adicionar CSS extra para os expanders
+st.markdown("""
+    <style>
+    /* Estilo customizado para expanders */
+    .streamlit-expanderHeader {
+        background-color: white !important;
+        color: #952791 !important;
+        border: 1px solid #e0e0e0 !important;
+        border-radius: 8px !important;
+        padding: 15px 20px !important;
+        font-weight: 700 !important;
+        font-size: 1rem !important;
+    }
+    
+    .streamlit-expanderHeader:hover {
+        background-color: #f8f9fa !important;
+        border-color: #952791 !important;
+    }
+    
+    .streamlit-expanderContent {
+        background-color: #fafafa !important;
+        color: #555555 !important;
+        border: 1px solid #e0e0e0 !important;
+        border-top: none !important;
+        border-radius: 0 0 8px 8px !important;
+    }
+    
+    /* Remover fundo do container */
+    [data-testid="column"] {
+        background-color: transparent !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Criar colunas para centralizar o FAQ
 col1, col2, col3 = st.columns([0.5, 2, 0.5])
 
@@ -781,7 +813,6 @@ with col2:
         
         Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência.
         """)
-
 
 
 # --- CTA FINAL ---
