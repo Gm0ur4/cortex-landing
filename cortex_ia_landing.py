@@ -288,10 +288,15 @@ st.markdown("""
     }
     
     .stat-card {
-        padding: 50px 30px;
+        padding: 60px 30px;
         background: white;
         border-radius: 12px;
         border: 2px solid #37D087;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .stat-number {
