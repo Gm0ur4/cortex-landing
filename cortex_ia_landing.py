@@ -389,32 +389,35 @@ st.markdown("""
     .faq-section {
         padding: 60px 20px;
         margin: 40px 0;
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     }
     
     .faq-section h2 {
+        color: #FFFFFF;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 800;
+    }
+    
+    .faq-item {
+        background: white;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+    
+    .faq-question {
         color: #952791;
-        font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 50px;
-        font-weight: 800;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
     
-    /* Estilo dos Expanders */
-    .streamlit-expanderHeader {
-        background-color: white !important;
-        color: #952791 !important;
-    }
-    
-    .streamlit-expanderHeader:hover {
-        background-color: #f8f9fa !important;
-    }
-    
-    .streamlit-expanderContent {
-        background-color: white !important;
-        color: #555555 !important;
+    .faq-answer {
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
     
     /* CTA FINAL */
@@ -706,64 +709,18 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ==================== FAQ COM ST.EXPANDER (SIMPLES E ELEGANTE) ====================
+# --- FAQ ---
 st.markdown("""
 <div class="container">
     <div class="faq-section">
-        <h2>❓ Perguntas Frequentes</h2>
-    </div>
+        <h2>❓ Perguntas frequentes</h2>
+            </div>
 </div>
 """, unsafe_allow_html=True)
+# Criar colunas para centralizar o FAQ
+col1, col2, col3 = st.columns([0.5, 2, 0.5])
 
-# Adicionar CSS AGRESSIVO para os expanders
-st.markdown("""
-    <style>
-    /* Forçar fundo branco em TUDO */
-    div[data-testid="stExpander"] {
-        background-color: white !important;
-    }
-    
-    div[data-testid="stExpander"] > div {
-        background-color: white !important;
-    }
-    
-    /* Header dos expanders */
-    button[data-testid="stExpanderToggleButton"] {
-        background-color: white !important;
-        color: #952791 !important;
-    }
-    
-    button[data-testid="stExpanderToggleButton"]:hover {
-        background-color: #f8f9fa !important;
-    }
-    
-    /* Conteúdo dos expanders */
-    div[data-testid="stExpanderContent"] {
-        background-color: white !important;
-        color: #555555 !important;
-    }
-    
-    div[data-testid="stExpanderContent"] > div {
-        background-color: white !important;
-        color: #555555 !important;
-    }
-    
-    /* Texto dos expanders */
-    div[data-testid="stExpander"] p {
-        color: #555555 !important;
-    }
-    
-    /* Remover fundo roxo */
-    div[data-testid="stExpander"] .streamlit-expanderHeader {
-        background-color: white !important;
-        color: #952791 !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-# Usar container em vez de colunas
-with st.container():
-    st.markdown('<div style="max-width: 800px; margin: 0 auto;">', unsafe_allow_html=True)
+with col2:
     # FAQ Item 1
     with st.expander("🔒 É seguro realizar a compra?"):
         st.write("""
@@ -824,8 +781,7 @@ with st.container():
         
         Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência.
         """)
-    
-    st.markdown('</div>', unsafe_allow_html=True)
+
 
 
 # --- CTA FINAL ---
