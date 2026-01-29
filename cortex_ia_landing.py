@@ -711,7 +711,9 @@ st.markdown("""
 # --- FAQ ---
 st.markdown("""
 <div class="container">
+    <div style="text-align:center; margin: 40px 0;">
     <div class="faq-section">
+    </div>
         <h2>❓ Perguntas frequentes</h2>
         <div class="faq-item">
             <div class="faq-question">É seguro realizar a compra?</div>
