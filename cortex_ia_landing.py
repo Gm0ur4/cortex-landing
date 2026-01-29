@@ -501,73 +501,6 @@ st.markdown("""
         transform: translateY(-2px);
         box-shadow: 0 10px 30px rgba(55, 208, 135, 0.3);
     }
-
-    /* --- CHECKOUT EMBUTIDO --- */
-
-.checkout-section {
-    background: linear-gradient(135deg, #F0FFFE 0%, #E8F8FF 100%);
-    padding: 80px 20px;
-    border-radius: 16px;
-    margin: 60px 0;
-}
-
-.checkout-title {
-    text-align: center;
-    color: #952791;
-    font-size: 2.4rem;
-    font-weight: 800;
-    margin-bottom: 15px;
-}
-
-.checkout-subtitle {
-    text-align: center;
-    color: #666;
-    margin-bottom: 40px;
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-@media (max-width: 768px) {
-    .products-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.product-card {
-    background: white;
-    border-radius: 16px;
-    padding: 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-    border: 2px solid transparent;
-}
-
-.product-card.featured {
-    border: 2px solid #37D087;
-    background: linear-gradient(135deg, #FFFFFF 0%, #F0FFFE 100%);
-}
-
-.price {
-    font-size: 2.4rem;
-    color: #952791;
-    font-weight: 800;
-}
-
-.btn-checkout {
-    background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
-    color: white;
-    border: none;
-    padding: 16px;
-    border-radius: 8px;
-    font-weight: 700;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
     
     /* Footer */
     .footer {
@@ -619,7 +552,7 @@ st.markdown("""
                 <br>
     <strong> São mais de 15.000 usuários absorvendo o conhecimento das 22 maiores referências sobre a mente humana do mundo</strong>
             </p>
-            <a href="#checkout" target="_blank" class="hero-cta-link">
+            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
             <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
@@ -766,7 +699,7 @@ st.markdown("""
 st.markdown("""
 <div class="container">
     <div style="text-align:center; margin: 40px 0;">
-        <a href="#checkout" target="_blank" style="text-decoration:none;">
+        <a href="https://cortexcheckout.streamlit.app" target="_blank" style="text-decoration:none;">
             <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
@@ -824,7 +757,7 @@ st.markdown("""
                 Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
                 <strong>A escolha é sua.</strong>
             </p>
-            <a href="#checkout" target="_blank" class="hero-cta-link">
+            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
             <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
@@ -834,64 +767,6 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
-
-# --- CHECKOUT ---
-st.markdown("""
-<div id="checkout" class="container">
-    <div class="checkout-section">
-
-        <h2 class="checkout-title">🧠 Comece agora</h2>
-        <p class="checkout-subtitle">
-            Escolha o melhor plano para você e tenha acesso imediato.
-        </p>
-
-        <div class="products-grid">
-
-            <div class="product-card">
-                <h3>Plataforma Cortex</h3>
-                <p>21 dias de aprendizado prático sobre comportamento humano.</p>
-
-                <div class="price">R$ 39,90</div>
-
-<a href="LINK" target="_blank" style="text-decoration:none;">
-    <button class="btn-checkout">
-        Quero acessar agora
-    </button>
-</a>
-
-        Quero acessar agora
-    </button>
-</a>
-
-        Quero acessar agora
-    </button>
-</a>
-                    Quero acessar agora
-                </button>
-            </div>
-
-            <div class="product-card featured">
-                <h3>Cortex + Chat IA</h3>
-                <p>Acesso completo + análise comportamental por IA.</p>
-
-                <div class="price">R$ 79,90</div>
-
-<a href="LINK" target="_blank" style="text-decoration:none;">
-    <button class="btn-checkout">
-        Quero acessar agora
-    </button>
-</a>
-
-                    Garantir experiência completa
-                </button>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-""", unsafe_allow_html=True)
-
 
 # --- FOOTER ---
 st.markdown("""
