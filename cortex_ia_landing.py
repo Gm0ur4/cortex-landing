@@ -521,6 +521,227 @@ st.markdown("""
         text-decoration: underline;
     }
     
+    /* CHECKOUT SECTION STYLES */
+    .checkout-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    /* Header */
+    .header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .header h1 {
+        color: #952791;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 0;
+        letter-spacing: -0.02em;
+    }
+    
+    .header p {
+        color: #666;
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    
+    /* Urgência */
+    .urgency-banner {
+        background: linear-gradient(90deg, #FF6B6B 0%, #FF8E72 100%);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    
+    /* Grid de Produtos */
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    
+    @media (max-width: 768px) {
+        .products-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    /* Card de Produto */
+    .product-card {
+        background: white;
+        border-radius: 16px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    }
+    
+    .product-card.featured {
+        border: 2px solid #37D087;
+        background: linear-gradient(135deg, #FFFFFF 0%, #F0FFFE 100%);
+    }
+    
+    .product-card.featured::before {
+        content: "MAIS POPULAR";
+        display: block;
+        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 800;
+        width: fit-content;
+        margin: -50px 0 20px 0;
+        letter-spacing: 0.05em;
+    }
+    
+    .product-title {
+        color: #952791;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin: 0 0 15px 0;
+    }
+    
+    .product-description {
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+    
+    .price {
+        font-size: 2.5rem;
+        color: #952791;
+        font-weight: 800;
+        margin: 20px 0;
+    }
+    
+    .price-small {
+        font-size: 0.9rem;
+        color: #999;
+        margin-bottom: 25px;
+    }
+    
+    .features-list {
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+    }
+    
+    .features-list li {
+        color: #666;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .features-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .features-list li::before {
+        content: "✓";
+        color: #37D087;
+        font-weight: 800;
+        margin-right: 12px;
+        font-size: 1.2rem;
+    }
+    
+    .btn-checkout {
+        background: linear-gradient(90deg, #37D087 0%, #39D7FE 100%);
+        color: white;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        width: 100%;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: 20px;
+    }
+    
+    .btn-checkout:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(55, 208, 135, 0.3);
+    }
+    
+    /* Order Bump */
+    .order-bump {
+        background: linear-gradient(135deg, #FFF9E6 0%, #FFFBF0 100%);
+        border: 2px solid #FFD700;
+        border-radius: 16px;
+        padding: 30px;
+        margin: 40px 0;
+        position: relative;
+    }
+    
+    .order-bump::before {
+        content: "⚡ OFERTA RELÂMPAGO";
+        position: absolute;
+        top: -15px;
+        left: 20px;
+        background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+    }
+    
+    .order-bump h3 {
+        color: #952791;
+        font-size: 1.3rem;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .order-bump p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    .bump-price {
+        font-size: 1.8rem;
+        color: #952791;
+        font-weight: 800;
+        margin: 15px 0;
+    }
+    
+    .bump-original {
+        text-decoration: line-through;
+        color: #999;
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+    
+    .bump-savings {
+        background: #FFD700;
+        color: #333;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    
     /* Responsivo */
     @media (max-width: 768px) {
         .hero h1 {
@@ -765,7 +986,121 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-# --- FOOTER ---
+# ============================================================
+# ===== INÍCIO DA SEÇÃO DE CHECKOUT INTEGRADA =====
+# ============================================================
+
+st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
+
+# Header
+st.markdown("""
+    <div class="header">
+        <h1>🧠 Inteligência Cortex</h1>
+        <p>Convivemos, trabalhamos e nos relacionamos com outras pessoas o tempo todo, entender o comportamento humano se torna uma habilidade essencial de sobrevivência e inteligência emocional. </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Urgência
+dias_restantes = 3
+st.markdown(f"""
+    <div class="urgency-banner">
+        ⏰ OFERTA ESPECIAL DE CAMPANHA!
+    </div>
+    """, unsafe_allow_html=True)
+
+# Produtos
+st.markdown('<div class="products-grid">', unsafe_allow_html=True)
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("""<div class="product-card">
+<h3 class="product-title">Plataforma de aprendizado Cortex</h3>
+
+<p class="product-description">
+Aprenda os princípios fundamentais do comportamento humano através de 21 dias de atividades práticas e transformadoras.
+</p>
+
+<div class="price">R$ 39,90</div>
+<p class="price-small">Acesso vitalício</p>
+
+<ul class="features-list">
+<li>21 dias de aprendizado puro</li>
+<li>Diversas atividades práticas para aplicação imediata</li>
+<li>Conteúdo baseado em comportamento humano</li>
+<li>Acesso vitalício à plataforma</li>
+<li>Atualizações futuras incluídas</li>
+<li>Suporte humano todos os dias</li>
+</ul>
+
+<button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia', '_blank')">
+Quero acessar agora
+</button>
+</div>""", unsafe_allow_html=True)
+
+
+with col2:
+    st.markdown("""<div class="product-card featured">
+<h3 class="product-title">Plataforma de aprendizado Cortex + Chat IA</h3>
+
+<p class="product-description">
+Aprenda e receba análises comportamentais personalizadas com nossa IA especializada. A melhor combinação para transformação.
+</p>
+
+<div class="price">R$ 79,90</div>
+<p class="price-small">Acesso vitalício a ambos</p>
+
+<ul class="features-list">
+<li>Acesso a todo aprendizado da plataforma</li>
+<li>Chat IA com análise comportamental</li>
+<li>Plano de ação customizado</li>
+<li>Análise de padrões comportamentais</li>
+<li>Diagnóstico personalizado</li>
+</ul>
+
+<button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-completo', '_blank')">
+Garantir a experiência completa
+</button>
+</div>""", unsafe_allow_html=True)
+
+st.markdown("</div>", unsafe_allow_html=True)
+
+
+# Order Bump
+st.markdown("""<div class="order-bump">
+<h3>🤖 Adicione somente a IA por apenas R$ 59,90</h3>
+
+<p>
+Caso queira, adicione somente nossa IA com análise comportamental e receba diagnósticos personalizados, planos de ação e acompanhamento contínuo.
+</p>
+
+<div class="bump-price">
+R$ 59,90
+<span class="bump-original">R$ 79,90</span>
+<span class="bump-savings">-25% OFF</span>
+</div>
+
+<p style="color: #666; margin: 15px 0;">
+✓ Análise de padrões comportamentais<br>
+✓ Diagnóstico personalizado<br>
+✓ Soluções para problemas específicos<br>
+✓ Plano de ação customizado<br>
+✓ Acesso vitalício
+</p>
+
+<button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-chat', '_blank')">
+Adicionar Chat IA Agora
+</button>
+</div>""", unsafe_allow_html=True)
+
+# Footer
+st.markdown("""
+    <div class="footer">
+        <p>© 2026 Cortex IA. Todos os direitos reservados.</p>
+    </div>
+</div>""", unsafe_allow_html=True)
+
+# --- FOOTER GERAL ---
 st.markdown("""
     <div class="container">
         <div class="footer">
