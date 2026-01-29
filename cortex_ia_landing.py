@@ -711,7 +711,7 @@ st.markdown("""
 # --- FAQ ---
 st.markdown("""
 <div class="container">
-    <div style="text-align:center; margin: 50px 0;">
+    <div style="text-align:center; margin: 10px 0;">
     <div class="faq-section">
     </div>
         <h2>❓ Perguntas frequentes</h2>
