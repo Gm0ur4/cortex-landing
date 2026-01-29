@@ -392,11 +392,11 @@ st.markdown("""
     }
     
     .faq-section h2 {
-        color: #952791;
-        font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 50px;
-        font-weight: 800;
+        color: #FFFFFF;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 800;
     }
     
     .faq-item {
