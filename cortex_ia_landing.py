@@ -522,12 +522,6 @@ st.markdown("""
     }
     
     /* ===== CHECKOUT STYLES ===== */
-    .checkout-section {
-        background: white !important;
-        padding: 40px 0 !important;
-        margin-top: 0 !important;
-    }
-    
     .checkout-container {
         max-width: 1200px;
         margin: 0 auto;
@@ -1002,10 +996,61 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # ============================================================
-# ===== CHECKOUT INTEGRADO =====
+# ===== CHECKOUT INTEGRADO COM FUNDO BRANCO =====
 # ============================================================
 
-st.markdown('<div class="checkout-section"><div class="checkout-container">', unsafe_allow_html=True)
+# Adicionar JavaScript para forçar fundo branco no checkout
+st.markdown("""
+<script>
+// Aguardar o DOM carregar completamente
+document.addEventListener('DOMContentLoaded', function() {
+    // Encontrar o elemento com a classe checkout-container
+    const checkoutElements = document.querySelectorAll('[class*="checkout"]');
+    
+    // Forçar fundo branco em todos os elementos
+    checkoutElements.forEach(el => {
+        el.style.backgroundColor = 'white !important';
+        el.style.backgroundImage = 'none !important';
+    });
+    
+    // Também forçar no stApp quando estiver no checkout
+    const stApp = document.querySelector('.stApp');
+    if (stApp) {
+        // Adicionar um observer para monitorar mudanças
+        const observer = new MutationObserver(function() {
+            const checkoutContainer = document.querySelector('[class*="checkout-container"]');
+            if (checkoutContainer) {
+                checkoutContainer.parentElement.style.backgroundColor = 'white !important';
+                checkoutContainer.parentElement.style.backgroundImage = 'none !important';
+            }
+        });
+        
+        observer.observe(stApp, { childList: true, subtree: true });
+    }
+});
+
+// Executar também ao scroll para garantir
+window.addEventListener('scroll', function() {
+    const checkoutContainer = document.querySelector('[class*="checkout-container"]');
+    if (checkoutContainer) {
+        checkoutContainer.style.backgroundColor = 'white !important';
+        checkoutContainer.style.backgroundImage = 'none !important';
+        
+        // Forçar no pai também
+        let parent = checkoutContainer.parentElement;
+        while (parent && parent !== document.body) {
+            if (parent.style) {
+                parent.style.backgroundColor = 'white !important';
+                parent.style.backgroundImage = 'none !important';
+            }
+            parent = parent.parentElement;
+        }
+    }
+});
+</script>
+""", unsafe_allow_html=True)
+
+st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
 
 # Header
 st.markdown("""
@@ -1112,4 +1157,4 @@ st.markdown("""
     <div class="footer">
         <p>© 2026 Cortex IA. Todos os direitos reservados.</p>
     </div>
-</div></div>""", unsafe_allow_html=True)
+</div>""", unsafe_allow_html=True)
