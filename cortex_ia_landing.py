@@ -695,6 +695,20 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
+# --- CTA ANTES DO FAQ ---
+st.markdown("""
+<div class="container">
+    <div style="text-align:center; margin: 40px 0;">
+        <a href="https://cortexcheckout.streamlit.app" target="_blank" style="text-decoration:none;">
+            <button class="hero-cta">
+                ⚡ Começar Agora
+            </button>
+        </a>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+
 # --- FAQ ---
 st.markdown("""
 <div class="container">
