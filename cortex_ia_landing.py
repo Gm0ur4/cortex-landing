@@ -683,7 +683,7 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="demo-section">
-            <h2>▶️ Veja como funciona</h2>
+            <h2>🎥 Veja como funciona</h2>
             <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.8;">
                 Quer ver um exemplo de como é um parte de um dia? Clique abaixo para acessar uma demonstração gratuita.Sem necessidade de cadastro. Acesso imediato.
             </p>
