@@ -853,8 +853,19 @@ st.markdown("""
 
                 <div class="price">R$ 39,90</div>
 
-                <button class="btn-checkout"
-                    onclick="window.open('https://seulink.eduzz.com/cortex-ia','_blank')">
+<a href="LINK" target="_blank" style="text-decoration:none;">
+    <button class="btn-checkout">
+        Quero acessar agora
+    </button>
+</a>
+
+        Quero acessar agora
+    </button>
+</a>
+
+        Quero acessar agora
+    </button>
+</a>
                     Quero acessar agora
                 </button>
             </div>
@@ -865,8 +876,12 @@ st.markdown("""
 
                 <div class="price">R$ 79,90</div>
 
-                <button class="btn-checkout"
-                    onclick="window.open('https://seulink.eduzz.com/cortex-ia-completo','_blank')">
+<a href="LINK" target="_blank" style="text-decoration:none;">
+    <button class="btn-checkout">
+        Quero acessar agora
+    </button>
+</a>
+
                     Garantir experiência completa
                 </button>
             </div>
