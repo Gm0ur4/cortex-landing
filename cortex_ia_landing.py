@@ -296,7 +296,7 @@ st.markdown("""
     
     .stat-number {
         color: #37D087 !important;
-        font-size: 2.5rem !important;
+        font-size: 3.5rem !important;
         font-weight: 800 !important;
         margin: 0 !important;
         line-height: 1 !important;
@@ -391,35 +391,123 @@ st.markdown("""
     .faq-section {
         padding: 60px 20px;
         margin: 40px 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 255, 254, 0.95) 100%);
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
     }
     
     .faq-section h2 {
-        color: #FFFFFF;
-        font-size: 2.2rem;
+        color: #952791;
+        font-size: 2.5rem;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         font-weight: 800;
+        letter-spacing: -0.02em;
     }
     
     .faq-item {
         background: white;
-        border-radius: 12px;
-        padding: 25px;
-        margin-bottom: 15px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        padding: 0;
+        margin-bottom: 20px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        border-left: 5px solid #37D087;
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+    
+    .faq-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 50px rgba(55, 208, 135, 0.2);
+        border-left-color: #39D7FE;
+    }
+    
+    .faq-item[open] {
+        background: linear-gradient(135deg, #FFFFFF 0%, #F0FFFE 100%);
     }
     
     .faq-question {
         color: #952791;
-        font-weight: 700;
-        font-size: 1rem;
-        margin-bottom: 10px;
+        font-weight: 800;
+        font-size: 1.1rem;
+        padding: 25px;
+        margin: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transition: all 0.3s ease;
+        list-style: none;
+    }
+    
+    .faq-question::before {
+        content: '';
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #37D087 0%, #39D7FE 100%);
+        border-radius: 50%;
+        color: white;
+        font-weight: 800;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+    
+    .faq-item:nth-child(1) .faq-question::before {
+        content: '1';
+    }
+    
+    .faq-item:nth-child(2) .faq-question::before {
+        content: '2';
+    }
+    
+    .faq-item:nth-child(3) .faq-question::before {
+        content: '3';
+    }
+    
+    .faq-item:nth-child(4) .faq-question::before {
+        content: '4';
+    }
+    
+    .faq-item:nth-child(5) .faq-question::before {
+        content: '5';
+    }
+    
+    .faq-item:nth-child(6) .faq-question::before {
+        content: '6';
     }
     
     .faq-answer {
-        color: #666;
+        color: #555;
         font-size: 0.95rem;
-        line-height: 1.6;
+        line-height: 1.8;
+        padding: 0 25px 25px 80px;
+        border-top: 2px solid #37D087;
+        margin-top: 0;
+        display: none;
+    }
+    
+    .faq-item[open] .faq-answer {
+        display: block;
+        animation: slideDown 0.3s ease;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .faq-answer strong {
+        color: #37D087;
+        font-weight: 800;
     }
     
     /* CTA FINAL */
@@ -932,45 +1020,89 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# --- FAQ (CORRIGIDO: SEM IDENTAÇÃO) ---
+# --- FAQ PREMIUM ---
 st.markdown("""
 <div class="container">
 <div class="faq-section">
-<h2>❓ Perguntas frequentes</h2>
+<h2>❓ Perguntas Frequentes</h2>
 <details class="faq-item">
 <summary class="faq-question">É seguro realizar a compra?</summary>
-<div class="faq-answer">Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
-Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
+<div class="faq-answer">Sim. Toda a compra é processada pela <strong>Eduzz</strong>, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com <strong>criptografia, certificados de segurança e antifraude</strong>. Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
 </details>
 <details class="faq-item">
 <summary class="faq-question">Por onde acesso a Cortex?</summary>
-<div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.</div>
+<div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: <strong>celular, computador, tablet ou qualquer dispositivo com internet</strong>, sem instalações complicadas. É 100% online e funciona perfeitamente em qualquer lugar.</div>
 </details>
 <details class="faq-item">
 <summary class="faq-question">Como funciona a IA?</summary>
-<div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
-Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação e tira todas suas dúvidas sobre a mente humana.
-Tudo baseado em ciência. Tudo prático. É como ter um especialista em comportamento humano disponível 24/7 para ajudar você.</div>
+<div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA: <strong>Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação</strong> e tira todas suas dúvidas sobre a mente humana. Tudo baseado em ciência. Tudo prático. É como ter um <strong>especialista em comportamento humano disponível 24/7</strong> para ajudar você.</div>
 </details>
 <details class="faq-item">
 <summary class="faq-question">O que vou aprender?</summary>
-<div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência (com inteligência emocional), vendas (com persuasão) + um conteúdo bônus final no formato intensivo surpresa.</div>
+<div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: <strong>Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência com inteligência emocional, vendas com persuasão</strong> + um conteúdo bônus final no formato intensivo surpresa. Tudo prático e aplicável imediatamente.</div>
 </details>
 <details class="faq-item">
 <summary class="faq-question">Existe algum tipo de suporte?</summary>
-<div class="faq-answer">Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.</div>
+<div class="faq-answer">Com certeza! Desde o primeiro acesso, você recebe <strong>instruções completas de orientação</strong> que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, oferecemos <strong>suporte humano rápido</strong>, garantindo que você nunca fique travado ou perdido durante o processo.</div>
 </details>
 <details class="faq-item">
 <summary class="faq-question">Posso fazer no meu ritmo?</summary>
-<div class="faq-answer">Claro! você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência..</div>
+<div class="faq-answer">Claro! Você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua <strong>disponibilidade e ao seu momento de vida</strong>. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência.</div>
 </details>
 </div>
 </div>
 """, unsafe_allow_html=True)
 
+
+# --- CTA FINAL ---
+st.markdown("""
+    <div class="container">
+        <div class="final-cta">
+            <h2>🚀 Comece sua transformação hoje</h2>
+            <p>
+                Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
+                <strong>A escolha é sua.</strong>
+            </p>
+            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
+            <button class="hero-cta">
+                ⚡ Começar Agora
+            </button>
+            <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
+                Acesso vitalício • Sem contratos • Comece hoje
+            </p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+# --- FOOTER ---
+st.markdown("""
+    <div class="container">
+        <div class="footer">
+            <p>© 2026 Inteligência Cortex. Todos os direitos reservados.</p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
 # ============================================================
 # ===== CHECKOUT INTEGRADO COM FUNDO BRANCO =====
 # ============================================================
+
+st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
+
+# Header
+st.markdown("""
+    <div class="header">
+        <h1>🧠 Inteligência Cortex</h1>
+        <p>Convivemos, trabalhamos e nos relacionamos com outras pessoas o tempo todo, entender o comportamento humano se torna uma habilidade essencial de sobrevivência e inteligência emocional. </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Urgência
+st.markdown("""
+    <div class="urgency-banner">
+        ⏰ OFERTA ESPECIAL DE CAMPANHA!
+    </div>
+    """, unsafe_allow_html=True)
 
 # Produtos
 st.markdown('<div class="products-grid">', unsafe_allow_html=True)
@@ -1020,7 +1152,6 @@ Aprenda e receba análises comportamentais personalizadas com nossa IA especiali
 <li>Plano de ação customizado</li>
 <li>Análise de padrões comportamentais</li>
 <li>Diagnóstico personalizado</li>
-<li>Suporte humano todos os dias</li>
 </ul>
 
 <button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-completo', '_blank')">
