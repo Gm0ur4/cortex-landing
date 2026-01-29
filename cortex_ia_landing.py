@@ -19,6 +19,11 @@ st.markdown("""
     }
     
     html, body, .stApp {
+        background: white !important;
+    }
+    
+    /* Gradiente roxo apenas para a landing page */
+    .landing-wrapper {
         background: linear-gradient(135deg, #020930 0%, #BE90E3 100%) !important;
     }
     
@@ -742,12 +747,6 @@ st.markdown("""
         font-weight: 700;
     }
     
-    /* CHECKOUT WRAPPER - FUNDO BRANCO */
-    .checkout-wrapper {
-        background: white !important;
-        position: relative;
-        z-index: 10;
-    }
     
     /* Responsivo */
     @media (max-width: 768px) {
@@ -772,6 +771,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # --- HERO SECTION ---
+st.markdown('<div class="landing-wrapper">', unsafe_allow_html=True)
 st.markdown("""
     <div class="container">
         <div class="hero">
@@ -997,7 +997,8 @@ st.markdown("""
 # ===== INÍCIO DA SEÇÃO DE CHECKOUT INTEGRADA =====
 # ============================================================
 
-st.markdown('<div class="checkout-wrapper"><div class="checkout-container">', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)  # Fecha landing-wrapper
+st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
 
 # Header
 st.markdown("""
@@ -1105,7 +1106,7 @@ st.markdown("""
     <div class="footer">
         <p>© 2026 Cortex IA. Todos os direitos reservados.</p>
     </div>
-</div></div></div>""", unsafe_allow_html=True)
+</div>""", unsafe_allow_html=True)
 
 # --- FOOTER GERAL ---
 st.markdown("""
