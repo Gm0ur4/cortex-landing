@@ -708,44 +708,41 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# --- FAQ ---
+# --- FAQ (CORRIGIDO: SEM IDENTAÇÃO) ---
 st.markdown("""
 <div class="container">
-    <div class="faq-section">
-        <h2>❓ Perguntas frequentes</h2>
-        <div class="faq-item">
-            <div class="faq-question">É seguro realizar a compra?</div>
-            <div class="faq-answer">Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
+<div class="faq-section">
+<h2>❓ Perguntas frequentes</h2>
+<details class="faq-item">
+<summary class="faq-question">É seguro realizar a compra?</summary>
+<div class="faq-answer">Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
 Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Por onde acesso a Cortex?</div>
-            <div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Como funciona a IA?</div>
-            <div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
+</details>
+<details class="faq-item">
+<summary class="faq-question">Por onde acesso a Cortex?</summary>
+<div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Como funciona a IA?</summary>
+<div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
 Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação e tira todas suas dúvidas sobre a mente humana.
 Tudo baseado em ciência. Tudo prático. É como ter um especialista em comportamento humano disponível 24/7 para ajudar você.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">O que vou aprender?</div>
-            <div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência (com inteligência emocional), vendas (com persuasão) + um conteúdo bônus final no formato intensivo surpresa.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Existe algum tipo de suporte?</div>
-            <div class="faq-answer">Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Posso fazer no meu ritmo?</div>
-            <div class="faq-answer">Claro! você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência..</div>
-        </div>
-    </div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">O que vou aprender?</summary>
+<div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência (com inteligência emocional), vendas (com persuasão) + um conteúdo bônus final no formato intensivo surpresa.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Existe algum tipo de suporte?</summary>
+<div class="faq-answer">Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Posso fazer no meu ritmo?</summary>
+<div class="faq-answer">Claro! você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência..</div>
+</details>
+</div>
 </div>
 """, unsafe_allow_html=True)
-
-
-
 
 
 # --- CTA FINAL ---
