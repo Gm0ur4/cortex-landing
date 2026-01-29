@@ -19,7 +19,13 @@ st.markdown("""
     }
     
     html, body, .stApp {
+        background: white !important;
+    }
+    
+    /* GRADIENTE ROXO APENAS PARA A LANDING */
+    .landing-gradient {
         background: linear-gradient(135deg, #020930 0%, #BE90E3 100%) !important;
+        padding: 60px 0;
     }
     
     /* Container Principal */
@@ -529,12 +535,12 @@ st.markdown("""
     }
     
     /* Header */
-    .checkout-header {
+    .header {
         text-align: center;
         margin-bottom: 50px;
     }
     
-    .checkout-header h1 {
+    .header h1 {
         color: #952791;
         font-size: 2.5rem;
         font-weight: 800;
@@ -542,7 +548,7 @@ st.markdown("""
         letter-spacing: -0.02em;
     }
     
-    .checkout-header p {
+    .header p {
         color: #666;
         font-size: 1.1rem;
         margin-top: 10px;
@@ -764,7 +770,8 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- HERO SECTION ---
+# --- HERO SECTION COM GRADIENTE ROXO ---
+st.markdown('<div class="landing-gradient">', unsafe_allow_html=True)
 st.markdown("""
     <div class="container">
         <div class="hero">
@@ -780,6 +787,7 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- PROVA SOCIAL ---
 st.markdown("""
@@ -929,7 +937,8 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# --- FAQ (CORRIGIDO: SEM IDENTAÇÃO) ---
+# --- FAQ COM GRADIENTE ROXO ---
+st.markdown('<div class="landing-gradient">', unsafe_allow_html=True)
 st.markdown("""
 <div class="container">
 <div class="faq-section">
@@ -964,9 +973,11 @@ Tudo baseado em ciência. Tudo prático. É como ter um especialista em comporta
 </div>
 </div>
 """, unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 
-# --- CTA FINAL ---
+# --- CTA FINAL COM GRADIENTE ROXO ---
+st.markdown('<div class="landing-gradient">', unsafe_allow_html=True)
 st.markdown("""
     <div class="container">
         <div class="final-cta">
@@ -985,6 +996,7 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- FOOTER ---
 st.markdown("""
@@ -999,62 +1011,11 @@ st.markdown("""
 # ===== CHECKOUT INTEGRADO COM FUNDO BRANCO =====
 # ============================================================
 
-# Adicionar JavaScript para forçar fundo branco no checkout
-st.markdown("""
-<script>
-// Aguardar o DOM carregar completamente
-document.addEventListener('DOMContentLoaded', function() {
-    // Encontrar o elemento com a classe checkout-container
-    const checkoutElements = document.querySelectorAll('[class*="checkout"]');
-    
-    // Forçar fundo branco em todos os elementos
-    checkoutElements.forEach(el => {
-        el.style.backgroundColor = 'white !important';
-        el.style.backgroundImage = 'none !important';
-    });
-    
-    // Também forçar no stApp quando estiver no checkout
-    const stApp = document.querySelector('.stApp');
-    if (stApp) {
-        // Adicionar um observer para monitorar mudanças
-        const observer = new MutationObserver(function() {
-            const checkoutContainer = document.querySelector('[class*="checkout-container"]');
-            if (checkoutContainer) {
-                checkoutContainer.parentElement.style.backgroundColor = 'white !important';
-                checkoutContainer.parentElement.style.backgroundImage = 'none !important';
-            }
-        });
-        
-        observer.observe(stApp, { childList: true, subtree: true });
-    }
-});
-
-// Executar também ao scroll para garantir
-window.addEventListener('scroll', function() {
-    const checkoutContainer = document.querySelector('[class*="checkout-container"]');
-    if (checkoutContainer) {
-        checkoutContainer.style.backgroundColor = 'white !important';
-        checkoutContainer.style.backgroundImage = 'none !important';
-        
-        // Forçar no pai também
-        let parent = checkoutContainer.parentElement;
-        while (parent && parent !== document.body) {
-            if (parent.style) {
-                parent.style.backgroundColor = 'white !important';
-                parent.style.backgroundImage = 'none !important';
-            }
-            parent = parent.parentElement;
-        }
-    }
-});
-</script>
-""", unsafe_allow_html=True)
-
 st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
 
 # Header
 st.markdown("""
-    <div class="checkout-header">
+    <div class="header">
         <h1>🧠 Inteligência Cortex</h1>
         <p>Convivemos, trabalhamos e nos relacionamos com outras pessoas o tempo todo, entender o comportamento humano se torna uma habilidade essencial de sobrevivência e inteligência emocional. </p>
     </div>
