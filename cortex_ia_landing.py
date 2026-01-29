@@ -27,7 +27,7 @@ st.markdown("""
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
-
+    }
     
     /* HERO SECTION */
     .hero {
@@ -289,7 +289,7 @@ st.markdown("""
     
     .stat-card {
         padding: 30px;
-        background: linear-gradient(135deg, ##BE90E3 0%, #020930 100%);
+        background: linear-gradient(135deg, #BE90E3 0%, #020930 100%);
         border-radius: 12px;
         border: 2px solid #37D087;
     }
@@ -385,7 +385,7 @@ st.markdown("""
         margin: 0;
     }
     
-    /* FAQ */
+    /* FAQ - ESTILO ATUALIZADO PARA ACCORDION */
     .faq-section {
         padding: 60px 20px;
         margin: 40px 0;
@@ -393,31 +393,69 @@ st.markdown("""
     
     .faq-section h2 {
         color: #FFFFFF;
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 800;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 800;
     }
     
-    .faq-item {
+    /* Estilo do container expansível (details) */
+    details.faq-item {
         background: white;
         border-radius: 12px;
         padding: 25px;
         margin-bottom: 15px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
     }
     
-    .faq-question {
+    /* Estilo do sumário (a pergunta visível) */
+    summary.faq-question {
         color: #952791;
         font-weight: 700;
         font-size: 1rem;
-        margin-bottom: 10px;
+        cursor: pointer;
+        list-style: none; /* Remove marcador padrão */
+        position: relative;
+        padding-right: 30px; /* Espaço para o ícone */
     }
     
+    /* Remove marcador padrão no Safari/Chrome */
+    summary.faq-question::-webkit-details-marker {
+        display: none;
+    }
+    
+    /* Ícone de + quando fechado */
+    summary.faq-question::after {
+        content: '+';
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-weight: 800;
+        color: #37D087;
+        font-size: 1.2rem;
+    }
+    
+    /* Ícone de - quando aberto */
+    details[open] summary.faq-question::after {
+        content: '-';
+        color: #952791;
+    }
+    
+    /* A resposta (oculta por padrão) */
     .faq-answer {
         color: #666;
         font-size: 0.95rem;
         line-height: 1.6;
+        margin-top: 15px; /* Espaço entre pergunta e resposta */
+        border-top: 1px solid #eee; /* Linha suave separadora */
+        padding-top: 15px;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
     }
     
     /* CTA FINAL */
@@ -581,8 +619,8 @@ st.markdown("""
             </div><h3 style="color: #952791; font-size: 1.8rem; margin-top: 50px; margin-bottom: 30px; font-weight: 800;">Mais do que estatísticas, somos feitos de histórias reais:</h3>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                        <img class="testimonial-photo"
-                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/ricardo_depoimento.png">
+                        <img class="testimonial-photo" 
+                        src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/ricardo_depoimento.png">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
                         "Eu sempre achei que linguagem corporal não importava muito, mas a prática me provou o contrário. Usei a técnica de leitura de bloqueios numa reunião e percebi que o cliente ia recusar o preço antes dele abrir a boca. Ajustei o tom na hora e consegui fechar o contrato. É bizarro o quanto a gente é cego para esses sinais."
@@ -590,8 +628,8 @@ st.markdown("""
                     <div class="testimonial-author">Ricardo Murata</div>
                 </div>
                 <div class="testimonial-card">
-                 <img class="testimonial-photo"
-                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/luiza_depoimento">
+                 <img class="testimonial-photo" 
+                        src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/luiza_depoimento">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
                         "O que eu mais gostei é que não tem enrolação. Eu leio o conteúdo no ônibus e já chego no escritório testando. É muito direto ao ponto: a plataforma entrega o módulo e em minutos você já entende por que aquela pessoa age de tal forma. Valeu cada centavo pela praticidade."
@@ -599,8 +637,8 @@ st.markdown("""
                     <div class="testimonial-author">Luiza Sabino</div>
                 </div>
                 <div class="testimonial-card">
-                        <img class="testimonial-photo"
-                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/fernanda_depoimento">
+                        <img class="testimonial-photo" 
+                        src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/fernanda_depoimento">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
                         "Parece que agora eu vejo o mundo em câmera lenta. Você começa a notar as microexpressões e entende as intenções reais das pessoas, não só o que elas dizem. Mudou totalmente a forma como eu me posiciono em conversas difíceis. Minha única reclamação é não ter descoberto isso antes kkkk"
@@ -708,45 +746,48 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# --- FAQ ---
+# --- FAQ (MODIFICADO COM DETAILS/SUMMARY) ---
 st.markdown("""
 <div class="container">
     <div class="faq-section">
         <h2>❓ Perguntas frequentes</h2>
-        <div class="faq-item">
-            <div class="faq-question">É seguro realizar a compra?</div>
+        
+        <details class="faq-item">
+            <summary class="faq-question">É seguro realizar a compra?</summary>
             <div class="faq-answer">Sim. Toda a compra é processada pela Eduzz, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com criptografia, certificados de segurança e antifraude.
-Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Por onde acesso a Cortex?</div>
+            Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
+        </details>
+        
+        <details class="faq-item">
+            <summary class="faq-question">Por onde acesso a Cortex?</summary>
             <div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: celular, computador, tablet ou qualquer dispositivo com internet, sem instalações complicadas.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Como funciona a IA?</div>
+        </details>
+        
+        <details class="faq-item">
+            <summary class="faq-question">Como funciona a IA?</summary>
             <div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA:
-Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação e tira todas suas dúvidas sobre a mente humana.
-Tudo baseado em ciência. Tudo prático. É como ter um especialista em comportamento humano disponível 24/7 para ajudar você.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">O que vou aprender?</div>
+            Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação e tira todas suas dúvidas sobre a mente humana.
+            Tudo baseado em ciência. Tudo prático. É como ter um especialista em comportamento humano disponível 24/7 para ajudar você.</div>
+        </details>
+        
+        <details class="faq-item">
+            <summary class="faq-question">O que vou aprender?</summary>
             <div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência (com inteligência emocional), vendas (com persuasão) + um conteúdo bônus final no formato intensivo surpresa.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Existe algum tipo de suporte?</div>
+        </details>
+        
+        <details class="faq-item">
+            <summary class="faq-question">Existe algum tipo de suporte?</summary>
             <div class="faq-answer">Com certeza. Desde o primeiro acesso, você recebe instruções completas de orientação, que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, através da Eduzz, oferecemos suporte humano rápido, garantindo que você nunca fique travado ou perdido durante o processo.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Posso fazer no meu ritmo?</div>
+        </details>
+        
+        <details class="faq-item">
+            <summary class="faq-question">Posso fazer no meu ritmo?</summary>
             <div class="faq-answer">Claro! você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua disponibilidade e ao seu momento de vida. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência..</div>
-        </div>
+        </details>
+        
     </div>
 </div>
 """, unsafe_allow_html=True)
-
-
-
-
 
 # --- CTA FINAL ---
 st.markdown("""
