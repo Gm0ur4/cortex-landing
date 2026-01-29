@@ -19,13 +19,7 @@ st.markdown("""
     }
     
     html, body, .stApp {
-        background: white !important;
-    }
-    
-    /* GRADIENTE ROXO APENAS PARA A LANDING */
-    .landing-gradient {
         background: linear-gradient(135deg, #020930 0%, #BE90E3 100%) !important;
-        padding: 60px 0;
     }
     
     /* Container Principal */
@@ -33,7 +27,7 @@ st.markdown("""
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
-
+    }
     
     /* HERO SECTION */
     .hero {
@@ -295,7 +289,7 @@ st.markdown("""
     
     .stat-card {
         padding: 30px;
-        background: linear-gradient(135deg, ##BE90E3 0%, #020930 100%);
+        background: linear-gradient(135deg, #BE90E3 0%, #020930 100%);
         border-radius: 12px;
         border: 2px solid #37D087;
     }
@@ -399,10 +393,10 @@ st.markdown("""
     
     .faq-section h2 {
         color: #FFFFFF;
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 800;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 800;
     }
     
     .faq-item {
@@ -532,6 +526,7 @@ st.markdown("""
         max-width: 1200px;
         margin: 0 auto;
         padding: 40px 20px;
+        background: white !important;
     }
     
     /* Header */
@@ -770,8 +765,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- HERO SECTION COM GRADIENTE ROXO ---
-st.markdown('<div class="landing-gradient">', unsafe_allow_html=True)
+# --- HERO SECTION ---
 st.markdown("""
     <div class="container">
         <div class="hero">
@@ -787,7 +781,6 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
 
 # --- PROVA SOCIAL ---
 st.markdown("""
@@ -937,8 +930,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# --- FAQ COM GRADIENTE ROXO ---
-st.markdown('<div class="landing-gradient">', unsafe_allow_html=True)
+# --- FAQ (CORRIGIDO: SEM IDENTAÇÃO) ---
 st.markdown("""
 <div class="container">
 <div class="faq-section">
@@ -973,11 +965,9 @@ Tudo baseado em ciência. Tudo prático. É como ter um especialista em comporta
 </div>
 </div>
 """, unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
 
 
-# --- CTA FINAL COM GRADIENTE ROXO ---
-st.markdown('<div class="landing-gradient">', unsafe_allow_html=True)
+# --- CTA FINAL ---
 st.markdown("""
     <div class="container">
         <div class="final-cta">
@@ -996,7 +986,6 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
 
 # --- FOOTER ---
 st.markdown("""
