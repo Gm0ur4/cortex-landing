@@ -862,7 +862,7 @@ st.markdown("""
             <h1>🧬 A Cortex é a primeira plataforma desenvolvida exclusivamente ao ensinamento do comportamento humano</h1>
             <p class="hero-subtitle">
                 <br>
-    <strong style="font-size: 1.3rem;">Junte-se a mais de 15 mil pessoas que dominam as táticas das 22 maiores autoridades globais em psicologia e linguagem corporal.</strong>
+    <strong style="font-size: 2.0rem;">Junte-se a mais de 15 mil pessoas que dominam as táticas das 22 maiores autoridades globais em psicologia e linguagem corporal.</strong>
             </p>
             <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
             <button class="hero-cta">
