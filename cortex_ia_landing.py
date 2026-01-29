@@ -296,7 +296,7 @@ st.markdown("""
     
     .stat-number {
         color: #37D087 !important;
-        font-size: 3.5rem !important;
+        font-size: 2.5rem !important;
         font-weight: 800 !important;
         margin: 0 !important;
         line-height: 1 !important;
@@ -1054,40 +1054,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# --- CTA FINAL ---
-st.markdown("""
-    <div class="container">
-        <div class="final-cta">
-            <h2>🚀 Comece sua transformação hoje</h2>
-            <p>
-                Você pode continuar como está. Ou pode dar 21 dias para transformar sua vida.<br>
-                <strong>A escolha é sua.</strong>
-            </p>
-            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
-            <button class="hero-cta">
-                ⚡ Começar Agora
-            </button>
-            <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.9;">
-                Acesso vitalício • Sem contratos • Comece hoje
-            </p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-# --- FOOTER ---
-st.markdown("""
-    <div class="container">
-        <div class="footer">
-            <p>© 2026 Inteligência Cortex. Todos os direitos reservados.</p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
 
 # ============================================================
 # ===== CHECKOUT INTEGRADO COM FUNDO BRANCO =====
 # ============================================================
-
-st.markdown('<div class="checkout-container">', unsafe_allow_html=True)
 
 # Header
 st.markdown("""
@@ -1151,6 +1121,7 @@ Aprenda e receba análises comportamentais personalizadas com nossa IA especiali
 <li>Chat IA com análise comportamental</li>
 <li>Plano de ação customizado</li>
 <li>Análise de padrões comportamentais</li>
+<li>Suporte humano todos os dias</li>
 <li>Diagnóstico personalizado</li>
 </ul>
 
