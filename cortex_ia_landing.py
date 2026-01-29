@@ -295,11 +295,12 @@ st.markdown("""
     }
     
     .stat-number {
-        color: #37D087;
-        font-size: 3.5rem;
-        font-weight: 800;
-        margin: 0;
-        line-height: 1;
+        color: #37D087 !important;
+        font-size: 3.5rem !important;
+        font-weight: 800 !important;
+        margin: 0 !important;
+        line-height: 1 !important;
+        display: block !important;
     }
     
     .stat-label {
