@@ -742,6 +742,13 @@ st.markdown("""
         font-weight: 700;
     }
     
+    /* CHECKOUT WRAPPER - FUNDO BRANCO */
+    .checkout-wrapper {
+        background: white !important;
+        position: relative;
+        z-index: 10;
+    }
+    
     /* Responsivo */
     @media (max-width: 768px) {
         .hero h1 {
@@ -990,7 +997,7 @@ st.markdown("""
 # ===== INÍCIO DA SEÇÃO DE CHECKOUT INTEGRADA =====
 # ============================================================
 
-st.markdown('<div style="background: white; padding: 40px 0; margin-top: 40px;"><div class="checkout-container">', unsafe_allow_html=True)
+st.markdown('<div class="checkout-wrapper"><div class="checkout-container">', unsafe_allow_html=True)
 
 # Header
 st.markdown("""
@@ -1098,7 +1105,7 @@ st.markdown("""
     <div class="footer">
         <p>© 2026 Cortex IA. Todos os direitos reservados.</p>
     </div>
-</div></div>""", unsafe_allow_html=True)
+</div></div></div>""", unsafe_allow_html=True)
 
 # --- FOOTER GERAL ---
 st.markdown("""
