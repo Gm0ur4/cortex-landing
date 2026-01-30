@@ -1060,13 +1060,6 @@ st.markdown("""
 # ===== CHECKOUT INTEGRADO COM FUNDO BRANCO =====
 # ============================================================
 
-# Urgência
-st.markdown("""
-    <div class="urgency-banner">
-        ⏰ OFERTA ESPECIAL DE CAMPANHA!
-    </div>
-    """, unsafe_allow_html=True)
-
 # ===== CHECKOUT =====
 
 # Âncora para rolar até aqui
