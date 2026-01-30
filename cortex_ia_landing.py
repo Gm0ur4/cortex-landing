@@ -864,7 +864,7 @@ st.markdown("""
                 <br>
     <strong style="font-size: 2.0rem;">Junte-se a mais de 15 mil pessoas que dominam as táticas das 22 maiores autoridades globais em psicologia e linguagem corporal.</strong>
             </p>
-            <a href="https://cortexcheckout.streamlit.app" target="_blank" class="hero-cta-link">
+            <a href="#produtos" class="hero-cta-link">
             <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
@@ -1066,6 +1066,19 @@ st.markdown("""
         ⏰ OFERTA ESPECIAL DE CAMPANHA!
     </div>
     """, unsafe_allow_html=True)
+
+# ===== CHECKOUT =====
+
+# Âncora para rolar até aqui
+st.markdown('<div id="produtos"></div>', unsafe_allow_html=True)
+
+# Urgência
+st.markdown("""
+    <div class="urgency-banner">
+        ⏰ OFERTA ESPECIAL DE CAMPANHA!
+    </div>
+    """, unsafe_allow_html=True)
+
 
 # Produtos
 st.markdown('<div class="products-grid">', unsafe_allow_html=True)
