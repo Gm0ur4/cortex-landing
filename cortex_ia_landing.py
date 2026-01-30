@@ -482,6 +482,10 @@ st.markdown("""
     .faq-item:nth-of-type(6) .faq-question::before {
         content: '6';
     }
+
+    .faq-item:nth-of-type(7) .faq-question::before {
+        content: '7';
+    }
     
     .faq-answer {
         color: #555;
@@ -1044,7 +1048,7 @@ st.markdown("""
 <div class="faq-answer">O Ultra Cortex é um manual prático em PDF de <strong>comportamento humano</strong> para ler pessoas e saber exatamente como agir no seu dia a dia em diversas situações: em <strong>negociações</strong>, <strong>interações humanas</strong>, <strong>conversas importantes</strong> e <strong>muito mais</strong>, usando técnicas rápidas de influência, comunicação e leitura de emoções.</div>
 </details>
 <details class="faq-item">
-<summary class="faq-question">Se eu não gostar, posso pedir reembolso?</summary>
+<summary class="faq-question">E se o produto não atender minhas expectativas? Posso pedir reembolso?</summary>
 <div class="faq-answer">Com certeza! Teste por 7 dias. Se não gostar, devolvemos 100% do seu dinheiro.</div>
 </details>
 <details class="faq-item">
