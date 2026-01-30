@@ -1090,7 +1090,7 @@ with col1:
 Aprenda os princípios fundamentais do comportamento humano através de 21 dias de atividades práticas e transformadoras.
 </p>
 
-<div class="price">R$ 39,90</div>
+<div class="price">R$44,90</div>
 <p class="price-small">Acesso vitalício</p>
 
 <ul class="features-list">
@@ -1110,22 +1110,22 @@ Quero acessar agora
 
 with col2:
     st.markdown("""<div class="product-card featured">
-<h3 class="product-title">Plataforma de aprendizado Cortex + Chat IA</h3>
+<h3 class="product-title">Plataforma de aprendizado Cortex + Ultra Cortex</h3>
 
 <p class="product-description">
-Aprenda e receba análises comportamentais personalizadas com nossa IA especializada. A melhor combinação para transformação.
+Além de todo aprendizado, o Ultra Cortex é o seu manual tático para o dia a dia. São mais de 50 análises de comportamento e scripts de reação prontos para você consultar no celular, exatamente na hora em que precisar identificar uma mentira, desarmar um conflito ou fechar um negócio.
 </p>
 
 <div class="price">R$ 79,90</div>
 <p class="price-small">Acesso vitalício a ambos</p>
 
 <ul class="features-list">
-<li>Acesso a todo aprendizado da plataforma</li>
-<li>Chat IA com análise comportamental</li>
-<li>Plano de ação customizado</li>
-<li>Análise de padrões comportamentais</li>
-<li>Diagnóstico personalizado</li>
-<li>Diagnóstico personalizado</li>
+<li>Plataforma de aprendizado e tudo que ela oferece</li>
+<li>Leitura rápida de microexpressões e emoções</li>
+<li>Táticas aplicáveis imediatamente na vida real</li>
+<li>Técnicas práticas de influência e persuasão</li>
+<li>Detecção de mentiras e sinais de desconforto</li>
+<li>Controle de ambiente e posições de poder</li>
 </ul>
 
 <button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-completo', '_blank')">
