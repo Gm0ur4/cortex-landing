@@ -1068,7 +1068,7 @@ st.markdown('<div id="produtos"></div>', unsafe_allow_html=True)
 # Urgência
 st.markdown("""
     <div class="urgency-banner">
-        ⏰ OFERTA ESPECIAL DE CAMPANHA!
+        <span class="urgency-text">⏰ OFERTA ESPECIAL DE CAMPANHA!</span>
     </div>
     """, unsafe_allow_html=True)
 
