@@ -1138,10 +1138,10 @@ st.markdown("</div>", unsafe_allow_html=True)
 
 # Order Bump
 st.markdown("""<div class="order-bump">
-<h3>🤖 Adicione somente a IA por apenas R$ 59,90</h3>
+<h3>🤖 Adicione somente a Ultra Cortex por R$ 59,90</h3>
 
 <p>
-Caso queira, adicione somente nossa IA com análise comportamental e receba diagnósticos personalizados, planos de ação e acompanhamento contínuo.
+Caso queira, adicione somente o Ultra Cortex com planos de ação e diversas técnicas da inteligência humana.
 </p>
 
 <div class="bump-price">
@@ -1151,11 +1151,11 @@ R$ 59,90
 </div>
 
 <p style="color: #666; margin: 15px 0;">
-✓ Análise de padrões comportamentais<br>
-✓ Diagnóstico personalizado<br>
-✓ Soluções para problemas específicos<br>
-✓ Plano de ação customizado<br>
-✓ Acesso vitalício
+<li>Leitura rápida de microexpressões e emoções</li>
+<li>Táticas aplicáveis imediatamente na vida real</li>
+<li>Técnicas práticas de influência e persuasão</li>
+<li>Detecção de mentiras e sinais de desconforto</li>
+<li>Controle de ambiente e posições de poder</li>
 </p>
 
 <button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-chat', '_blank')">
