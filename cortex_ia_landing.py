@@ -1110,10 +1110,10 @@ Quero acessar agora
 
 with col2:
     st.markdown("""<div class="product-card featured">
-<h3 class="product-title">Plataforma de aprendizado Cortex + Ultra Cortex</h3>
+<h3 class="product-title">Plataforma de aprendizado Cortex + Ultra Cortex (PDF)</h3>
 
 <p class="product-description">
-Além da plataforma de aprendizado, o Ultra Cortex é o seu manual tático em PDF para o dia a dia. São mais de 50 análises de comportamento e scripts de reação prontos para você consultar no celular, exatamente na hora em que precisar identificar uma mentira, desarmar um conflito ou fechar um negócio.
+Além da plataforma de aprendizado, o Ultra Cortex é o seu manual tático para o dia a dia. São mais de 50 análises de comportamento e scripts de reação prontos para você consultar no celular, exatamente na hora em que precisar identificar uma mentira, desarmar um conflito ou fechar um negócio.
 </p>
 
 <div class="price">R$ 79,90</div>
