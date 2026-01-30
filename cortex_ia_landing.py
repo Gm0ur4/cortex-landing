@@ -28,10 +28,6 @@ st.markdown("""
         margin: 0 auto;
         padding: 0 20px;
     }
-
-    html {
-    scroll-behavior: smooth;
-}
     
     /* HERO SECTION */
     .hero {
