@@ -1013,7 +1013,7 @@ st.markdown("""
 st.markdown("""
 <div class="container">
     <div style="text-align:center; margin: 40px 0;">
-        <a href="https://cortexcheckout.streamlit.app" target="_blank" style="text-decoration:none;">
+        <a <a href="#produtos" class="hero-cta-link" style="text-decoration:none;">
             <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
