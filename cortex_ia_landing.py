@@ -1151,8 +1151,8 @@ R$ 59,90
 </div>
 
 <p style="color: #666; margin: 15px 0;">
-✓ Leitura rápida de microexpressões e emoções<br>
-✓ Táticas aplicáveis imediatamente na vida real<br>
+✓ Consulta rápida para decisões sob pressão<br>
+✓ Criação instantânea de conexão e autoridade<br>
 ✓ Scripts prontos para negociações e conversas difíceis<br>
 ✓ Consulta rápida para decisões sob pressão<br>
 ✓ Manual direto ao ponto
