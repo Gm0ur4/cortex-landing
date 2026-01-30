@@ -1040,8 +1040,8 @@ st.markdown("""
 <div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: <strong>celular, computador, tablet ou qualquer dispositivo com internet</strong>, sem instalações complicadas. É 100% online e funciona perfeitamente em qualquer lugar.</div>
 </details>
 <details class="faq-item">
-<summary class="faq-question">Como funciona a IA?</summary>
-<div class="faq-answer">O Chat IA é treinado com os principais conceitos de comportamento humano de todas as nossas fontes. Você descreve uma situação (um conflito, uma dificuldade pessoal) e a IA: <strong>Analisa seus padrões comportamentais, faz um diagnóstico personalizado, oferece soluções práticas, cria um plano de ação</strong> e tira todas suas dúvidas sobre a mente humana. Tudo baseado em ciência. Tudo prático. É como ter um <strong>especialista em comportamento humano disponível 24/7</strong> para ajudar você.</div>
+<summary class="faq-question">Como funciona o Ultra Cortex?</summary>
+<div class="faq-answer">O Ultra Cortex é um manual práticoem PDF de <strong>comportamento humano</strong> para ler pessoas e saber exatamente como agir no seu dia a dia em diversas situações: em <strong>negociações</strong>, <strong>interações humanas</strong>, <strong>conversas importantes</strong> e muito mais, usando técnicas rápidas de influência, comunicação e leitura de emoções.</div>
 </details>
 <details class="faq-item">
 <summary class="faq-question">O que vou aprender?</summary>
