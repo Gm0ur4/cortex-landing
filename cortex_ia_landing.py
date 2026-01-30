@@ -1041,7 +1041,7 @@ st.markdown("""
 </details>
 <details class="faq-item">
 <summary class="faq-question">Como funciona o Ultra Cortex?</summary>
-<div class="faq-answer">O Ultra Cortex é um manual práticoem PDF de <strong>comportamento humano</strong> para ler pessoas e saber exatamente como agir no seu dia a dia em diversas situações: em <strong>negociações</strong>, <strong>interações humanas</strong>, <strong>conversas importantes</strong> e muito mais, usando técnicas rápidas de influência, comunicação e leitura de emoções.</div>
+<div class="faq-answer">O Ultra Cortex é um manual prático em PDF de <strong>comportamento humano</strong> para ler pessoas e saber exatamente como agir no seu dia a dia em diversas situações: em <strong>negociações</strong>, <strong>interações humanas</strong>, <strong>conversas importantes</strong> e <strong>muito mais</strong>, usando técnicas rápidas de influência, comunicação e leitura de emoções.</div>
 </details>
 <details class="faq-item">
 <summary class="faq-question">O que vou aprender?</summary>
