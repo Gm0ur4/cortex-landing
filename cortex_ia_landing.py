@@ -1044,6 +1044,10 @@ st.markdown("""
 <div class="faq-answer">O Ultra Cortex é um manual prático em PDF de <strong>comportamento humano</strong> para ler pessoas e saber exatamente como agir no seu dia a dia em diversas situações: em <strong>negociações</strong>, <strong>interações humanas</strong>, <strong>conversas importantes</strong> e <strong>muito mais</strong>, usando técnicas rápidas de influência, comunicação e leitura de emoções.</div>
 </details>
 <details class="faq-item">
+<summary class="faq-question">Se eu não gostar, posso pedir reembolso?</summary>
+<div class="faq-answer">Com certeza! Teste por 7 dias. Se não gostar, devolvemos 100% do seu dinheiro.</div>
+</details>
+<details class="faq-item">
 <summary class="faq-question">O que vou aprender?</summary>
 <div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: <strong>Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência com inteligência emocional, vendas com persuasão</strong> + um conteúdo bônus final no formato intensivo surpresa. Tudo prático e aplicável imediatamente.</div>
 </details>
