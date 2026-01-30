@@ -135,6 +135,10 @@ st.markdown("""
         border-radius: 16px;
         border-left: 5px solid #37D087;
     }
+
+    .urgency-text {
+    font-size: 2.0rem;
+}
     
     .solution-section h2 {
         color: #952791;
