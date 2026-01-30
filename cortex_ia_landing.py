@@ -1159,13 +1159,13 @@ R$ 59,90
 </p>
 
 <button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-chat', '_blank')">
-Adicionar Chat IA Agora
+Adicionar apenas Ultra Cortex
 </button>
 </div>""", unsafe_allow_html=True)
 
 # Footer
 st.markdown("""
     <div class="footer">
-        <p>© 2026 Cortex IA. Todos os direitos reservados.</p>
+        <p>© 2026 Inteligência Cortex. Todos os direitos reservados.</p>
     </div>
 </div>""", unsafe_allow_html=True)
