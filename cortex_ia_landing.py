@@ -1151,11 +1151,11 @@ R$ 59,90
 </div>
 
 <p style="color: #666; margin: 15px 0;">
-<li>Leitura rápida de microexpressões e emoções</li>
-<li>Táticas aplicáveis imediatamente na vida real</li>
-<li>Técnicas práticas de influência e persuasão</li>
-<li>Detecção de mentiras e sinais de desconforto</li>
-<li>Controle de ambiente e posições de poder</li>
+<br>Leitura rápida de microexpressões e emoções</br>
+<br>Táticas aplicáveis imediatamente na vida real</br>
+<br>Técnicas práticas de influência e persuasão</br>
+<br>Detecção de mentiras e sinais de desconforto</br>
+<br>Controle de ambiente e posições de poder</br>
 </p>
 
 <button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-chat', '_blank')">
