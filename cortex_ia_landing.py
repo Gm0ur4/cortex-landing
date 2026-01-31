@@ -1148,7 +1148,7 @@ st.markdown("</div>", unsafe_allow_html=True)
 
 # Order Bump
 st.markdown("""<div class="order-bump">
-<h3>🤖 Adicione somente a Ultra Cortex por R$ 59,90</h3>
+<h3>🤖 Adicione somente o Ultra Cortex por R$ 59,90</h3>
 
 <p>
 Caso queira, adicione somente o Ultra Cortex com planos de ação e diversas técnicas da inteligência humana.
@@ -1169,6 +1169,7 @@ R$ 59,90
 </p>
 
 <a href="https://chk.eduzz.com/40Q358ZJ0B" target="_blank" class="hero-cta-link">
+<button class="btn-checkout">
 Adicionar apenas Ultra Cortex
 </button>
 </div>""", unsafe_allow_html=True)
