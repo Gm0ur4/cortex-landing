@@ -1110,7 +1110,7 @@ Aprenda os princípios fundamentais do comportamento humano através de 21 dias 
 <li>Suporte humano todos os dias</li>
 </ul>
 
-<button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia', '_blank')">
+<a href="https://chk.eduzz.com/Z0B5Z4N3WA" target="_blank" class="hero-cta-link">
 Quero acessar agora
 </button>
 </div>""", unsafe_allow_html=True)
