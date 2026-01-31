@@ -1137,7 +1137,8 @@ Além da plataforma de aprendizado, o Ultra Cortex é o seu manual tático para 
 <li>Controle de ambiente e posições de poder</li>
 </ul>
 
-<button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-completo', '_blank')">
+<a href="https://chk.eduzz.com/Q9N564ZZ01" target="_blank" class="hero-cta-link">
+<button class="btn-checkout">
 Garantir a experiência completa
 </button>
 </div>""", unsafe_allow_html=True)
