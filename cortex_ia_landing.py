@@ -1168,7 +1168,7 @@ R$ 59,90
 ✓ Manual direto ao ponto
 </p>
 
-<button class="btn-checkout" onclick="window.open('https://seulink.eduzz.com/cortex-ia-chat', '_blank')">
+<a href="https://chk.eduzz.com/40Q358ZJ0B" target="_blank" class="hero-cta-link">
 Adicionar apenas Ultra Cortex
 </button>
 </div>""", unsafe_allow_html=True)
