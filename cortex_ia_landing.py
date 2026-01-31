@@ -1111,6 +1111,7 @@ Aprenda os princípios fundamentais do comportamento humano através de 21 dias 
 </ul>
 
 <a href="https://chk.eduzz.com/Z0B5Z4N3WA" target="_blank" class="hero-cta-link">
+<button class="hero-cta">
 Quero acessar agora
 </button>
 </div>""", unsafe_allow_html=True)
