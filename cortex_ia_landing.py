@@ -1090,16 +1090,16 @@ st.markdown('<div class="products-grid">', unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 
-with col1:
-    st.markdown("""<div class="product-card">
-<h3 class="product-title">Plataforma de aprendizado Cortex</h3>
+with col2:
+    st.markdown("""<div class="product-card featured">
+<h3 class="product-title">Plataforma de aprendizado Cortex + Ultra Cortex (bônus gratuito)</h3>
 
 <p class="product-description">
-Aprenda os princípios fundamentais do comportamento humano através de 21 dias de atividades práticas e transformadoras.
+Aprenda os princípios fundamentais do comportamento humano através de 21 dias de atividades práticas e transformadoras. Além da plataforma de aprendizado, o Ultra Cortex é o seu manual tático para o dia a dia que te enviamos de forma gratuita. São mais de 50 análises de comportamento e scripts de reação prontos para você consultar no celular, exatamente na hora em que precisar identificar uma mentira, desarmar um conflito ou fechar um negócio.
 </p>
 
-<div class="price">R$44,90</div>
-<p class="price-small">Acesso vitalício</p>
+<div class="price">R$ 49,90</div>
+<p class="price-small">Acesso vitalício a ambos</p>
 
 <ul class="features-list">
 <li>21 dias de aprendizado puro</li>
@@ -1108,33 +1108,10 @@ Aprenda os princípios fundamentais do comportamento humano através de 21 dias 
 <li>Acesso vitalício à plataforma</li>
 <li>Atualizações futuras incluídas</li>
 <li>Suporte humano todos os dias</li>
-</ul>
-
-<a href="https://chk.eduzz.com/Z0B5Z4N3WA" target="_blank" class="hero-cta-link">
-<button class="btn-checkout">
-Quero acessar agora
-</button>
-</div>""", unsafe_allow_html=True)
-
-
-with col2:
-    st.markdown("""<div class="product-card featured">
-<h3 class="product-title">Plataforma de aprendizado Cortex + Ultra Cortex (PDF)</h3>
-
-<p class="product-description">
-Além da plataforma de aprendizado, o Ultra Cortex é o seu manual tático para o dia a dia. São mais de 50 análises de comportamento e scripts de reação prontos para você consultar no celular, exatamente na hora em que precisar identificar uma mentira, desarmar um conflito ou fechar um negócio.
-</p>
-
-<div class="price">R$ 79,90</div>
-<p class="price-small">Acesso vitalício a ambos</p>
-
-<ul class="features-list">
-<li>Plataforma de aprendizado e tudo que ela oferece</li>
-<li>Leitura rápida de microexpressões e emoções</li>
-<li>Táticas aplicáveis imediatamente na vida real</li>
-<li>Técnicas práticas de influência e persuasão</li>
-<li>Detecção de mentiras e sinais de desconforto</li>
-<li>Controle de ambiente e posições de poder</li>
+<li>Leitura rápida de microexpressões e emoções (Ultra Cortex)</li>
+<li>Táticas aplicáveis imediatamente na vida real(Ultra Cortex)</li>
+<li>Técnicas práticas de influência e persuasão(Ultra Cortex)</li>
+<li>Detecção de mentiras e sinais de desconforto(Ultra Cortex)</li>
 </ul>
 
 <a href="https://chk.eduzz.com/Q9N564ZZ01" target="_blank" class="hero-cta-link">
@@ -1144,35 +1121,6 @@ Garantir a experiência completa
 </div>""", unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
-
-
-# Order Bump
-st.markdown("""<div class="order-bump">
-<h3>🤖 Adicione somente o Ultra Cortex por R$ 59,90</h3>
-
-<p>
-Caso queira, adicione somente o Ultra Cortex com planos de ação e diversas técnicas da inteligência humana.
-</p>
-
-<div class="bump-price">
-R$ 59,90
-<span class="bump-original">R$ 79,90</span>
-<span class="bump-savings">-25% OFF</span>
-</div>
-
-<p style="color: #666; margin: 15px 0;">
-✓ Consulta rápida para decisões sob pressão<br>
-✓ Criação instantânea de conexão e autoridade<br>
-✓ Scripts prontos para negociações e conversas difíceis<br>
-✓ Consulta rápida para decisões sob pressão<br>
-✓ Manual direto ao ponto
-</p>
-
-<a href="https://chk.eduzz.com/40Q358ZJ0B" target="_blank" class="hero-cta-link">
-<button class="btn-checkout">
-Adicionar apenas Ultra Cortex
-</button>
-</div>""", unsafe_allow_html=True)
 
 # Footer
 st.markdown("""
