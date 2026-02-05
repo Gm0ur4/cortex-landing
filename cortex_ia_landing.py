@@ -960,7 +960,7 @@ st.markdown("""
                 </div>
                 <div class="testimonial-card">
                         <img class="testimonial-photo"
-                         src="https://raw.githubusercontent.com/Gm0ur4/cortex-landing/main/fernandadepoimento.png">
+                         src="fernandadepoimento.png">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">
                         "Parece que agora eu vejo o mundo em câmera lenta. Você começa a notar as microexpressões e entende as intenções reais das pessoas, não só o que elas dizem. Mudou totalmente a forma como eu me posiciono em conversas difíceis. Minha única reclamação é não ter descoberto isso antes kkkk"
