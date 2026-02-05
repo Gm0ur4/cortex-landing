@@ -660,12 +660,12 @@ st.markdown("""
     }
     
     /* Grid de Produtos */
-    .products-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        margin-bottom: 50px;
-    }
+ .products-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
     
     @media (max-width: 768px) {
         .products-grid {
@@ -1087,12 +1087,6 @@ st.markdown("""
 
 # Produtos
 st.markdown('<div class="products-grid">', unsafe_allow_html=True)
-
-col1, col2 = st.columns(2)
-
-with col2:
-    st.markdown("""<div class="product-card featured">
-<h3 class="product-title">Plataforma de aprendizado Cortex + Ultra Cortex (bônus gratuito)</h3>
 
 <p class="product-description">
 Aprenda os princípios fundamentais do comportamento humano através de 21 dias de atividades práticas e transformadoras. Além da plataforma de aprendizado, o Ultra Cortex é o seu manual tático para o dia a dia que te enviamos de forma gratuita. São mais de 50 análises de comportamento e scripts de reação prontos para você consultar no celular, exatamente na hora em que precisar identificar uma mentira, desarmar um conflito ou fechar um negócio.
