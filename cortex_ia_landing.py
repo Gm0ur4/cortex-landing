@@ -1088,7 +1088,7 @@ st.markdown("""
 # Produtos
 st.markdown('<div class="products-grid">', unsafe_allow_html=True)
 
-    st.markdown("""<div class="product-card featured">
+st.markdown("""<div class="product-card featured">
 <h3 class="product-title">Plataforma de aprendizado Cortex + Ultra Cortex (bônus gratuito)</h3>
 
 <p class="product-description">
