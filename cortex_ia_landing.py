@@ -660,10 +660,10 @@ st.markdown("""
     }
     
     /* Grid de Produtos */
-    .products-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+.products-grid {
+        display: flex;             /* Muda para flexível */
+        justify-content: center;   /* Centraliza horizontalmente */
+        width: 100%;
         margin-bottom: 50px;
     }
     
@@ -1088,9 +1088,6 @@ st.markdown("""
 # Produtos
 st.markdown('<div class="products-grid">', unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
-
-with col2:
     st.markdown("""<div class="product-card featured">
 <h3 class="product-title">Plataforma de aprendizado Cortex + Ultra Cortex (bônus gratuito)</h3>
 
