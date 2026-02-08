@@ -1103,8 +1103,8 @@ Aprenda os princípios fundamentais do comportamento humano através de 21 dias 
 </p>
 
 <div class="price">
-  <span class="price-old">R$ 49,90</span>
-  R$ 34,90
+  R$ 27,90
+    <span class="price-old">R$ 59,90</span>
 </div>
 <p class="price-small">Acesso vitalício a ambos</p>
 
