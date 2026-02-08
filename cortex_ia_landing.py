@@ -1095,7 +1095,7 @@ st.markdown("""<div class="product-card featured">
 Aprenda os princípios fundamentais do comportamento humano através de 21 dias de atividades práticas e transformadoras. Além da plataforma de aprendizado, o Ultra Cortex é o seu manual tático para o dia a dia que te enviamos de forma gratuita. São mais de 50 análises de comportamento e scripts de reação prontos para você consultar no celular, exatamente na hora em que precisar identificar uma mentira, desarmar um conflito ou fechar um negócio.
 </p>
 
-<div class="price">R$ 49,90</div>
+<div class="price">R$ 34,90</div>
 <p class="price-small">Acesso vitalício a ambos</p>
 
 <ul class="features-list">
