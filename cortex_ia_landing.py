@@ -954,7 +954,7 @@ st.markdown("""
                     <p class="testimonial-text">
                         "Eu sempre achei que linguagem corporal não importava muito, mas a prática me provou o contrário. Usei a técnica de leitura de bloqueios numa reunião e percebi que o cliente ia recusar o preço antes dele abrir a boca. Ajustei o tom na hora e consegui fechar o contrato. É bizarro o quanto a gente é cego para esses sinais."
                     </p>
-                    <div class="testimonial-author">Ricardo Murata (Via Chat Eduzz)</div>
+                    <div class="testimonial-author">Ricardo Murata - Via Chat Eduzz</div>
                 </div>
                 <div class="testimonial-card">
                  <img class="testimonial-photo"
@@ -963,7 +963,7 @@ st.markdown("""
                     <p class="testimonial-text">
                         "O que eu mais gostei é que não tem enrolação. Eu leio o conteúdo no ônibus e já chego no escritório testando. É muito direto ao ponto: a plataforma entrega o módulo e em minutos você já entende por que aquela pessoa age de tal forma. Valeu cada centavo pela praticidade."
                     </p>
-                    <div class="testimonial-author">Luiza Sabino (Via Chat Eduzz)</div>
+                    <div class="testimonial-author">Luiza Sabino - Via Chat Eduzz</div>
                 </div>
                 <div class="testimonial-card">
                         <img class="testimonial-photo"
@@ -972,7 +972,7 @@ st.markdown("""
                     <p class="testimonial-text">
                         "Parece que agora eu vejo o mundo em câmera lenta. Você começa a notar as microexpressões e entende as intenções reais das pessoas, não só o que elas dizem. Mudou totalmente a forma como eu me posiciono em conversas difíceis. Minha única reclamação é não ter descoberto isso antes kkkk"
                     </p>
-                    <div class="testimonial-author">Fernanda Zerbini (Via Chat Eduzz)</div>
+                    <div class="testimonial-author">Fernanda Zerbini - Via Chat Eduzz</div>
                 </div>
             </div>
         </div>
