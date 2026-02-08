@@ -954,7 +954,7 @@ st.markdown("""
                     <p class="testimonial-text">
                         "Eu sempre achei que linguagem corporal não importava muito, mas a prática me provou o contrário. Usei a técnica de leitura de bloqueios numa reunião e percebi que o cliente ia recusar o preço antes dele abrir a boca. Ajustei o tom na hora e consegui fechar o contrato. É bizarro o quanto a gente é cego para esses sinais."
                     </p>
-                    <div class="testimonial-author">Ricardo Murata</div>
+                    <div class="testimonial-author">Ricardo Murata (Via Chat Eduzz)</div>
                 </div>
                 <div class="testimonial-card">
                  <img class="testimonial-photo"
@@ -963,7 +963,7 @@ st.markdown("""
                     <p class="testimonial-text">
                         "O que eu mais gostei é que não tem enrolação. Eu leio o conteúdo no ônibus e já chego no escritório testando. É muito direto ao ponto: a plataforma entrega o módulo e em minutos você já entende por que aquela pessoa age de tal forma. Valeu cada centavo pela praticidade."
                     </p>
-                    <div class="testimonial-author">Luiza Sabino</div>
+                    <div class="testimonial-author">Luiza Sabino (Via Chat Eduzz)</div>
                 </div>
                 <div class="testimonial-card">
                         <img class="testimonial-photo"
@@ -972,7 +972,7 @@ st.markdown("""
                     <p class="testimonial-text">
                         "Parece que agora eu vejo o mundo em câmera lenta. Você começa a notar as microexpressões e entende as intenções reais das pessoas, não só o que elas dizem. Mudou totalmente a forma como eu me posiciono em conversas difíceis. Minha única reclamação é não ter descoberto isso antes kkkk"
                     </p>
-                    <div class="testimonial-author">Fernanda Zerbini</div>
+                    <div class="testimonial-author">Fernanda Zerbini (Via Chat Eduzz)</div>
                 </div>
             </div>
         </div>
@@ -1096,10 +1096,10 @@ st.markdown("""
 st.markdown('<div class="products-grid">', unsafe_allow_html=True)
 
 st.markdown("""<div class="product-card featured">
-<h3 class="product-title">Plataforma de aprendizado Cortex + Ultra Cortex (bônus gratuito)</h3>
+<h3 class="product-title">Plataforma de aprendizado Cortex</h3>
 
 <p class="product-description">
-Aprenda os princípios fundamentais do comportamento humano através de 21 dias de atividades práticas e transformadoras. Além da plataforma de aprendizado, o Ultra Cortex é o seu manual tático para o dia a dia que te enviamos de forma gratuita. São mais de 50 análises de comportamento e scripts de reação prontos para você consultar no celular, exatamente na hora em que precisar identificar uma mentira, desarmar um conflito ou fechar um negócio.
+Aprenda os princípios fundamentais do comportamento humano através de 21 dias de atividades práticas e transformadoras.
 </p>
 
 <div class="price">
@@ -1110,18 +1110,17 @@ Aprenda os princípios fundamentais do comportamento humano através de 21 dias 
 
 <ul class="features-list">
 <li>21 dias de aprendizado puro</li>
-<li>Diversas atividades práticas para aplicação imediata</li>
+<li>Atividades práticas para aplicação imediata</li>
 <li>Conteúdo baseado em comportamento humano</li>
-<li>Acesso vitalício à plataforma</li>
+<li>Pagamento único e acesso vitalício à plataforma</li>
 <li>Atualizações futuras incluídas</li>
 <li>Suporte humano todos os dias</li>
 <li>Leitura rápida de microexpressões e emoções</li>
 <li>Táticas aplicáveis imediatamente na vida real</li>
 <li>Técnicas práticas de influência e persuasão</li>
-<li>Detecção de mentiras e sinais de desconforto</li>
 </ul>
 
-<a href="https://chk.eduzz.com/Q9N564ZZ01" target="_blank" class="hero-cta-link">
+<a href="https://sun.eduzz.com/Z0B5Z4N3WA" target="_blank" class="hero-cta-link">
 <button class="btn-checkout">
 Garantir a experiência completa
 </button>
