@@ -877,7 +877,7 @@ st.markdown("""
             <h1>🧬 Domine as táticas de comportamento humano, inteligência emocional e linguagem corporal para acelerar seus resultados.</h1>
             <p class="hero-subtitle">
                 <br>
-    <strong style="font-size: 2.0rem;">Junte-se a mais de 15 mil pessoas que dominam as táticas das 22 maiores autoridades globais em psicologia e linguagem corporal.</strong>
+    <strong style="font-size: 2.0rem;">Um cronograma de 21 dias para desenvolver controle emocional, identificar padrões de comportamento e interpretar a linguagem corporal de forma prática.</strong>
             </p>
             <a href="#produtos" class="hero-cta-link">
             <button class="hero-cta">
@@ -909,45 +909,6 @@ st.markdown("""
                 <div class="problem-item">
                     <h3>👑 Fase 4: Liderança e influência social (Dia 16 ao 21)</h3>
                     <p>A fase final consolida tudo. Você aprenderá como projetar uma presença de liderança que comanda o ambiente sem precisar dizer uma palavra. É o ajuste final para você se tornar a pessoa mais influente em qualquer grupo social ou profissional.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-
-# --- MICROLEARNING ---
-st.markdown("""
-    <div class="container">
-        <div class="microlearning-section">
-            <h2>🧬 Microlearning + Neurociência = Aprendizado Real</h2>
-            <p style="text-align: center; color: #666; font-size: 1.05rem; margin-bottom: 40px; line-height: 1.8;">
-                Cada módulo é projetado com base em como o cérebro realmente aprende. Não é coincidência que você vai reter o conhecimento.
-            </p>
-            <div class="microlearning-grid">
-                <div class="microlearning-item">
-                    <h3>🔗 Links cerebrais</h3>
-                    <p>Cada conceito é conectado a exemplos reais. Seu cérebro cria conexões mais fortes e memória duradoura.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>🌊 Modo difuso</h3>
-                    <p>Atividades que ativam o modo difuso do cérebro. Você aprende enquanto relaxa, não através de força bruta.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>⏱️ Sessões curtas</h3>
-                    <p>15-20 minutos por dia. Seu cérebro absorve melhor em sessões curtas e focadas do que em maratonas.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>🔄 Repetição espaçada</h3>
-                    <p>Conceitos são revisitados em intervalos ótimos. Você não esquece. Conhecimento fica para sempre.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>✍️ Atividades práticas</h3>
-                    <p>Fazer é o melhor jeito de aprender. Cada dia tem exercícios que consolidam o conhecimento.</p>
-                </div>
-                <div class="microlearning-item">
-                    <h3>🎓 Baseado em estudo</h3>
-                    <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva (Paul Ekman, Joe Navarro, Cialdini e muito mais). Todo conteúdo sempre estará citando de onde vem a base. Aprendizado que funciona.</p>
                 </div>
             </div>
         </div>
@@ -1008,6 +969,46 @@ st.markdown("""
     """, unsafe_allow_html=True
 )
 
+
+# --- MICROLEARNING ---
+st.markdown("""
+    <div class="container">
+        <div class="microlearning-section">
+            <h2>🧬 Microlearning + Neurociência = Aprendizado Real</h2>
+            <p style="text-align: center; color: #666; font-size: 1.05rem; margin-bottom: 40px; line-height: 1.8;">
+                Cada módulo é projetado com base em como o cérebro realmente aprende. Não é coincidência que você vai reter o conhecimento.
+            </p>
+            <div class="microlearning-grid">
+                <div class="microlearning-item">
+                    <h3>🔗 Links cerebrais</h3>
+                    <p>Cada conceito é conectado a exemplos reais. Seu cérebro cria conexões mais fortes e memória duradoura.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>🌊 Modo difuso</h3>
+                    <p>Atividades que ativam o modo difuso do cérebro. Você aprende enquanto relaxa, não através de força bruta.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>⏱️ Sessões curtas</h3>
+                    <p>15-20 minutos por dia. Seu cérebro absorve melhor em sessões curtas e focadas do que em maratonas.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>🔄 Repetição espaçada</h3>
+                    <p>Conceitos são revisitados em intervalos ótimos. Você não esquece. Conhecimento fica para sempre.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>✍️ Atividades práticas</h3>
+                    <p>Fazer é o melhor jeito de aprender. Cada dia tem exercícios que consolidam o conhecimento.</p>
+                </div>
+                <div class="microlearning-item">
+                    <h3>🎓 Baseado em estudo</h3>
+                    <p>Tudo segue as melhores práticas de neurociência e psicologia cognitiva (Paul Ekman, Joe Navarro, Cialdini e muito mais). Todo conteúdo sempre estará citando de onde vem a base. Aprendizado que funciona.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+
 # --- CTA ANTES DO FAQ ---
 st.markdown("""
 <div class="container">
@@ -1021,42 +1022,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# --- FAQ PREMIUM ---
-st.markdown("""
-<div class="container">
-<div class="faq-section">
-<h2>❓ Perguntas Frequentes</h2>
-<details class="faq-item">
-<summary class="faq-question">É seguro realizar a compra?</summary>
-<div class="faq-answer">Sim. Toda a compra é processada pela <strong>Eduzz</strong>, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com <strong>criptografia, certificados de segurança e antifraude</strong>. Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Por onde acesso a Cortex?</summary>
-<div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: <strong>celular, computador, tablet ou qualquer dispositivo com internet</strong>, sem instalações complicadas. É 100% online e funciona perfeitamente em qualquer lugar.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Como funciona o Ultra Cortex?</summary>
-<div class="faq-answer">O Ultra Cortex é um manual prático em PDF de <strong>comportamento humano</strong> para ler pessoas e saber exatamente como agir no seu dia a dia em diversas situações: em <strong>negociações</strong>, <strong>interações humanas</strong>, <strong>conversas importantes</strong> e <strong>muito mais</strong>, usando técnicas rápidas de influência, comunicação e leitura de emoções.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">E se o produto não atender minhas expectativas? Posso pedir reembolso?</summary>
-<div class="faq-answer">Com certeza! Teste por 7 dias. Se não gostar, devolvemos 100% do seu dinheiro.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">O que vou aprender?</summary>
-<div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: <strong>Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência com inteligência emocional, vendas com persuasão</strong> + um conteúdo bônus final no formato intensivo surpresa. Tudo prático e aplicável imediatamente.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Existe algum tipo de suporte?</summary>
-<div class="faq-answer">Com certeza! Desde o primeiro acesso, você recebe <strong>instruções completas de orientação</strong> que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, oferecemos <strong>suporte humano rápido</strong>, garantindo que você nunca fique travado ou perdido durante o processo.</div>
-</details>
-<details class="faq-item">
-<summary class="faq-question">Posso fazer no meu ritmo?</summary>
-<div class="faq-answer">Claro! Você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua <strong>disponibilidade e ao seu momento de vida</strong>. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência.</div>
-</details>
-</div>
-</div>
-""", unsafe_allow_html=True)
 
 
 # ============================================================
@@ -1111,6 +1076,45 @@ QUERO INICIAR AGORA
 </div>""", unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
+
+
+# --- FAQ PREMIUM ---
+st.markdown("""
+<div class="container">
+<div class="faq-section">
+<h2>❓ Perguntas Frequentes</h2>
+<details class="faq-item">
+<summary class="faq-question">É seguro realizar a compra?</summary>
+<div class="faq-answer">Sim. Toda a compra é processada pela <strong>Eduzz</strong>, uma das plataformas de pagamentos e educação mais seguras e reconhecidas do Brasil. Nenhum dado sensível passa por nós, tudo ocorre diretamente no ambiente da Eduzz, com <strong>criptografia, certificados de segurança e antifraude</strong>. Além disso, você sempre pode verificar a URL do checkout, confirmar que está no domínio oficial da Eduzz e pesquisar sobre a empresa para garantir total transparência.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Por onde acesso a Cortex?</summary>
+<div class="faq-answer">Você pode acessar nossa plataforma de qualquer lugar pelo navegador: <strong>celular, computador, tablet ou qualquer dispositivo com internet</strong>, sem instalações complicadas. É 100% online e funciona perfeitamente em qualquer lugar.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Como funciona o Ultra Cortex?</summary>
+<div class="faq-answer">O Ultra Cortex é um manual prático em PDF de <strong>comportamento humano</strong> para ler pessoas e saber exatamente como agir no seu dia a dia em diversas situações: em <strong>negociações</strong>, <strong>interações humanas</strong>, <strong>conversas importantes</strong> e <strong>muito mais</strong>, usando técnicas rápidas de influência, comunicação e leitura de emoções.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">E se o produto não atender minhas expectativas? Posso pedir reembolso?</summary>
+<div class="faq-answer">Com certeza! Teste por 7 dias. Se não gostar, devolvemos 100% do seu dinheiro.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">O que vou aprender?</summary>
+<div class="faq-answer">Nosso conteúdo foi escolhido com base no que as pessoas mais procuram sobre o assunto: <strong>Persuasão, leitura de pessoas, linguagem corporal, controle emocional, influência social, resiliência com inteligência emocional, vendas com persuasão</strong> + um conteúdo bônus final no formato intensivo surpresa. Tudo prático e aplicável imediatamente.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Existe algum tipo de suporte?</summary>
+<div class="faq-answer">Com certeza! Desde o primeiro acesso, você recebe <strong>instruções completas de orientação</strong> que explica como a plataforma funciona. Caso precise de qualquer tipo de assistência, oferecemos <strong>suporte humano rápido</strong>, garantindo que você nunca fique travado ou perdido durante o processo.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Posso fazer no meu ritmo?</summary>
+<div class="faq-answer">Claro! Você pode usar a Cortex no seu próprio ritmo, porque ela se adapta à sua <strong>disponibilidade e ao seu momento de vida</strong>. Não existem aulas extensas, vídeos obrigatórios ou sequências fixas. A plataforma personaliza as explicações e orientações conforme você evolui, para que cada interação gere resultado independentemente da frequência.</div>
+</details>
+</div>
+</div>
+""", unsafe_allow_html=True)
+
 
 # Footer
 st.markdown("""
