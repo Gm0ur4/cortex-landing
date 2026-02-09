@@ -874,7 +874,7 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="hero">
-            <h1>🧬 A Cortex é a primeira plataforma desenvolvida exclusivamente ao ensinamento do comportamento humano</h1>
+            <h1>🧬 Domine as táticas de comportamento humano, inteligência emocional e linguagem corporal para acelerar seus resultados.</h1>
             <p class="hero-subtitle">
                 <br>
     <strong style="font-size: 2.0rem;">Junte-se a mais de 15 mil pessoas que dominam as táticas das 22 maiores autoridades globais em psicologia e linguagem corporal.</strong>
@@ -883,6 +883,34 @@ st.markdown("""
             <button class="hero-cta">
                 ⚡ Começar Agora
             </button>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+# --- PROBLEMA ---
+st.markdown("""
+    <div class="container">
+        <div class="problem-section">
+            <h2>Sua jornada de 21 dias:</h2>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <h3>🏁 Fase 1: Persuasão e vendas (Dia 01 ao 05)</h3>
+                    <p>Nesta fase, você desbloqueia as chaves da comunicação persuasiva. O objetivo é que, já na primeira semana, você consiga aplicar gatilhos mentais em negociações e conversas casuais para notar uma mudança imediata na aceitação das suas ideias.</p>
+                </div>
+                <div class="problem-item">
+                    <h3>🔍 Fase 2: Leitura de pessoas e linguagem corporal (Dia 06 ao 10)</h3>
+                    <p>Aqui é onde você "abre os olhos". Você aprenderá a decodificar microexpressões e gestos involuntários. É o módulo que o Ricardo (nosso aluno) usou para ler o fechamento de corpo do cliente e garantir o contrato.</p>
+                </div>
+                <div class="problem-item">
+                    <h3>🧠 Fase 3: Controle emocional e resiliência (Dia 11 ao 15)</h3>
+                    <p>Não adianta ler os outros se você não domina a si mesmo. Esta fase foca em manter a calma sob pressão e usar a resiliência como arma em ambientes hostis ou discussões acaloradas. Você aprende a não reagir, mas a agir com estratégia.</p>
+                </div>
+                <div class="problem-item">
+                    <h3>👑 Fase 4: Liderança e influência social (Dia 16 ao 21)</h3>
+                    <p>A fase final consolida tudo. Você aprenderá como projetar uma presença de liderança que comanda o ambiente sem precisar dizer uma palavra. É o ajuste final para você se tornar a pessoa mais influente em qualquer grupo social ou profissional.</p>
+                </div>
+            </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -934,7 +962,7 @@ st.markdown("""
             <h2>📊 Nossos resultados em números</h2>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <p class="stat-number">15.000+</p>
+                    <p class="stat-number">5.000+</p>
                     <p class="stat-label">Usuários ativos</p>
                 </div>
                 <div class="stat-card">
@@ -979,34 +1007,6 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True
 )
-
-
-# --- PROBLEMA ---
-st.markdown("""
-    <div class="container">
-        <div class="problem-section">
-            <h2>Sua jornada de 21 dias:</h2>
-            <div class="problem-grid">
-                <div class="problem-item">
-                    <h3>🏁 Fase 1: Persuasão e vendas (Dia 01 ao 05)</h3>
-                    <p>Nesta fase, você desbloqueia as chaves da comunicação persuasiva. O objetivo é que, já na primeira semana, você consiga aplicar gatilhos mentais em negociações e conversas casuais para notar uma mudança imediata na aceitação das suas ideias.</p>
-                </div>
-                <div class="problem-item">
-                    <h3>🔍 Fase 2: Leitura de pessoas e linguagem corporal (Dia 06 ao 10)</h3>
-                    <p>Aqui é onde você "abre os olhos". Você aprenderá a decodificar microexpressões e gestos involuntários. É o módulo que o Ricardo (nosso aluno) usou para ler o fechamento de corpo do cliente e garantir o contrato.</p>
-                </div>
-                <div class="problem-item">
-                    <h3>🧠 Fase 3: Controle emocional e resiliência (Dia 11 ao 15)</h3>
-                    <p>Não adianta ler os outros se você não domina a si mesmo. Esta fase foca em manter a calma sob pressão e usar a resiliência como arma em ambientes hostis ou discussões acaloradas. Você aprende a não reagir, mas a agir com estratégia.</p>
-                </div>
-                <div class="problem-item">
-                    <h3>👑 Fase 4: Liderança e influência social (Dia 16 ao 21)</h3>
-                    <p>A fase final consolida tudo. Você aprenderá como projetar uma presença de liderança que comanda o ambiente sem precisar dizer uma palavra. É o ajuste final para você se tornar a pessoa mais influente em qualquer grupo social ou profissional.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
 
 # --- CTA ANTES DO FAQ ---
 st.markdown("""
@@ -1106,7 +1106,7 @@ Aprenda os princípios fundamentais do comportamento humano através de 21 dias 
 
 <a href="https://sun.eduzz.com/Z0B5Z4N3WA" target="_blank" class="hero-cta-link">
 <button class="btn-checkout">
-Garantir a experiência completa
+QUERO INICIAR AGORA
 </button>
 </div>""", unsafe_allow_html=True)
 
