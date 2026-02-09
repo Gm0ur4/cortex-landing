@@ -1008,22 +1008,6 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-# --- DEMO ---
-st.markdown("""
-    <div class="container">
-        <div class="demo-section">
-            <h2>🎥 Veja como funciona</h2>
-            <p style="color: #666; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.8;">
-                Quer ver um exemplo de como é um parte de um dia? Clique abaixo para acessar uma demonstração gratuita. Sem necessidade de cadastro e acesso imediato.
-            </p>
-            <a href="https://aprendizadocortexdemo.streamlit.app/" target="_blank" style="text-decoration: none;">
-            <button class="demo-btn" style="cursor: pointer;">
-                👀 Ver demonstração gratuita
-            </button>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
 # --- CTA ANTES DO FAQ ---
 st.markdown("""
 <div class="container">
