@@ -962,16 +962,25 @@ st.markdown("""
                         "Parece que agora eu vejo o mundo em câmera lenta. Você começa a notar as microexpressões e entende as intenções reais das pessoas, não só o que elas dizem. Mudou totalmente a forma como eu me posiciono em conversas difíceis. Minha única reclamação é não ter descoberto isso antes kkkk"
                     </p>
                     <div class="testimonial-author">Fernanda Zerbini - Via Chat Eduzz</div>
-                            <a <a href="#produtos" class="hero-cta-link" style="text-decoration:none;">
-            <button class="hero-cta">
-                ⚡ Garantir meu acesso imediato
-            </button>
                 </div>
             </div>
         </div>
     </div>
     """, unsafe_allow_html=True
 )
+
+# --- CTA ANTES DO FAQ ---
+st.markdown("""
+<div class="container">
+    <div style="text-align:center; margin: 40px 0;">
+        <a <a href="#produtos" class="hero-cta-link" style="text-decoration:none;">
+            <button class="hero-cta">
+                ⚡ Começar Agora
+            </button>
+        </a>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 
 # --- MICROLEARNING ---
@@ -1011,20 +1020,6 @@ st.markdown("""
         </div>
     </div>
     """, unsafe_allow_html=True)
-
-
-# --- CTA ANTES DO FAQ ---
-st.markdown("""
-<div class="container">
-    <div style="text-align:center; margin: 40px 0;">
-        <a <a href="#produtos" class="hero-cta-link" style="text-decoration:none;">
-            <button class="hero-cta">
-                ⚡ Começar Agora
-            </button>
-        </a>
-    </div>
-</div>
-""", unsafe_allow_html=True)
 
 
 
