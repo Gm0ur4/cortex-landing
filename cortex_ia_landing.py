@@ -975,7 +975,7 @@ st.markdown("""
     <div style="text-align:center; margin: 40px 0;">
         <a <a href="#produtos" class="hero-cta-link" style="text-decoration:none;">
             <button class="hero-cta">
-                ⚡ Começar Agora
+                ⚡ Quero iniciar agora
             </button>
         </a>
     </div>
