@@ -881,7 +881,7 @@ st.markdown("""
             </p>
             <a href="#produtos" class="hero-cta-link">
             <button class="hero-cta">
-                ⚡ Começar Agora
+                ⚡ Começar o cronograma
             </button>
         </div>
     </div>
