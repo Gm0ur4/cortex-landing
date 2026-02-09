@@ -874,14 +874,14 @@ st.markdown("""
 st.markdown("""
     <div class="container">
         <div class="hero">
-            <h1>🧬 Domine as táticas de comportamento humano, inteligência emocional e linguagem corporal para acelerar seus resultados.</h1>
+            <h1>🧬 Domine as táticas de comportamento humano, inteligência emocional e linguagem corporal.</h1>
             <p class="hero-subtitle">
                 <br>
     <strong style="font-size: 2.0rem;">Um cronograma de 21 dias para desenvolver controle emocional, identificar padrões de comportamento e interpretar a linguagem corporal de forma prática.</strong>
             </p>
             <a href="#produtos" class="hero-cta-link">
             <button class="hero-cta">
-                ⚡ Começar o cronograma
+                ⚡ Começar o cronograma por R$27,90
             </button>
         </div>
     </div>
