@@ -1070,7 +1070,7 @@ Aprenda os princípios fundamentais do comportamento humano através de 21 dias 
 
 <a href="https://sun.eduzz.com/Z0B5Z4N3WA" target="_blank" class="hero-cta-link">
 <button class="btn-checkout">
-QUERO INICIAR AGORA
+GARANTIR MEU ACESSO IMEDIATO
 </button>
 </div>""", unsafe_allow_html=True)
 
