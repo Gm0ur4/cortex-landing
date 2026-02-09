@@ -916,6 +916,19 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 
+st.markdown("""
+<div class="container">
+    <div style="text-align:center; margin: 40px 0;">
+        <a <a href="#produtos" class="hero-cta-link" style="text-decoration:none;">
+            <button class="hero-cta">
+                ⚡ Iniciar minha jornada de 21 dias
+            </button>
+        </a>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+
 # --- PROVA SOCIAL ---
 st.markdown("""
     <div class="container">
