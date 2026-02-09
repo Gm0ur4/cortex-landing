@@ -969,6 +969,11 @@ st.markdown("""
     """, unsafe_allow_html=True
 )
 
+        <a <a href="#produtos" class="hero-cta-link" style="text-decoration:none;">
+            <button class="hero-cta">
+                ⚡ Garantir meu acesso imediato
+            </button>
+
 
 # --- MICROLEARNING ---
 st.markdown("""
